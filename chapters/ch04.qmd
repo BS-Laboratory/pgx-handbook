@@ -1,5 +1,4 @@
-# บทที่ 4
-# ดาวนำทาง: Star Alleles และฟีโนไทป์
+# บทที่ 4: ดาวนำทาง Star Alleles และฟีโนไทป์
 ## Poor / Intermediate / Normal / Rapid / Ultrarapid Metabolizer
 
 ในบทที่ผ่านมาเราได้รู้จักกันแล้วว่า ร่างกายของเรามี "โรงงานสลายยา" อยู่ในตับ ซึ่งก็คือกลุ่มเอนไซม์ตระกูล CYP450  เช่น CYP2D6, CYP2C19, CYP2C9 
