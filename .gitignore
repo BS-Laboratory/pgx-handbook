@@ -1,0 +1,4 @@
+.quarto/
+_freeze/
+*.rds
+.DS_Store
