@@ -3,7 +3,7 @@ Bhoom Suktitipat Laboratory
 2026-09-22
 
 - [คำนำ](#คำนำ)
-- [บทที่ 1 รหัสชีวิตกับยา](#บทที่-1-รหัสชีวิตกับยา)
+- [บทที่ 1: รหัสชีวิตกับยา](#บทที่-1-รหัสชีวิตกับยา)
   - [“**DNA ทำงานอย่างไร ?“**](#dna-ทำงานอย่างไร-)
     - [**1.1 Central Dogma:
       พิมพ์เขียวของชีวิต**](#11-central-dogma-พิมพ์เขียวของชีวิต)
@@ -74,8 +74,8 @@ Bhoom Suktitipat Laboratory
   - [3.9 ข้อจำกัดที่ต้องพึงระลึกไว้เสมอ](#39-ข้อจำกัดที่ต้องพึงระลึกไว้เสมอ)
   - [สรุปท้ายบท](#สรุปท้ายบท)
   - [เอกสารอ้างอิง (References)](#เอกสารอ้างอิง-references)
-- [บทที่ 4](#บทที่-4)
-- [ดาวนำทาง: Star Alleles และฟีโนไทป์](#ดาวนำทาง-star-alleles-และฟีโนไทป์)
+- [บทที่ 4: ดาวนำทาง Star Alleles
+  และฟีโนไทป์](#บทที่-4-ดาวนำทาง-star-alleles-และฟีโนไทป์)
   - [Poor / Intermediate / Normal / Rapid / Ultrarapid
     Metabolizer](#poor--intermediate--normal--rapid--ultrarapid-metabolizer)
   - [ตอนที่ 1: Star Allele คืออะไร
@@ -113,6 +113,27 @@ Bhoom Suktitipat Laboratory
     - [ทำไมต้องออกแบบเป็น Prodrug?](#ทำไมต้องออกแบบเป็น-prodrug)
   - [5.2 แผนที่ Prodrug
     สำคัญในเภสัชพันธุศาสตร์](#52-แผนที่-prodrug-สำคัญในเภสัชพันธุศาสตร์)
+  - [5.3 Codeine: Prodrug
+    ที่คนไทยต้องรู้ให้ชัด](#53-codeine-prodrug-ที่คนไทยต้องรู้ให้ชัด)
+    - [กลไกการออกฤทธิ์](#กลไกการออกฤทธิ์)
+    - [ผลตามกลุ่มยีน CYP2D6](#ผลตามกลุ่มยีน-cyp2d6)
+    - [🔬 กรณีศึกษา:
+      โศกนาฏกรรมที่เปลี่ยนวงการแพทย์โลก](#microscope-กรณีศึกษา-โศกนาฏกรรมที่เปลี่ยนวงการแพทย์โลก)
+    - [คำแนะนำ CPIC 2021 สำหรับ Codeine
+      \[\]](#คำแนะนำ-cpic-2021-สำหรับ-codeine-ch05-3)
+  - [5.4 Tramadol: Prodrug ที่ซับซ้อนกว่า
+    Codeine](#54-tramadol-prodrug-ที่ซับซ้อนกว่า-codeine)
+    - [กลไกซับซ้อน 2 ช่องทางพร้อมกัน](#กลไกซับซ้อน-2-ช่องทางพร้อมกัน)
+  - [5.5 Tamoxifen: Prodrug
+    สำหรับมะเร็งเต้านม](#55-tamoxifen-prodrug-สำหรับมะเร็งเต้านม)
+    - [ความสำคัญของ Endoxifen](#ความสำคัญของ-endoxifen)
+    - [⚠️
+      คำเตือนสำหรับผู้ป่วยมะเร็งเต้านมชาวไทย](#warning-คำเตือนสำหรับผู้ป่วยมะเร็งเต้านมชาวไทย)
+    - [คำแนะนำ CPIC 2018 \[\]](#คำแนะนำ-cpic-2018-ch05-4)
+  - [5.6 Clopidogrel: Prodrug หัวใจที่คนไทย 1 ใน 10
+    ต้องระวัง](#56-clopidogrel-prodrug-หัวใจที่คนไทย-1-ใน-10-ต้องระวัง)
+    - [บริบทที่สำคัญมากสำหรับประเทศไทย](#บริบทที่สำคัญมากสำหรับประเทศไทย)
+    - [กลไก 2 ขั้นตอนที่ขึ้นกับ CYP2C19](#กลไก-2-ขั้นตอนที่ขึ้นกับ-cyp2c19)
     - [ผลทางคลินิกตามกลุ่มยีน](#ผลทางคลินิกตามกลุ่มยีน)
     - [คำแนะนำ CPIC 2022 \[\]](#คำแนะนำ-cpic-2022-ch05-7)
   - [5.7 กฎทอง 5 ข้อสำหรับ Prodrug
@@ -328,7 +349,7 @@ Laboratory
 
 > แก้ไขคำนำนี้ได้อิสระใน `index.qmd`
 
-# บทที่ 1 รหัสชีวิตกับยา
+# บทที่ 1: รหัสชีวิตกับยา
 
 ## “**DNA ทำงานอย่างไร ?“**
 
@@ -1240,9 +1261,7 @@ Score) แบบเข้าใจง่าย ๆ กัน \*\*\*
 
 ## เอกสารอ้างอิง (References)
 
-# บทที่ 4
-
-# ดาวนำทาง: Star Alleles และฟีโนไทป์
+# บทที่ 4: ดาวนำทาง Star Alleles และฟีโนไทป์
 
 ## Poor / Intermediate / Normal / Rapid / Ultrarapid Metabolizer
 
@@ -1604,162 +1623,188 @@ function) เมื่อได้รับอัลลีลนี้จาก�
 ต่อไปนี้คือ Prodrug 4 ชนิดที่มีความสำคัญทางคลินิกสูงสุด
 เพราะล้วนขึ้นกับเอนไซม์ที่มีความหลากหลายทางพันธุกรรมสูง
 
-                        ┌─────────────────────────────────────┐
-                        │          ยาที่กลืนเข้าไป                │
-                        └──────────────┬──────────────────────┘
-                                       │
-                        ┌──────────────▼──────────────────────┐
-                        │       ตับ: เอนไซม์ CYP450 ทำงาน       │
-                        └──────────────┬──────────────────────┘
-                                       │
-                  ┌────────────────────┼────────────────────┐
-                  │                    │                    │
-        ┌─────────▼──────┐    ┌────────▼────────┐   ┌───────▼──────────┐
-        │  Prodrug       │    │  Active Drug    │   │  Inactive        │
-        │  (ไม่มีฤทธิ์)      │    │  (ออกฤทธิ์)       │   │  Metabolite      │
-        │  → ต้องแปลง     │    │  → ขับออก        │   │  (ไม่มีฤทธิ์)        │
-        └────────────────┘    └─────────────────┘   └──────────────────┘
+                            ┌─────────────────────────────────────┐
+                            │          ยาที่กลืนเข้าไป                │
+                            └──────────────┬──────────────────────┘
+                                           │
+                            ┌──────────────▼──────────────────────┐
+                            │       ตับ: เอนไซม์ CYP450 ทำงาน       │
+                            └──────────────┬──────────────────────┘
+                                           │
+                      ┌────────────────────┼────────────────────┐
+                      │                    │                    │
+            ┌─────────▼──────┐    ┌────────▼────────┐   ┌───────▼──────────┐
+            │  Prodrug       │    │  Active Drug    │   │  Inactive        │
+            │  (ไม่มีฤทธิ์)      │    │  (ออกฤทธิ์)       │   │  Metabolite      │
+            │  → ต้องแปลง     │    │  → ขับออก        │   │  (ไม่มีฤทธิ์)        │
+            └────────────────┘    └─────────────────┘   └──────────────────┘
 
+| Prodrug | เอนไซม์ | รูปออกฤทธิ์ | CPIC Level | ใช้รักษา |
+|----|----|----|----|----|
+| **Codeine** | CYP2D6 | Morphine | **A** | ยาแก้ปวด, แก้ไอ |
+| **Tramadol** | CYP2D6 | O-desmethyltramadol (M1) | **A** | ยาแก้ปวดปานกลาง-รุนแรง |
+| **Tamoxifen** | CYP2D6 | Endoxifen | **A** | มะเร็งเต้านม (ER+) |
+| **Clopidogrel** | CYP2C19 | Thiol metabolite | **A** | ป้องกันลิ่มเลือด |
 
-    | Prodrug | เอนไซม์ | รูปออกฤทธิ์ | CPIC Level | ใช้รักษา |
-    |---------|---------|------------|-----------|---------|
-    | **Codeine** | CYP2D6 | Morphine | **A** | ยาแก้ปวด, แก้ไอ |
-    | **Tramadol** | CYP2D6 | O-desmethyltramadol (M1) | **A** | ยาแก้ปวดปานกลาง-รุนแรง |
-    | **Tamoxifen** | CYP2D6 | Endoxifen | **A** | มะเร็งเต้านม (ER+) |
-    | **Clopidogrel** | CYP2C19 | Thiol metabolite | **A** | ป้องกันลิ่มเลือด |
+------------------------------------------------------------------------
 
-    ***
+## 5.3 Codeine: Prodrug ที่คนไทยต้องรู้ให้ชัด
 
-    ## 5.3 Codeine: Prodrug ที่คนไทยต้องรู้ให้ชัด
+### กลไกการออกฤทธิ์
 
-    ### กลไกการออกฤทธิ์
+    Codeine (กินเข้าไป — ไม่มีฤทธิ์แก้ปวด)
+        │
+        │  CYP2D6 แปลงประมาณ 10% ของ Codeine
+        ▼
+    Morphine (ออกฤทธิ์แก้ปวด — แรงกว่า Codeine 200 เท่า!)
+        │
+        │  UGT2B7 แปลงต่อ
+        ▼
+    Morphine-6-glucuronide (M6G) → ออกฤทธิ์ด้วย
 
-Codeine (กินเข้าไป — ไม่มีฤทธิ์แก้ปวด) │ │ CYP2D6 แปลงประมาณ 10% ของ Codeine ▼
-Morphine (ออกฤทธิ์แก้ปวด — แรงกว่า Codeine 200 เท่า!) │ │ UGT2B7 แปลงต่อ ▼
-Morphine-6-glucuronide (M6G) → ออกฤทธิ์ด้วย
+> 💡 **จุดสำคัญ:** CYP2D6 แปลง Codeine เป็น Morphine เพียง 10% แต่ Morphine
+> ที่ได้แรงกว่า Codeine ถึง **200 เท่า** ดังนั้นแม้ปริมาณน้อย แต่ผลทางคลินิกใหญ่มาก
+> \[[^23]\]
 
-    > 💡 **จุดสำคัญ:** CYP2D6 แปลง Codeine เป็น Morphine เพียง 10%
-    > แต่ Morphine ที่ได้แรงกว่า Codeine ถึง **200 เท่า**
-    > ดังนั้นแม้ปริมาณน้อย แต่ผลทางคลินิกใหญ่มาก [[^ch05-1]]
+### ผลตามกลุ่มยีน CYP2D6
 
-    ### ผลตามกลุ่มยีน CYP2D6
+| กลุ่มยีน (Phenotype) | Activity Score | Morphine ที่ได้ | ผลทางคลินิก |
+|----|----|----|----|
+| Poor Metabolizer (PM) | 0 | แทบไม่มี | ปวดทนอยู่ — ยาไม่แก้ปวดเลย |
+| Intermediate Metabolizer (IM) | 0.25–1.0 | น้อยกว่าปกติ | แก้ปวดได้บางส่วน |
+| Normal Metabolizer (NM) | 1.25–2.25 | ปกติ | แก้ปวดได้ตามที่คาด |
+| Rapid Metabolizer (RM) | 2.5–3.0 | มากกว่าปกติเล็กน้อย | อาจมีผลข้างเคียงเพิ่ม |
+| **Ultrarapid Metabolizer (UM)** | **≥ 3.0** | **มากผิดปกติ** | **⚠️ เสี่ยง Morphine toxicity!** |
 
-    | กลุ่มยีน (Phenotype) | Activity Score | Morphine ที่ได้ | ผลทางคลินิก |
-    |---------------------|---------------|----------------|------------|
-    | Poor Metabolizer (PM) | 0 | แทบไม่มี | ปวดทนอยู่ — ยาไม่แก้ปวดเลย |
-    | Intermediate Metabolizer (IM) | 0.25–1.0 | น้อยกว่าปกติ | แก้ปวดได้บางส่วน |
-    | Normal Metabolizer (NM) | 1.25–2.25 | ปกติ | แก้ปวดได้ตามที่คาด |
-    | Rapid Metabolizer (RM) | 2.5–3.0 | มากกว่าปกติเล็กน้อย | อาจมีผลข้างเคียงเพิ่ม |
-    | **Ultrarapid Metabolizer (UM)** | **≥ 3.0** | **มากผิดปกติ** | **⚠️ เสี่ยง Morphine toxicity!** |
-    ### 🔬 กรณีศึกษา: โศกนาฏกรรมที่เปลี่ยนวงการแพทย์โลก
+### 🔬 กรณีศึกษา: โศกนาฏกรรมที่เปลี่ยนวงการแพทย์โลก
 
-    <details>
-    <summary>📖 คลิกอ่านกรณีศึกษา</summary>
+<details>
 
-    **กรณีที่ 1 (2009):** เด็กชายวัย 2 ขวบชาวแคนาดาเสียชีวิตหลังผ่าตัดทอนซิล
-    ได้รับ Codeine ตามขนาดมาตรฐาน แต่ผลตรวจพันธุกรรมภายหลังพบว่า
-    เขาเป็น **Ultrarapid Metabolizer** (มียีน CYP2D6 ถึง 13 สำเนา)
-    ทำให้ Codeine ถูกเปลี่ยนเป็น Morphine เร็วและมากผิดปกติ
-    เกิดภาวะกดการหายใจ (Respiratory Depression) จนเสียชีวิต [[^ch05-2]]
+<summary>
 
-    **กรณีที่ 2 (2012):** ทารกอายุ 2 สัปดาห์เสียชีวิต
-    มารดาซึ่งให้นมบุตรและเป็น Ultrarapid Metabolizer
-    กิน Codeine หลังผ่าตัดคลอด ทำให้ Morphine
-    สะสมในน้ำนมสูงมาก ทารกได้รับ Morphine ผ่านน้ำนม
-    จนเกิดภาวะกดการหายใจและเสียชีวิต [[^ch05-2]]
+📖 คลิกอ่านกรณีศึกษา
+</summary>
 
-    **ผลที่ตามมา:**
-    - FDA ออกคำเตือน **Black Box** สำหรับ Codeine (2013)
-    - ห้ามใช้ Codeine ในเด็กอายุ < 12 ปี
-    - ห้ามใช้ในมารดาให้นมบุตร
-    - ไทยและหลายประเทศออกข้อบังคับตาม [[^ch05-3]]
-    </details>
+**กรณีที่ 1 (2009):** เด็กชายวัย 2 ขวบชาวแคนาดาเสียชีวิตหลังผ่าตัดทอนซิล ได้รับ
+Codeine ตามขนาดมาตรฐาน แต่ผลตรวจพันธุกรรมภายหลังพบว่า เขาเป็น **Ultrarapid
+Metabolizer** (มียีน CYP2D6 ถึง 13 สำเนา) ทำให้ Codeine ถูกเปลี่ยนเป็น Morphine
+เร็วและมากผิดปกติ เกิดภาวะกดการหายใจ (Respiratory Depression) จนเสียชีวิต
+\[[^24]\]
 
-    ### คำแนะนำ CPIC 2021 สำหรับ Codeine [[^ch05-3]]
+**กรณีที่ 2 (2012):** ทารกอายุ 2 สัปดาห์เสียชีวิต มารดาซึ่งให้นมบุตรและเป็น Ultrarapid
+Metabolizer กิน Codeine หลังผ่าตัดคลอด ทำให้ Morphine สะสมในน้ำนมสูงมาก
+ทารกได้รับ Morphine ผ่านน้ำนม จนเกิดภาวะกดการหายใจและเสียชีวิต \[[^25]\]
 
-กลุ่ม UM (ยีนทำงานแรงจัด) └── ❌ ห้ามใช้ Codeine — เสี่ยง Morphine toxicity └──
-✅ เปลี่ยนเป็น Morphine, Oxycodone, Hydromorphone (ยาเหล่านี้ไม่ใช่ Prodrug
-ออกฤทธิ์ได้โดยตรง)
+**ผลที่ตามมา:** - FDA ออกคำเตือน **Black Box** สำหรับ Codeine (2013) - ห้ามใช้
+Codeine ในเด็กอายุ \< 12 ปี - ห้ามใช้ในมารดาให้นมบุตร -
+ไทยและหลายประเทศออกข้อบังคับตาม \[[^26]\]
+</details>
 
-กลุ่ม NM/RM (ยีนทำงานปกติ-เร็ว) └── ✅ ใช้ขนาดปกติได้
+### คำแนะนำ CPIC 2021 สำหรับ Codeine \[[^27]\]
 
-กลุ่ม IM (ยีนทำงานลดลง) └── ⚠️ อาจแก้ปวดได้น้อยกว่าที่คาด └──
-พิจารณาเปลี่ยนยาหรือเพิ่มขนาดอย่างระมัดระวัง
+    กลุ่ม UM (ยีนทำงานแรงจัด)
+    └── ❌ ห้ามใช้ Codeine — เสี่ยง Morphine toxicity
+        └── ✅ เปลี่ยนเป็น Morphine, Oxycodone, Hydromorphone
+            (ยาเหล่านี้ไม่ใช่ Prodrug ออกฤทธิ์ได้โดยตรง)
 
-กลุ่ม PM (ยีนไม่ทำงาน) └── ❌ ไม่แนะนำ — Codeine จะไม่ออกฤทธิ์แก้ปวดเลย └── ✅
-เปลี่ยนเป็น Morphine, Oxycodone, Hydromorphone
+    กลุ่ม NM/RM (ยีนทำงานปกติ-เร็ว)
+    └── ✅ ใช้ขนาดปกติได้
 
+    กลุ่ม IM (ยีนทำงานลดลง)
+    └── ⚠️ อาจแก้ปวดได้น้อยกว่าที่คาด
+        └── พิจารณาเปลี่ยนยาหรือเพิ่มขนาดอย่างระมัดระวัง
 
-    ***
-    ## 5.4 Tramadol: Prodrug ที่ซับซ้อนกว่า Codeine
+    กลุ่ม PM (ยีนไม่ทำงาน)
+    └── ❌ ไม่แนะนำ — Codeine จะไม่ออกฤทธิ์แก้ปวดเลย
+        └── ✅ เปลี่ยนเป็น Morphine, Oxycodone, Hydromorphone
 
-    ### กลไกซับซ้อน 2 ช่องทางพร้อมกัน
+------------------------------------------------------------------------
 
-Tramadol │ ├── CYP2D6 (O-demethylation) │ └── O-desmethyltramadol (M1) │
-└── จับ μ-opioid receptor │ (แก้ปวดหลัก — แรงกว่า Tramadol 200 เท่า) │ └──
-CYP3A4 (N-demethylation) └── N-desmethyltramadol └── ออกฤทธิ์น้อยกว่า M1 มาก
+## 5.4 Tramadol: Prodrug ที่ซับซ้อนกว่า Codeine
 
+### กลไกซับซ้อน 2 ช่องทางพร้อมกัน
 
-    Tramadol ต่างจาก Codeine ตรงที่มี **2 ช่องทาง** ในการออกฤทธิ์
-    คนที่เป็น PM ยังแก้ปวดได้บ้างจากช่องทางที่ 2 แต่น้อยกว่าคนปกติมาก
+    Tramadol
+        │
+        ├── CYP2D6 (O-demethylation)
+        │   └── O-desmethyltramadol (M1)
+        │       └── จับ μ-opioid receptor
+        │           (แก้ปวดหลัก — แรงกว่า Tramadol 200 เท่า)
+        │
+        └── CYP3A4 (N-demethylation)
+            └── N-desmethyltramadol
+                └── ออกฤทธิ์น้อยกว่า M1 มาก
 
-    > ⚠️ **สำคัญ:** กลุ่ม UM ที่ได้รับ Tramadol มีความเสี่ยงต่อ
-    > **Serotonin Syndrome** (ไข้ กล้ามเนื้อกระตุก ชัก สับสน)
-    > นอกเหนือจากความเสี่ยง Opioid toxicity ด้วย [[^ch05-3]]
+Tramadol ต่างจาก Codeine ตรงที่มี **2 ช่องทาง** ในการออกฤทธิ์ คนที่เป็น PM
+ยังแก้ปวดได้บ้างจากช่องทางที่ 2 แต่น้อยกว่าคนปกติมาก
 
-    ***
-    ## 5.5 Tamoxifen: Prodrug สำหรับมะเร็งเต้านม
+> ⚠️ **สำคัญ:** กลุ่ม UM ที่ได้รับ Tramadol มีความเสี่ยงต่อ **Serotonin Syndrome**
+> (ไข้ กล้ามเนื้อกระตุก ชัก สับสน) นอกเหนือจากความเสี่ยง Opioid toxicity ด้วย
+> \[[^28]\]
 
-    ### ความสำคัญของ Endoxifen
+------------------------------------------------------------------------
 
-    Tamoxifen เป็นยาหลักสำหรับรักษา **มะเร็งเต้านมชนิด ER+**
-    ซึ่งพบในผู้ป่วยมะเร็งเต้านมประมาณ 70–80%
+## 5.5 Tamoxifen: Prodrug สำหรับมะเร็งเต้านม
 
-Tamoxifen (ฤทธิ์ต่ำ) │ ├── CYP2D6 ────────────────────────
-4-Hydroxytamoxifen │ (ฤทธิ์สูง แต่ Half-life สั้น) │ └── CYP3A4/3A5 ──
-N-Desmethyltamoxifen │ │ CYP2D6 ← ขั้นตอนสำคัญที่สุด! ▼ ⭐ Endoxifen (ฤทธิ์สูง +
-Half-life ยาว) รูปออกฤทธิ์หลักในการต้านมะเร็ง
+### ความสำคัญของ Endoxifen
 
+Tamoxifen เป็นยาหลักสำหรับรักษา **มะเร็งเต้านมชนิด ER+**
+ซึ่งพบในผู้ป่วยมะเร็งเต้านมประมาณ 70–80%
 
-    **Endoxifen** มีฤทธิ์ต้านเอสโตรเจน **สูงกว่า Tamoxifen ถึง 100 เท่า**
-    ระดับ Endoxifen ≥ **5.9 ng/mL** ถือว่าเพียงพอสำหรับประสิทธิผลการรักษา [[^ch05-4]]
+    Tamoxifen (ฤทธิ์ต่ำ)
+        │
+        ├── CYP2D6 ──────────────────────── 4-Hydroxytamoxifen
+        │                                       (ฤทธิ์สูง แต่ Half-life สั้น)
+        │
+        └── CYP3A4/3A5 ── N-Desmethyltamoxifen
+                                  │
+                                  │ CYP2D6 ← ขั้นตอนสำคัญที่สุด!
+                                  ▼
+                             ⭐ Endoxifen (ฤทธิ์สูง + Half-life ยาว)
+                             รูปออกฤทธิ์หลักในการต้านมะเร็ง
 
-    ### ⚠️ คำเตือนสำหรับผู้ป่วยมะเร็งเต้านมชาวไทย
+**Endoxifen** มีฤทธิ์ต้านเอสโตรเจน **สูงกว่า Tamoxifen ถึง 100 เท่า** ระดับ
+Endoxifen ≥ **5.9 ng/mL** ถือว่าเพียงพอสำหรับประสิทธิผลการรักษา \[[^29]\]
 
-    > คนไทย **ประมาณ 40%** มียีน `CYP2D6*10` ซึ่งทำงานได้แค่ 25%
-    > ของประสิทธิภาพปกติ ทำให้ผู้ป่วยชาวไทยจำนวนมาก
-    > มีระดับ Endoxifen ต่ำกว่าเกณฑ์ และอาจได้รับประโยชน์
-    > จาก Tamoxifen น้อยกว่าที่คาด [[^ch05-4]]
-    >
-    > ควรปรึกษาแพทย์เกี่ยวกับการตรวจยีน CYP2D6
-    > ก่อนเริ่มใช้ Tamoxifen ระยะยาว
+### ⚠️ คำเตือนสำหรับผู้ป่วยมะเร็งเต้านมชาวไทย
 
-    ### คำแนะนำ CPIC 2018 [[^ch05-4]]
+> คนไทย **ประมาณ 40%** มียีน `CYP2D6*10` ซึ่งทำงานได้แค่ 25% ของประสิทธิภาพปกติ
+> ทำให้ผู้ป่วยชาวไทยจำนวนมาก มีระดับ Endoxifen ต่ำกว่าเกณฑ์ และอาจได้รับประโยชน์ จาก
+> Tamoxifen น้อยกว่าที่คาด \[[^30]\]
+>
+> ควรปรึกษาแพทย์เกี่ยวกับการตรวจยีน CYP2D6 ก่อนเริ่มใช้ Tamoxifen ระยะยาว
 
-PM หรือ IM (AS ≤ 1.0 รวมถึงกลุ่ม *10/*10 ของคนไทย) └── ⚠️ พิจารณาทางเลือก: ├──
-เพิ่มขนาด Tamoxifen เป็น 40 mg/วัน (แทน 20 mg/วัน) └── เปลี่ยนเป็น Aromatase
-Inhibitor (AI) เช่น Letrozole, Anastrozole, Exemestane (AI ไม่ขึ้นกับ CYP2D6
-— ใช้ได้ใน Post-menopausal)
+ชื่ออัลลีลแบบ `*10` ที่ใช้ทั่วทั้งบทนี้เป็นระบบการตั้งชื่อมาตรฐานสากล ที่ดูแลโดย The
+Pharmacogene Variation (PharmVar) Consortium \[[^31]\]
 
-NM หรือ UM └── ✅ Tamoxifen 20 mg/วัน ขนาดปกติ ⚠️ หลีกเลี่ยง Strong CYP2D6
-Inhibitors ร่วมกับ Tamoxifen: └── Fluoxetine, Paroxetine, Bupropion (ลด
-Endoxifen ได้ถึง 50–70%!)
+### คำแนะนำ CPIC 2018 \[[^32]\]
 
+    PM หรือ IM (AS ≤ 1.0 รวมถึงกลุ่ม *10/*10 ของคนไทย)
+    └── ⚠️ พิจารณาทางเลือก:
+        ├── เพิ่มขนาด Tamoxifen เป็น 40 mg/วัน (แทน 20 mg/วัน)
+        └── เปลี่ยนเป็น Aromatase Inhibitor (AI)
+            เช่น Letrozole, Anastrozole, Exemestane
+            (AI ไม่ขึ้นกับ CYP2D6 — ใช้ได้ใน Post-menopausal)
 
-    ***
+    NM หรือ UM
+    └── ✅ Tamoxifen 20 mg/วัน ขนาดปกติ
+    ⚠️ หลีกเลี่ยง Strong CYP2D6 Inhibitors ร่วมกับ Tamoxifen:
+       └── Fluoxetine, Paroxetine, Bupropion
+           (ลด Endoxifen ได้ถึง 50–70%!)
 
-    ## 5.6 Clopidogrel: Prodrug หัวใจที่คนไทย 1 ใน 10 ต้องระวัง
+------------------------------------------------------------------------
 
-    ### บริบทที่สำคัญมากสำหรับประเทศไทย
+## 5.6 Clopidogrel: Prodrug หัวใจที่คนไทย 1 ใน 10 ต้องระวัง
 
-    **Clopidogrel (Plavix)** เป็นยาป้องกันลิ่มเลือดที่ใช้มากในผู้ป่วยโรคหัวใจ
-    แต่ในคนไทย **9.2% เป็น PM ของ CYP2C19** [[^ch05-6]]
-    หมายความว่าผู้ป่วยชาวไทยเกือบ **1 ใน 10 คน**
-    ที่ได้รับ Clopidogrel อาจไม่ได้รับการปกป้องที่เพียงพอเลย!
+### บริบทที่สำคัญมากสำหรับประเทศไทย
 
-    ### กลไก 2 ขั้นตอนที่ขึ้นกับ CYP2C19
+**Clopidogrel (Plavix)** เป็นยาป้องกันลิ่มเลือดที่ใช้มากในผู้ป่วยโรคหัวใจ แต่ในคนไทย
+**9.2% เป็น PM ของ CYP2C19** \[[^33]\] หมายความว่าผู้ป่วยชาวไทยเกือบ **1 ใน 10
+คน** ที่ได้รับ Clopidogrel อาจไม่ได้รับการปกป้องที่เพียงพอเลย!
 
-    ```Clopidogrel (ไม่มีฤทธิ์)
+### กลไก 2 ขั้นตอนที่ขึ้นกับ CYP2C19
+
+    Clopidogrel (ไม่มีฤทธิ์)
         │
         │ ขั้น 1: CYP2C19 + CYP1A2 (แปลงประมาณ 15% ของ dose)
         ▼
@@ -1783,7 +1828,7 @@ Endoxifen ได้ถึง 50–70%!)
 | NM    | ปกติ              | ยับยั้งได้ดี      | ปกติ                     |
 | RM/UM | สูงกว่าปกติ         | ยับยั้งได้ดีมาก   | ปกติหรือลดลง              |
 
-### คำแนะนำ CPIC 2022 \[[^23]\]
+### คำแนะนำ CPIC 2022 \[[^34]\]
 
     PM (*2/*2, *2/*3, *3/*3)
     └── ❌ ไม่แนะนำ Clopidogrel (สำหรับ ACS/PCI)
@@ -2061,7 +2106,7 @@ Phenoconversion
 ## 7.1 ภาพรวม: ยาหัวใจที่เกี่ยวข้องกับพันธุกรรม
 
 โรคหัวใจและหลอดเลือดเป็นสาเหตุการเสียชีวิตอันดับต้นๆ ของโลก
-และยาหัวใจหลายชนิดมีความสัมพันธ์กับพันธุกรรมอย่างใกล้ชิด \[[^24]\] \| กลุ่มยา \|
+และยาหัวใจหลายชนิดมีความสัมพันธ์กับพันธุกรรมอย่างใกล้ชิด \[[^35]\] \| กลุ่มยา \|
 ยีนสำคัญ \| CPIC Level \| ผลถ้าไม่ตรวจยีน \| \|———\|———\|———–\|—————-\| \|
 ยาต้านเกล็ดเลือด (Clopidogrel) \| CYP2C19 \| **A** \| PM ป้องกันลิ่มเลือดไม่ได้เลย
 \| \| ยาลดคอเลสเตอรอล (Statins) \| SLCO1B1, ABCG2 \| **A** \|
@@ -2085,7 +2130,7 @@ metabolite (Active) │ จับ P2Y12 บนเกล็ดเลือด │
 
 ### สถิติที่คนไทยต้องรู้
 
-| กลุ่มยีน             | ความถี่ในคนไทย \[[^25]\] | ผลต่อ Clopidogrel |
+| กลุ่มยีน             | ความถี่ในคนไทย \[[^36]\] | ผลต่อ Clopidogrel |
 |-------------------|------------------------|------------------|
 | PM (*2/*2, *2/*3) | **~9.2%**              | ยาแทบไม่ได้ผลเลย   |
 | IM (*1/*2, *1/*3) | **~30–35%**            | ยาได้ผลลดลง       |
@@ -2093,7 +2138,7 @@ metabolite (Active) │ จับ P2Y12 บนเกล็ดเลือด │
 | RM/UM (*1/*17)    | ~3%                    | ยาได้ผลดีมาก       |
 
 > 💡 **สรุป:** คนไทยเกือบ **40%** อาจได้รับยา Clopidogrel ที่ไม่มีประสิทธิผลเต็มที่
-> โดยไม่รู้ตัว! \### คำแนะนำ CPIC 2022 \[[^26]\]
+> โดยไม่รู้ตัว! \### คำแนะนำ CPIC 2022 \[[^37]\]
 
 ACS/PCI (โรคหัวใจเฉียบพลัน/ขยายหลอดเลือด):
 
@@ -2120,7 +2165,7 @@ HMG-CoA Reductase → ลด LDL ✓ + CYP450 เผาผลาญ → ขั�
 ⚠️ ถ้า SLCO1B1 บกพร่อง (\*5 allele): Statin ค้างในเลือด → เข้ากล้ามเนื้อ →
 กล้ามเนื้ออักเสบ (Myopathy / Rhabdomyolysis)
 
-### CPIC 2022: ขยายครอบคลุม Statins หลายชนิด \[[^27]\]
+### CPIC 2022: ขยายครอบคลุม Statins หลายชนิด \[[^38]\]
 
 | Phenotype SLCO1B1           | ความเสี่ยง SAMS | คำแนะนำ Simvastatin        |
 |-----------------------------|---------------|----------------------------|
@@ -2134,7 +2179,7 @@ HMG-CoA Reductase → ลด LDL ✓ + CYP450 เผาผลาญ → ขั�
 ### ABCG2: ยีนพิเศษสำหรับ Rosuvastatin
 
 ผู้ที่มี ABCG2 c.421C\>A (Q141K) จะดูดซึม Rosuvastatin มากกว่าปกติถึง 100–200%
-ควรพิจารณาลดขนาดยา \[[^28]\]
+ควรพิจารณาลดขนาดยา \[[^39]\]
 
 > 💡 ความถี่ Q141K ในคนไทยสูงกว่าชาวยุโรป (~30–35% vs ~10%)
 > ทำให้มีความสำคัญเป็นพิเศษในบริบทไทย \## 7.4 Warfarin + CYP2C9 + VKORC1: ต้องดู
@@ -2151,7 +2196,7 @@ sensitivity → ยาน้อยก็เห็นผลมาก → เส�
 
 ต้องพิจารณาทั้งสองพร้อมกันเสมอ!
 
-### Matrix ขนาด Warfarin (mg/วัน) \[[^29]\]
+### Matrix ขนาด Warfarin (mg/วัน) \[[^40]\]
 
 | CYP2C9   | VKORC1 ไวสูง (AA)   | VKORC1 ปานกลาง (GA) | VKORC1 ไวต่ำ (GG) |
 |----------|--------------------|---------------------|------------------|
@@ -2161,7 +2206,7 @@ sensitivity → ยาน้อยก็เห็นผลมาก → เส�
 
 > ⚠️ **คำเตือน:** ผู้ป่วยที่เป็น CYP2C9 PM + VKORC1 High sensitivity อาจต้องการ
 > Warfarin **น้อยกว่าขนาดมาตรฐานถึง 5–10 เท่า** หากให้ขนาดปกติ 5 mg/วัน
-> โดยไม่ตรวจยีน ผู้ป่วยเสี่ยงเลือดออกในสมองหรืออวัยวะภายใน \[[^30]\]
+> โดยไม่ตรวจยีน ผู้ป่วยเสี่ยงเลือดออกในสมองหรืออวัยวะภายใน \[[^41]\]
 
 ## 7.5 สัญญาณเตือนที่ควรขอตรวจยีน
 
@@ -2457,7 +2502,7 @@ Abacavir จับกับ HLA-B*57:01 │ HLA-B*57:01 นำเสนอ Abaca
 ต่อ CD8+ T-cell │ T-cell คิดว่า “นี่คือศัตรู!” │ ปล่อย Cytotoxic granules +
 Cytokines │ ทำลายเซลล์ผิวหนัง เยื่อบุ และอวัยวะ → Hypersensitivity Reaction
 
-### ความสำเร็จของการตรวจ HLA-B\*57:01 \[[^31]\]
+### ความสำเร็จของการตรวจ HLA-B\*57:01 \[[^42]\]
 
 **ก่อนตรวจยีน:** HSR เกิดขึ้น ~5–8% ของผู้ใช้ยา
 **หลังตรวจยีนและหลีกเลี่ยงในกลุ่มเสี่ยง:** HSR ลดเหลือ **เกือบ 0%**
@@ -2490,9 +2535,9 @@ Cytokines │ ทำลายเซลล์ผิวหนัง เยื่�
 ซึ่งใช้กันแพร่หลายมากในประเทศไทย
 
 แต่ในคนไทยที่มียีน **HLA-B\*15:02** ยานี้สามารถทำให้เกิด SJS/TEN ซึ่งอาจถึงชีวิตได้
-\[[^32]\] \> ⚠️ **ข้อมูลสะเทือนใจจากประเทศไทย:** \> ในการศึกษาผู้ป่วย SJS/TEN
+\[[^43]\] \> ⚠️ **ข้อมูลสะเทือนใจจากประเทศไทย:** \> ในการศึกษาผู้ป่วย SJS/TEN
 จาก Carbamazepine ในไทย \> พบว่า **ผู้ป่วย 100% ล้วนมี HLA-B\*15:02**
-\[[^33]\] \> หมายความว่าหากตรวจยีนก่อนและไม่ให้ยาในกลุ่มเสี่ยง \>
+\[[^44]\] \> หมายความว่าหากตรวจยีนก่อนและไม่ให้ยาในกลุ่มเสี่ยง \>
 เราอาจป้องกันโศกนาฏกรรมเหล่านี้ได้ทั้งหมด
 
 ### ความถี่ HLA-B\*15:02 ในประชากรต่างๆ
@@ -2505,7 +2550,7 @@ Cytokines │ ทำลายเซลล์ผิวหนัง เยื่�
 | ชาวฟิลิปปินส์ | ~3%                |
 | ชาวยุโรป   | \< 0.1% (พบน้อยมาก) |
 
-### มาตรการที่ไทยดำเนินการแล้ว \[[^34]\]
+### มาตรการที่ไทยดำเนินการแล้ว \[[^45]\]
 
 โรงพยาบาลหลายแห่งในไทย รวมถึงโรงพยาบาลรามาธิบดี ได้นำ **HLA-B\*15:02 เข้าเป็น
 Standard of Care** ก่อนสั่งจ่าย Carbamazepine และพัฒนาระบบ Clinical Decision
@@ -2534,8 +2579,13 @@ Support (CDS) ใน EHR เพื่อแจ้งเตือนแพทย�
 | HLA-B\*13:01 | Dapsone | DRESS | พบในเอเชียใต้ | ตรวจก่อนใช้ |
 
 > ⚠️ **HLA-B\*58:01 + Allopurinol:** เป็นอีกคู่ที่สำคัญมากในไทย เพราะ
-> Allopurinol (ยารักษาเก๊าท์) ใช้กันแพร่หลาย และ HLA-B\*58:01 พบในคนไทย
-> **~6–7%** ปัจจุบันหลายโรงพยาบาลในไทยแนะนำให้ตรวจก่อนใช้ยาแล้ว
+> Allopurinol (ยารักษาเก๊าท์) ใช้กันแพร่หลาย
+
+นอกจาก HLA-B\*15:02 แล้ว งานวิเคราะห์ pooled-data และ in silico
+ยังพบว่าอัลลีลใกล้เคียงอย่าง **HLA-B\*15:21** อาจมีความสัมพันธ์กับ
+Carbamazepine-induced SJS ด้วยเช่นกัน แม้หลักฐานจะยังไม่มากเท่า B\*15:02
+\[[^46]\] \> และ HLA-B\*58:01 พบในคนไทย **~6–7%** \>
+ปัจจุบันหลายโรงพยาบาลในไทยแนะนำให้ตรวจก่อนใช้ยาแล้ว
 
 ## 9.6 หลักการนำไปใช้จริง
 
@@ -2827,6 +2877,7 @@ Metabolizer แทน ปรากฏการณ์นี้แสดงให�
 
 OATP1B1 เป็น Uptake Transporter หลักที่รับผิดชอบ การนำยาจากกระแสเลือดเข้าสู่เซลล์ตับ
 เพื่อให้ CYP450 และกระบวนการ Metabolism ทำงานต่อได้
+และถือเป็นตัวขนส่งที่มีความสำคัญที่สุด ต่อการดูดซึมยาเข้าตับ \[[^47]\]
 
 ### ทำไมถึงสำคัญมากสำหรับ Statin?
 
@@ -2841,15 +2892,16 @@ OATP1B1 เป็น Uptake Transporter หลักที่รับผิด�
 
 **คนที่มียีน SLCO1B1\*5** (c.521T\>C) จะมี OATP1B1 ที่ทำงานบกพร่อง ทำให้
 Simvastatin สะสมในเลือดสูงขึ้นอย่างมีนัยสำคัญ **เสี่ยงต่อ Myopathy สูงขึ้น 16–18 เท่า**
-สำหรับ Simvastatin 80 mg \[[^35]\]
+สำหรับ Simvastatin 80 mg \[[^48]\]
 
 > 💡 ความถี่ SLCO1B1\*5 ในคนไทยประมาณ **12–15%**
-> ซึ่งใกล้เคียงกับประชากรเอเชียอื่นๆ \[[^36]\]
+> ซึ่งใกล้เคียงกับประชากรเอเชียอื่นๆ \[[^49]\]
 
 ## 11.3 P-glycoprotein / P-gp (ABCB1): ยามเฝ้าประตูทุกอวัยวะ
 
-P-gp หรือ P-glycoprotein เป็น **Efflux Transporter** ที่ทรงพลังที่สุด
-พบได้แทบทุกอวัยวะสำคัญ และคอยขนยากลับออกจากเซลล์ตลอดเวลา
+P-gp หรือ P-glycoprotein เป็น **Efflux Transporter** ที่ทรงพลังที่สุด ในกลุ่ม ABC
+transporter (ร่วมกับ BCRP และ MRP2) ที่ควบคุมการดูดซึมและขับยาออกจากร่างกาย
+\[[^50]\] พบได้แทบทุกอวัยวะสำคัญ และคอยขนยากลับออกจากเซลล์ตลอดเวลา
 
 ### P-gp ประจำการอยู่ที่ไหน?
 
@@ -2889,7 +2941,7 @@ BCRP (Breast Cancer Resistance Protein) หรือ ABCG2 เป็น Efflux T
 
 ABCG2 c.421C\>A (Q141K) ทำให้ BCRP ทำงานลดลง → Rosuvastatin
 ดูดซึมในลำไส้มากขึ้น → ระดับยาในเลือดสูงขึ้น **100–200%** → CPIC 2022
-แนะนำให้ลดขนาด Rosuvastatin ใน Q141K carriers \[[^37]\]
+แนะนำให้ลดขนาด Rosuvastatin ใน Q141K carriers \[[^51]\]
 
 | Genotype          | BCRP Function | คำแนะนำ CPIC           |
 |-------------------|---------------|------------------------|
@@ -3206,7 +3258,7 @@ inducer ของเอนไซม์ที่เกี่ยวข้องก
 ภายใน 2–3 สัปดาห์
 
 การเปลี่ยนแปลงครั้งนี้ไม่ใช่แค่เรื่องราคา แต่เป็นการเปลี่ยนแนวคิดทั้งระบบของการแพทย์ จาก
-**“ยาสำหรับทุกคน”** เป็น **“ยาสำหรับคุณโดยเฉพาะ”**
+**“ยาสำหรับทุกคน”** เป็น **“ยาสำหรับคุณโดยเฉพาะ”** \[[^52]\]
 
 ------------------------------------------------------------------------
 
@@ -3251,10 +3303,13 @@ inducer ของเอนไซม์ที่เกี่ยวข้องก
 
 ## 13.2 หลักฐานว่า Preemptive PGx ได้ผลจริง
 
+แม้เภสัชพันธุศาสตร์จะมีหลักฐานทางวิทยาศาสตร์มานานหลายสิบปี
+แต่การนำไปใช้จริงในระบบสาธารณสุขทั่วโลกยังอยู่ในช่วงเปลี่ยนผ่าน \[[^53]\]
+
 ### การศึกษา PREPARE (7 ประเทศยุโรป, 2022)
 
 การศึกษาในผู้ป่วย **6,944 คน** ใน 7 ประเทศยุโรป พบว่า Preemptive PGx testing
-ลด **Clinically relevant ADRs ได้ 30%** \[[^38]\]
+ลด **Clinically relevant ADRs ได้ 30%** \[[^54]\]
 
 > หมายความว่าถ้าตรวจยีนก่อน ผู้ป่วย 3 ใน 10 คนที่มีผลข้างเคียงรุนแรง
 > **สามารถป้องกันได้ล่วงหน้า**
@@ -3263,7 +3318,7 @@ inducer ของเอนไซม์ที่เกี่ยวข้องก
 
 ศึกษาในผู้ป่วย **500 คน** ใน 5 คลินิก โดยตรวจ 5 ยีน (CYP2D6, CYP2C9, CYP2C19,
 SLCO1B1, HLA-B\*58:01) สำหรับยา 29 ชนิด พบว่า Preemptive PGx
-สามารถนำมาใช้ได้จริง ในบริบทคลินิกของเอเชีย และแพทย์ส่วนใหญ่พอใจกับระบบนี้ \[[^39]\]
+สามารถนำมาใช้ได้จริง ในบริบทคลินิกของเอเชีย และแพทย์ส่วนใหญ่พอใจกับระบบนี้ \[[^55]\]
 
 ### สถานการณ์ในประเทศไทยปัจจุบัน
 
@@ -3317,7 +3372,7 @@ SLCO1B1, HLA-B\*58:01) สำหรับยา 29 ชนิด พบว่า 
 ## 13.5 EHR Integration: เมื่อข้อมูลยีนเข้าไปอยู่ในระบบโรงพยาบาล
 
 ข้อมูล PGx จะไม่มีประโยชน์ถ้าไม่สามารถนำไปใช้ได้ทันที ที่แพทย์สั่งยา
-จุดสำคัญคือการบูรณาการกับ **EHR** \[[^40]\]
+จุดสำคัญคือการบูรณาการกับ **EHR** \[[^56]\]
 
     แพทย์กำลังสั่ง Codeine ให้เด็ก 8 ขวบ
                │
@@ -3821,79 +3876,144 @@ Flockhart Table เป็นเครื่องมือเสริมสำ�
     CYP3A5 genotype and tacrolimus dosing. *Clin Pharmacol Ther*.
     2015;98(1):19–24. doi:10.1002/cpt.113
 
-[^23]: Lee CR, et al. CPIC Guideline for CYP2C19 Genotype and
-    Clopidogrel Therapy: 2022 Update. *Clin Pharmacol Ther*.
-    2022;112(5):959–967. doi:10.1002/cpt.2526
+[^23]: Crews KR, Monte AA, Huddart R, et al. Clinical Pharmacogenetics
+    Implementation Consortium Guideline for CYP2D6, OPRM1, and COMT
+    Genotypes and Select Opioid Therapy. *Clin Pharmacol Ther*.
+    2021;110(4):888–896. doi:10.1002/cpt.2149
 
-[^24]: Relling MV, Evans WE. Pharmacogenomics in the clinic. *Nature*.
-    2015;526(7573):343–350. doi:10.1038/nature15817
+[^24]: Kelly LE, Rieder M, van den Anker J, et al. More codeine
+    fatalities after tonsillectomy in North American children.
+    *Pediatrics*. 2012;129(5):e1343–e1347. doi:10.1542/peds.2011-2538
 
-[^25]: Sukasem C, et al. High prevalence of CYP2C19 poor and
+[^25]: Kelly LE, Rieder M, van den Anker J, et al. More codeine
+    fatalities after tonsillectomy in North American children.
+    *Pediatrics*. 2012;129(5):e1343–e1347. doi:10.1542/peds.2011-2538
+
+[^26]: Crews KR, Gaedigk A, Dunnenberger HM, et al. CPIC Guideline for
+    Codeine and CYP2D6. *Clin Pharmacol Ther*. 2014;95(4):376–382.
+    Updated 2021. doi:10.1038/clpt.2013.254
+
+[^27]: Crews KR, Gaedigk A, Dunnenberger HM, et al. CPIC Guideline for
+    Codeine and CYP2D6. *Clin Pharmacol Ther*. 2014;95(4):376–382.
+    Updated 2021. doi:10.1038/clpt.2013.254
+
+[^28]: Crews KR, Gaedigk A, Dunnenberger HM, et al. CPIC Guideline for
+    Codeine and CYP2D6. *Clin Pharmacol Ther*. 2014;95(4):376–382.
+    Updated 2021. doi:10.1038/clpt.2013.254
+
+[^29]: Goetz MP, Sangkuhl K, Guchelaar H-J, et al. CPIC Guideline for
+    CYP2D6 and Tamoxifen Therapy. *Clin Pharmacol Ther*.
+    2018;103(5):770–777. doi:10.1002/cpt.1007
+
+[^30]: Goetz MP, Sangkuhl K, Guchelaar H-J, et al. CPIC Guideline for
+    CYP2D6 and Tamoxifen Therapy. *Clin Pharmacol Ther*.
+    2018;103(5):770–777. doi:10.1002/cpt.1007
+
+[^31]: Gaedigk A, et al. The Pharmacogene Variation (PharmVar)
+    Consortium. *Clin Pharmacol Ther*. 2018;103(3):399–401.
+    doi:10.1002/cpt.910
+
+[^32]: Goetz MP, Sangkuhl K, Guchelaar H-J, et al. CPIC Guideline for
+    CYP2D6 and Tamoxifen Therapy. *Clin Pharmacol Ther*.
+    2018;103(5):770–777. doi:10.1002/cpt.1007
+
+[^33]: Sukasem C, et al. High prevalence of CYP2C19 poor and
     intermediate metabolizers in Thai population. *Pharmacogenomics J*.
     2013;13(6):527–531. doi:10.1038/tpj.2012.50
 
-[^26]: Lee CR, et al. CPIC Guideline for CYP2C19 Genotype and
+[^34]: Lee CR, et al. CPIC Guideline for CYP2C19 Genotype and
     Clopidogrel Therapy: 2022 Update. *Clin Pharmacol Ther*.
     2022;112(5):959–967. doi:10.1002/cpt.2526
 
-[^27]: Cooper-DeHoff RM, et al. CPIC Guideline for SLCO1B1, ABCG2, and
+[^35]: Relling MV, Evans WE. Pharmacogenomics in the clinic. *Nature*.
+    2015;526(7573):343–350. doi:10.1038/nature15817
+
+[^36]: Sukasem C, et al. High prevalence of CYP2C19 poor and
+    intermediate metabolizers in Thai population. *Pharmacogenomics J*.
+    2013;13(6):527–531. doi:10.1038/tpj.2012.50
+
+[^37]: Lee CR, et al. CPIC Guideline for CYP2C19 Genotype and
+    Clopidogrel Therapy: 2022 Update. *Clin Pharmacol Ther*.
+    2022;112(5):959–967. doi:10.1002/cpt.2526
+
+[^38]: Cooper-DeHoff RM, et al. CPIC Guideline for SLCO1B1, ABCG2, and
     CYP2C9 genotypes and Statin-Associated Musculoskeletal Symptoms.
     *Clin Pharmacol Ther*. 2022;111:1007–1021. doi:10.1002/cpt.2557
 
-[^28]: Cooper-DeHoff RM, et al. CPIC Guideline for SLCO1B1, ABCG2, and
+[^39]: Cooper-DeHoff RM, et al. CPIC Guideline for SLCO1B1, ABCG2, and
     CYP2C9 genotypes and Statin-Associated Musculoskeletal Symptoms.
     *Clin Pharmacol Ther*. 2022;111:1007–1021. doi:10.1002/cpt.2557
 
-[^29]: Johnson JA, et al. CPIC Guideline for Pharmacogenomics-Guided
+[^40]: Johnson JA, et al. CPIC Guideline for Pharmacogenomics-Guided
     Warfarin Dosing: 2017 Update. *Clin Pharmacol Ther*.
     2017;102(3):397–404. doi:10.1002/cpt.668
 
-[^30]: Johnson JA, et al. CPIC Guideline for Pharmacogenomics-Guided
+[^41]: Johnson JA, et al. CPIC Guideline for Pharmacogenomics-Guided
     Warfarin Dosing: 2017 Update. *Clin Pharmacol Ther*.
     2017;102(3):397–404. doi:10.1002/cpt.668
 
-[^31]: Martin MA, et al. CPIC Guidelines for HLA Genotype and Use of
+[^42]: Martin MA, et al. CPIC Guidelines for HLA Genotype and Use of
     Abacavir: 2014 Update. *Clin Pharmacol Ther*. 2014;95(5):499–500.
     doi:10.1038/clpt.2014.38
 
-[^32]: Sukasem C, et al. Implementation of HLA-B\*15:02 Genotyping as
+[^43]: Sukasem C, et al. Implementation of HLA-B\*15:02 Genotyping as
     Standard-of-Care for Reducing Carbamazepine/Oxcarbazepine Induced
     Cutaneous Adverse Drug Reactions in Thailand. *Front Pharmacol*.
     2022;13:867490. doi:10.3389/fphar.2022.867490
 
-[^33]: Sukasem C, et al. Implementation of HLA-B\*15:02 Genotyping as
+[^44]: Sukasem C, et al. Implementation of HLA-B\*15:02 Genotyping as
     Standard-of-Care for Reducing Carbamazepine/Oxcarbazepine Induced
     Cutaneous Adverse Drug Reactions in Thailand. *Front Pharmacol*.
     2022;13:867490. doi:10.3389/fphar.2022.867490
 
-[^34]: Sukasem C, et al. Implementation of HLA-B\*15:02 Genotyping as
+[^45]: Sukasem C, et al. Implementation of HLA-B\*15:02 Genotyping as
     Standard-of-Care for Reducing Carbamazepine/Oxcarbazepine Induced
     Cutaneous Adverse Drug Reactions in Thailand. *Front Pharmacol*.
     2022;13:867490. doi:10.3389/fphar.2022.867490
 
-[^35]: Wilke RA, et al. The clinical pharmacogenomics implementation
+[^46]: Jaruthamsophon K, et al. HLA-B\*15:21 and carbamazepine-induced
+    Stevens-Johnson syndrome: pooled-data and in silico analysis. *Sci
+    Rep*. 2017;7:45553. doi:10.1038/srep45553
+
+[^47]: Niemi M, Pasanen MK, Neuvonen PJ. Organic anion transporting
+    polypeptide 1B1: a genetically polymorphic transporter of major
+    importance for hepatic drug uptake. *Pharmacol Rev*.
+    2011;63:157–181. doi:10.1124/pr.110.002857
+
+[^48]: Wilke RA, et al. The clinical pharmacogenomics implementation
     consortium: CPIC guideline for SLCO1B1 and simvastatin-induced
     myopathy. *Clin Pharmacol Ther*. 2012;92(1):112–117.
     doi:10.1038/clpt.2012.57
 
-[^36]: Cooper-DeHoff RM, et al. CPIC Guideline for SLCO1B1, ABCG2, and
+[^49]: Cooper-DeHoff RM, et al. CPIC Guideline for SLCO1B1, ABCG2, and
     CYP2C9 genotypes and Statin-Associated Musculoskeletal Symptoms.
     *Clin Pharmacol Ther*. 2022;111:1007–1021. doi:10.1002/cpt.2557
 
-[^37]: Cooper-DeHoff RM, et al. CPIC Guideline for SLCO1B1, ABCG2, and
+[^50]: Ieiri I. Functional significance of genetic polymorphisms in P-gp
+    (MDR1, ABCB1), BCRP (ABCG2), and MRP2 (ABCC2). *J Clin Pharm Ther*.
+    2012;37:587–601. doi:10.1111/j.1365-2710.2012.01370.x
+
+[^51]: Cooper-DeHoff RM, et al. CPIC Guideline for SLCO1B1, ABCG2, and
     CYP2C9 genotypes and Statin-Associated Musculoskeletal Symptoms.
     *Clin Pharmacol Ther*. 2022;111:1007–1021. doi:10.1002/cpt.2557
 
-[^38]: Swen JJ, et al. A 12-gene pharmacogenetic panel to prevent
+[^52]: Pirmohamed M. Pharmacogenomics: current status and future
+    perspectives. *Nat Rev Genet*. 2023;24(6):350–362.
+    doi:10.1038/s41576-022-00572-8
+
+[^53]: Medwid S, et al. Implementation of pharmacogenomics: Where are we
+    now? *Br J Clin Pharmacol*. 2024. doi:10.1111/bcp.15591
+
+[^54]: Swen JJ, et al. A 12-gene pharmacogenetic panel to prevent
     adverse drug reactions: an open-label, multicentre, controlled,
     cluster-randomised crossover implementation study (PREPARE).
     *Lancet*. 2023;401(10374):347–356. doi:10.1016/S0140-6736(22)01841-4
 
-[^39]: Nalagenetics/Raffles Medical Group. Implementation of Pre-emptive
+[^55]: Nalagenetics/Raffles Medical Group. Implementation of Pre-emptive
     Pharmacogenomics Testing in Outpatient Clinics in Singapore (IMPT
     Study). ClinicalTrials.gov: NCT05504135. Published 2022; Updated
     2025.
 
-[^40]: Kanegusuku AG, Chan CW, O’Donnell PH, Yeo KJ. Implementation of
+[^56]: Kanegusuku AG, Chan CW, O’Donnell PH, Yeo KJ. Implementation of
     pharmacogenomics testing for precision medicine. *Crit Rev Clin Lab
     Sci*. 2024;61(2):89–106. doi:10.1080/10408363.2023.2255279
