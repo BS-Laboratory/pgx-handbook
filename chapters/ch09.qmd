@@ -42,7 +42,7 @@
 > ความหลากหลายนี้ช่วยให้มนุษยชาติรับมือเชื้อโรคได้หลากหลาย
 > แต่บางอัลลีลก็ทำให้ยาบางชนิดถูกจดจำผิดว่าเป็นอันตราย
 
-##9.2 Stevens-Johnson Syndrome (SJS/TEN) คืออะไร?
+## 9.2 Stevens-Johnson Syndrome (SJS/TEN) คืออะไร?
 
 **SJS (Stevens-Johnson Syndrome)** และ **TEN (Toxic Epidermal Necrolysis)**
 เป็นปฏิกิริยาแพ้ยาที่รุนแรงที่สุด

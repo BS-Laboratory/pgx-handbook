@@ -6,6 +6,17 @@ format:
   gfm:
     toc: true
     number-sections: false
+  pdf:
+    documentclass: report
+    pdf-engine: xelatex
+    mainfont: "Thonburi"
+    fontsize: 11pt
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    geometry: margin=1in
+    linestretch: 1.2
+    include-in-header: pdf-header.tex
 ---
 
 {{< include chapters/index.qmd >}}
