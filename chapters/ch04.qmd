@@ -1,5 +1,23 @@
 # บทที่ 4: ดาวนำทาง — Star Allele และฟีโนไทป์การเผาผลาญยา
 
+::: {.callout-note appearance="minimal"}
+## ภาพรวมบท (Chapter Overview)
+
+```{mermaid}
+%%| fig-align: center
+flowchart LR
+  T(["บทที่ 4<br/>Star Allele และฟีโนไทป์"]):::hub
+  T --> A["Star Allele<br/>เช่น *1 *4 *10"]:::node
+  A --> B["Diplotype<br/>อัลลีล 2 ชุด"]:::node
+  B --> C["Activity Score"]:::node
+  C --> D["ฟีโนไทป์<br/>PM · IM · NM · RM · UM"]:::accent
+  classDef hub fill:#0b6e99,stroke:#084a67,color:#fff;
+  classDef node fill:#eef4f8,stroke:#0b6e99,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+```
+
+:::
+
 ในบทที่ 3 เราได้รู้จักเอนไซม์ในกลุ่ม Cytochrome P450 (CYP450) ที่เผาผลาญยาในตับ เช่น CYP2D6, CYP2C19 และ CYP2C9 เอนไซม์เหล่านี้ถูกสร้างตามข้อมูลในยีน และยีนของแต่ละคนไม่เหมือนกัน บางคนมียีนที่ทำให้เอนไซม์ทำงานปกติ บางคนมียีนที่ทำให้เอนไซม์ทำงานลดลงหรือไม่ทำงาน และบางคนมียีนที่ทำให้เอนไซม์ทำงานมากกว่าปกติ
 
 คำถามคือ เราจะทราบได้อย่างไรว่ายีนของแต่ละคนเป็นแบบใด บทนี้จะอธิบายขั้นตอนการแปลผลตรวจยีน ตั้งแต่ระบบการตั้งชื่อ **Star Allele** การระบุ **Diplotype** การคำนวณ **Activity Score** ไปจนถึงการจัดกลุ่ม **ฟีโนไทป์การเผาผลาญยา** พร้อมเคสสมมติเพื่อฝึกการแปลผล

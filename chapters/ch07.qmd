@@ -1,5 +1,22 @@
 # บทที่ 7: ยาหัวใจและหลอดเลือด
 
+::: {.callout-note appearance="minimal"}
+## ภาพรวมบท (Chapter Overview)
+
+```{mermaid}
+%%| fig-align: center
+flowchart LR
+  T(["บทที่ 7<br/>ยาหัวใจและหลอดเลือด"]):::hub
+  T --> A["Clopidogrel — CYP2C19<br/>PM/IM → Prasugrel/Ticagrelor"]:::node
+  T --> B["Statin — SLCO1B1, ABCG2<br/>เสี่ยงอาการทางกล้ามเนื้อ"]:::node
+  T --> C["Warfarin — CYP2C9 + VKORC1<br/>กำหนดขนาดจาก 2 ยีน"]:::accent
+  classDef hub fill:#0b6e99,stroke:#084a67,color:#fff;
+  classDef node fill:#eef4f8,stroke:#0b6e99,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+```
+
+:::
+
 ผู้ป่วยชายอายุ 62 ปี (เคสสมมติ) ได้รับการใส่ขดลวดขยายหลอดเลือดหัวใจเมื่อสองสัปดาห์ก่อน แพทย์สั่ง Clopidogrel เพื่อป้องกันลิ่มเลือดอุดตันซ้ำ ผู้ป่วยรับประทานยาสม่ำเสมอ แต่ในสัปดาห์ที่สี่กลับมีอาการเจ็บหน้าอกและตรวจพบว่าหลอดเลือดอุดตันซ้ำ
 
 คำถามแรกของแพทย์มักเป็น "ผู้ป่วยรับประทานยาไม่สม่ำเสมอหรือไม่" แต่ในกรณีนี้สาเหตุคือ ผู้ป่วยเป็น **CYP2C19 Poor Metabolizer** ร่างกายจึงเปลี่ยน Clopidogrel ให้อยู่ในรูปออกฤทธิ์ได้น้อยมาก สถานการณ์นี้ไม่ใช่เรื่องแปลกในประเทศไทย เพราะคนไทยเกือบ 1 ใน 10 คนเป็น CYP2C19 Poor Metabolizer [1,2]

@@ -1,5 +1,23 @@
 # บทที่ 10: ปฏิกิริยาระหว่างยา ยา และยีน (DDGI)
 
+::: {.callout-note appearance="minimal"}
+## ภาพรวมบท (Chapter Overview)
+
+```{mermaid}
+%%| fig-align: center
+flowchart LR
+  T(["บทที่ 10<br/>ปฏิกิริยา DDGI"]):::hub
+  T --> A["Phenoconversion<br/>ฟีโนไทป์จริง ≠ จีโนไทป์ ชั่วคราว"]:::accent
+  T --> B["Inhibitor<br/>Reversible · Mechanism-based"]:::node
+  T --> C["Inducer"]:::node
+  T --> D["ตาราง Flockhart<br/>ประเมินยาที่ใช้ร่วม"]:::node
+  classDef hub fill:#0b6e99,stroke:#084a67,color:#fff;
+  classDef node fill:#eef4f8,stroke:#0b6e99,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+```
+
+:::
+
 ผู้ป่วยจำนวนมาก โดยเฉพาะผู้ป่วยโรคเรื้อรังและผู้สูงอายุ ใช้ยาหลายชนิดร่วมกัน ซึ่งอาจทำให้ฟีโนไทป์ที่แท้จริงในร่างกายต่างไปจากผลตรวจพันธุกรรม ปรากฏการณ์นี้เรียกว่า **ปฏิกิริยาระหว่างยา ยา และยีน (Drug–Drug–Gene Interaction; DDGI)** ซึ่งเป็นหนึ่งในความท้าทายที่ซับซ้อนที่สุดของการนำเภสัชพันธุศาสตร์ไปใช้จริง
 
 ## 10.1 Phenoconversion: เมื่อจีโนไทป์ไม่เท่ากับฟีโนไทป์

@@ -1,5 +1,23 @@
 # บทที่ 9: ยีนภูมิคุ้มกัน HLA และปฏิกิริยาแพ้ยารุนแรง
 
+::: {.callout-note appearance="minimal"}
+## ภาพรวมบท (Chapter Overview)
+
+```{mermaid}
+%%| fig-align: center
+flowchart LR
+  T(["บทที่ 9<br/>HLA และการแพ้ยารุนแรง"]):::hub
+  T --> M["HLA + T-cell<br/>→ SJS/TEN, DRESS, HSR"]:::accent
+  T --> A["HLA-B*57:01 — Abacavir"]:::node
+  T --> B["HLA-B*15:02 — Carbamazepine"]:::node
+  T --> C["HLA-B*58:01 — Allopurinol"]:::node
+  classDef hub fill:#0b6e99,stroke:#084a67,color:#fff;
+  classDef node fill:#eef4f8,stroke:#0b6e99,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+```
+
+:::
+
 ผู้ป่วยหญิงอายุ 68 ปี (เคสสมมติ) มีอาการปวดเส้นประสาทและได้รับยา Carbamazepine สัปดาห์แรกไม่มีอาการผิดปกติ แต่ในสัปดาห์ที่สองเริ่มมีไข้สูง ตาแดง มีแผลในปาก และผื่นขึ้นทั่วตัว ภายในสองวันผิวหนังเริ่มหลุดลอก แพทย์วินิจฉัยว่าเป็น **Stevens–Johnson Syndrome (SJS)**
 
 ความแตกต่างระหว่างผู้ป่วยรายนี้กับผู้ที่ใช้ Carbamazepine โดยไม่เกิดปัญหา คือการมีอัลลีล **HLA-B\*15:02** ซึ่งทำให้ระบบภูมิคุ้มกันตอบสนองต่อยาอย่างรุนแรง อัลลีลนี้พบได้บ่อยในประชากรเอเชียตะวันออกเฉียงใต้รวมถึงไทย [1]

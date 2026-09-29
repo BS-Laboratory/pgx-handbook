@@ -1,5 +1,23 @@
 # บทที่ 11: ตัวขนส่งยา (Drug Transporters)
 
+::: {.callout-note appearance="minimal"}
+## ภาพรวมบท (Chapter Overview)
+
+```{mermaid}
+%%| fig-align: center
+flowchart LR
+  T(["บทที่ 11<br/>ตัวขนส่งยา"]):::hub
+  T --> A["Uptake: นำยาเข้าเซลล์<br/>OATP1B1, OCT1"]:::node
+  T --> B["Efflux: ขนยาออกจากเซลล์<br/>P-gp, BCRP, MRP2"]:::node
+  A --> C["Statin, Metformin"]:::node
+  B --> D["Rosuvastatin, ยาจิตเวช (BBB)"]:::accent
+  classDef hub fill:#0b6e99,stroke:#084a67,color:#fff;
+  classDef node fill:#eef4f8,stroke:#0b6e99,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+```
+
+:::
+
 ยาที่ถูกดูดซึมเข้าสู่กระแสเลือดแล้ว ไม่ได้เดินทางถึงเป้าหมายได้เสมอไป ยาต้องอาศัย **ตัวขนส่งยา (drug transporters)** ซึ่งเป็นโปรตีนที่ควบคุมการเข้าและออกของยาจากเซลล์ และกำหนดว่ายาจะไปถึงอวัยวะเป้าหมายหรือถูกกำจัดออกอย่างไร ความแปรผันทางพันธุกรรมของตัวขนส่งยาจึงเป็นอีกกลไกหนึ่งที่มีผลต่อการตอบสนองต่อยา
 
 ในบทที่ 2 เราเรียนรู้กระบวนการ ADME และในบทที่ 3 เรารู้จักเอนไซม์ CYP450 ที่เผาผลาญยาในตับ บทนี้จะศึกษาตัวขนส่งยาที่สำคัญ ซึ่งทำงานทั้งก่อนและหลังการเผาผลาญยา

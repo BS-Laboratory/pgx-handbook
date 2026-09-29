@@ -1,5 +1,23 @@
 # บทที่ 5: ยาเปลี่ยนรูป — Prodrug vs. Active Drug
 
+::: {.callout-note appearance="minimal"}
+## ภาพรวมบท (Chapter Overview)
+
+```{mermaid}
+%%| fig-align: center
+flowchart LR
+  T(["บทที่ 5<br/>Prodrug vs Active Drug"]):::hub
+  T --> A["Prodrug<br/>ต้องเปลี่ยนเป็นรูปออกฤทธิ์ก่อน"]:::node
+  A --> A1["Codeine · Tramadol · Tamoxifen · Clopidogrel"]:::node
+  T --> B["Active Drug<br/>ออกฤทธิ์ได้ทันที"]:::node
+  T --> C["ผลกลับทิศ<br/>PM: Prodrug ไม่ได้ผล / Active สะสม<br/>UM: Prodrug เสี่ยงพิษ"]:::accent
+  classDef hub fill:#0b6e99,stroke:#084a67,color:#fff;
+  classDef node fill:#eef4f8,stroke:#0b6e99,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+```
+
+:::
+
 ยาบางชนิดยังไม่มีฤทธิ์เมื่อรับประทานเข้าไป ต้องถูกเอนไซม์ในร่างกายเปลี่ยนให้อยู่ในรูปออกฤทธิ์ก่อน และยีนของแต่ละคนเป็นตัวกำหนดว่าการเปลี่ยนรูปนั้นจะเกิดได้เร็ว ช้า มาก น้อย หรือไม่เกิดขึ้นเลย บทนี้จะอธิบายความแตกต่างระหว่าง Prodrug กับ Active Drug และศึกษายา Prodrug สำคัญ 4 ชนิดที่เกี่ยวข้องกับเภสัชพันธุศาสตร์
 
 ## 5.1 Prodrug และ Active Drug
