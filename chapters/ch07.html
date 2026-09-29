@@ -44,10 +44,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-d9d66ecfd89cc62cac79a498701bb256.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6b142e7faa852efe82cf055f57d87643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-95863237d9acc750b64c3c49c9e6d325.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-6b142e7faa852efe82cf055f57d87643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -75,18 +79,180 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<style>
-  body, .sidebar, .toc-actions, h1, h2, h3, h4 { font-family: 'Sarabun', sans-serif; }
-  pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&amp;family=IBM+Plex+Sans+Thai:wght@400;500;600&amp;display=swap" rel="stylesheet">
 
 
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -112,6 +278,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="../">คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)</a> 
         <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -227,6 +394,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-title">บทที่ 7: ยาหัวใจและหลอดเลือด</span></h1>
@@ -246,6 +414,37 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>ภาพรวมบท (Chapter Overview)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  T(["บทที่ 7&lt;br/&gt;ยาหัวใจและหลอดเลือด"]):::hub
+  T --&gt; A["Clopidogrel — CYP2C19&lt;br/&gt;PM/IM → Prasugrel/Ticagrelor"]:::node
+  T --&gt; B["Statin — SLCO1B1, ABCG2&lt;br/&gt;เสี่ยงอาการทางกล้ามเนื้อ"]:::node
+  T --&gt; C["Warfarin — CYP2C9 + VKORC1&lt;br/&gt;กำหนดขนาดจาก 2 ยีน"]:::accent
+  classDef hub fill:#0b6e99,stroke:#084a67,color:#fff;
+  classDef node fill:#eef4f8,stroke:#0b6e99,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <p>ผู้ป่วยชายอายุ 62 ปี (เคสสมมติ) ได้รับการใส่ขดลวดขยายหลอดเลือดหัวใจเมื่อสองสัปดาห์ก่อน แพทย์สั่ง Clopidogrel เพื่อป้องกันลิ่มเลือดอุดตันซ้ำ ผู้ป่วยรับประทานยาสม่ำเสมอ แต่ในสัปดาห์ที่สี่กลับมีอาการเจ็บหน้าอกและตรวจพบว่าหลอดเลือดอุดตันซ้ำ</p>
 <p>คำถามแรกของแพทย์มักเป็น “ผู้ป่วยรับประทานยาไม่สม่ำเสมอหรือไม่” แต่ในกรณีนี้สาเหตุคือ ผู้ป่วยเป็น <strong>CYP2C19 Poor Metabolizer</strong> ร่างกายจึงเปลี่ยน Clopidogrel ให้อยู่ในรูปออกฤทธิ์ได้น้อยมาก สถานการณ์นี้ไม่ใช่เรื่องแปลกในประเทศไทย เพราะคนไทยเกือบ 1 ใน 10 คนเป็น CYP2C19 Poor Metabolizer [1,2]</p>
 <p>บทนี้จะศึกษาคู่ยีน–ยาในกลุ่มยาโรคหัวใจและหลอดเลือดที่มีความสำคัญทางคลินิกสูง ได้แก่ Clopidogrel, ยากลุ่ม Statin และ Warfarin</p>
@@ -359,6 +558,32 @@ NM     → Clopidogrel ขนาดมาตรฐาน
 RM/UM  → Clopidogrel ขนาดมาตรฐาน</code></pre>
 <p>คำแนะนำสำหรับทั้ง PM และ IM อยู่ในระดับ strong [4] Ticagrelor เป็น Active Drug ที่ไม่ต้องอาศัย CYP2C19 ในการเปลี่ยนรูป จึงเป็นทางเลือกที่ได้ผลในทุกฟีโนไทป์ของ CYP2C19</p>
 </section>
+<section id="แผนภาพการตดสนใจ-decision-tree" class="level3">
+<h3 class="anchored" data-anchor-id="แผนภาพการตดสนใจ-decision-tree">แผนภาพการตัดสินใจ (Decision Tree)</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A["ผู้ป่วย ACS หรือ PCI&lt;br/&gt;ทราบผลตรวจ CYP2C19"]:::start --&gt; B{"ฟีโนไทป์ CYP2C19"}
+  B --&gt;|"NM / RM / UM"| C["Clopidogrel ขนาดมาตรฐาน&lt;br/&gt;75 mg/วัน"]:::ok
+  B --&gt;|"IM"| D["หลีกเลี่ยง Clopidogrel ขนาดมาตรฐาน"]:::caution
+  B --&gt;|"PM"| E["หลีกเลี่ยง Clopidogrel"]:::avoid
+  D --&gt; F["ใช้ Prasugrel หรือ Ticagrelor&lt;br/&gt;หากไม่มีข้อห้ามใช้"]:::alt
+  E --&gt; F
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+  classDef caution fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
+  classDef alt fill:#e3f2fd,stroke:#1565c0,color:#111;
+  classDef start fill:#eceff1,stroke:#455a64,color:#111;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
 </section>
 <section id="ยากลม-statin-slco1b1-และ-abcg2" class="level2">
 <h2 class="anchored" data-anchor-id="ยากลม-statin-slco1b1-และ-abcg2">7.3 ยากลุ่ม Statin: SLCO1B1 และ ABCG2</h2>
@@ -440,6 +665,33 @@ VKORC1 (PD)
 <blockquote class="blockquote">
 <p><strong>ข้อควรระวัง:</strong> ผู้ป่วยที่มี CYP2C9 ทำงานลดลงร่วมกับ VKORC1 แบบไวต่อยา หากได้รับขนาดมาตรฐานโดยไม่ทราบจีโนไทป์ จะเสี่ยงต่อระดับยาเกินและเลือดออกรุนแรง CPIC แนะนำให้ใช้สมการคำนวณขนาดยาที่รวมข้อมูลพันธุกรรมกับปัจจัยทางคลินิก เช่น อายุ น้ำหนัก และยาที่ใช้ร่วม และติดตามค่า INR อย่างใกล้ชิด [7]</p>
 </blockquote>
+</section>
+<section id="แผนภาพการตดสนใจ-decision-tree-1" class="level3">
+<h3 class="anchored" data-anchor-id="แผนภาพการตดสนใจ-decision-tree-1">แผนภาพการตัดสินใจ (Decision Tree)</h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A["เริ่มยา Warfarin&lt;br/&gt;ทราบผลตรวจ CYP2C9 และ VKORC1"]:::start --&gt; B{"ระดับการทำงานรวมของ 2 ยีน"}
+  B --&gt;|"CYP2C9 ปกติ + VKORC1 ไวต่อยาน้อย"| C["ขนาดสูง&lt;br/&gt;ประมาณ 5–7 mg/วัน"]:::ok
+  B --&gt;|"ค่ากลาง"| D["ขนาดปานกลาง&lt;br/&gt;ประมาณ 3–4 mg/วัน"]:::caution
+  B --&gt;|"CYP2C9 ทำงานลดลงมาก และ/หรือ VKORC1 ไวต่อยามาก"| E["ขนาดต่ำ&lt;br/&gt;ประมาณ 0.5–2 mg/วัน"]:::avoid
+  C --&gt; F["ใช้สมการคำนวณขนาดยาที่รวมพันธุกรรม + ปัจจัยทางคลินิก&lt;br/&gt;และติดตามค่า INR อย่างใกล้ชิด"]:::alt
+  D --&gt; F
+  E --&gt; F
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+  classDef caution fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
+  classDef alt fill:#e3f2fd,stroke:#1565c0,color:#111;
+  classDef start fill:#eceff1,stroke:#455a64,color:#111;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="สถานการณทควรพจารณาตรวจยน" class="level2">
@@ -526,6 +778,19 @@ VKORC1 (PD)
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -940,14 +1205,14 @@ VKORC1 (PD)
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
+<p>คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)</p>
+</div>   
     <div class="nav-footer-center">
-<p>คู่มือเภสัชพันธุศาสตร์ (PGx Handbook) · Bhoom Suktitipat Laboratory</p>
-</div>
-    <div class="nav-footer-right">
       &nbsp;
     </div>
+    <div class="nav-footer-right">
+<p>Bhoom Suktitipat Laboratory</p>
+</div>
   </div>
 </footer>
 
