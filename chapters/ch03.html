@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="th" xml:lang="th"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>บทที่ 3: เอนไซม์ Big 5 – คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch04.html" rel="next">
+<link href="../chapters/ch02.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d9d66ecfd89cc62cac79a498701bb256.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  body, .sidebar, .toc-actions, h1, h2, h3, h4 { font-family: 'Sarabun', sans-serif; }
+  pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+</style>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch03.html"><span class="chapter-title">บทที่ 3: เอนไซม์ Big 5</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">คำนำ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 1: รหัสชีวิตกับยา — DNA ทำงานอย่างไร</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 2: ร่างกายทำอะไรกับยา — เภสัชจลนศาสตร์และเภสัชพลศาสตร์</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">บทที่ 3: เอนไซม์ Big 5</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 4: ดาวนำทาง — Star Allele และฟีโนไทป์การเผาผลาญยา</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 5: ยาเปลี่ยนรูป — Prodrug vs.&nbsp;Active Drug</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 6: แนวทาง CPIC — จากวิทยาศาสตร์สู่เตียงผู้ป่วย</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 7: ยาหัวใจและหลอดเลือด</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 8: ยาจิตเวชและยาแก้ปวด</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 9: ยีนภูมิคุ้มกัน HLA และปฏิกิริยาแพ้ยารุนแรง</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 10: ปฏิกิริยาระหว่างยา ยา และยีน (DDGI)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 11: ตัวขนส่งยา (Drug Transporters)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 12: เภสัชพันธุศาสตร์ในกลุ่มประชากรพิเศษ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 13: อนาคตของเภสัชพันธุศาสตร์</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/appendix.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ภาคผนวก (ฉบับละเอียด)</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">ในบทนี้</h2>
+   
+  <ul class="collapse">
+  <li><a href="#ทำไมตองรจก-big-5" id="toc-ทำไมตองรจก-big-5" class="nav-link active" data-scroll-target="#ทำไมตองรจก-big-5">3.1 ทำไมต้องรู้จัก Big 5</a></li>
+  <li><a href="#ยาทยบยงและกระตนเอนไซม" id="toc-ยาทยบยงและกระตนเอนไซม" class="nav-link" data-scroll-target="#ยาทยบยงและกระตนเอนไซม">3.2 ยาที่ยับยั้งและกระตุ้นเอนไซม์</a></li>
+  <li><a href="#cyp2d6-เอนไซมทมความหลากหลายทางพนธกรรมสงทสด" id="toc-cyp2d6-เอนไซมทมความหลากหลายทางพนธกรรมสงทสด" class="nav-link" data-scroll-target="#cyp2d6-เอนไซมทมความหลากหลายทางพนธกรรมสงทสด">3.3 CYP2D6: เอนไซม์ที่มีความหลากหลายทางพันธุกรรมสูงที่สุด</a></li>
+  <li><a href="#cyp2c19-ยนทสำคญเปนพเศษสำหรบคนไทย" id="toc-cyp2c19-ยนทสำคญเปนพเศษสำหรบคนไทย" class="nav-link" data-scroll-target="#cyp2c19-ยนทสำคญเปนพเศษสำหรบคนไทย">3.4 CYP2C19: ยีนที่สำคัญเป็นพิเศษสำหรับคนไทย</a></li>
+  <li><a href="#cyp2c9-เอนไซมของยาทมชวงการรกษาแคบ" id="toc-cyp2c9-เอนไซมของยาทมชวงการรกษาแคบ" class="nav-link" data-scroll-target="#cyp2c9-เอนไซมของยาทมชวงการรกษาแคบ">3.5 CYP2C9: เอนไซม์ของยาที่มีช่วงการรักษาแคบ</a></li>
+  <li><a href="#cyp3a4-เอนไซมทพบมากทสดในตบ" id="toc-cyp3a4-เอนไซมทพบมากทสดในตบ" class="nav-link" data-scroll-target="#cyp3a4-เอนไซมทพบมากทสดในตบ">3.6 CYP3A4: เอนไซม์ที่พบมากที่สุดในตับ</a></li>
+  <li><a href="#cyp3a5-เอนไซมทแตกตางกนตามชาตพนธ" id="toc-cyp3a5-เอนไซมทแตกตางกนตามชาตพนธ" class="nav-link" data-scroll-target="#cyp3a5-เอนไซมทแตกตางกนตามชาตพนธ">3.7 CYP3A5: เอนไซม์ที่แตกต่างกันตามชาติพันธุ์</a></li>
+  <li><a href="#การนำความร-big-5-ไปใชในทางปฏบต" id="toc-การนำความร-big-5-ไปใชในทางปฏบต" class="nav-link" data-scroll-target="#การนำความร-big-5-ไปใชในทางปฏบต">3.8 การนำความรู้ Big 5 ไปใช้ในทางปฏิบัติ</a></li>
+  <li><a href="#ขอจำกดของการตรวจยน" id="toc-ขอจำกดของการตรวจยน" class="nav-link" data-scroll-target="#ขอจำกดของการตรวจยน">3.9 ข้อจำกัดของการตรวจยีน</a></li>
+  <li><a href="#สรปทายบท" id="toc-สรปทายบท" class="nav-link" data-scroll-target="#สรปทายบท">สรุปท้ายบท</a></li>
+  <li><a href="#คำถามทบทวน" id="toc-คำถามทบทวน" class="nav-link" data-scroll-target="#คำถามทบทวน">คำถามทบทวน</a></li>
+  <li><a href="#เอกสารอางอง" id="toc-เอกสารอางอง" class="nav-link" data-scroll-target="#เอกสารอางอง">เอกสารอ้างอิง</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">บทที่ 3: เอนไซม์ Big 5</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>ตับเป็นอวัยวะหลักที่ทำหน้าที่ <strong>เผาผลาญยา (drug metabolism)</strong> และสารแปลกปลอมที่เข้าสู่ร่างกาย เมื่อยาเข้าสู่ร่างกาย เอนไซม์ในตับจะเปลี่ยนโครงสร้างของยาเพื่อให้ร่างกายกำจัดออกได้ หรือในยาบางชนิดคือการเปลี่ยนยาให้อยู่ในรูปที่ออกฤทธิ์ ความสามารถของเอนไซม์เหล่านี้แตกต่างกันในแต่ละบุคคล บางคนมีเอนไซม์ที่ทำงานปกติ บางคนมีเอนไซม์ที่ทำงานลดลง และบางคนแทบไม่มีเอนไซม์ชนิดนั้นทำงานเลย ซึ่งถูกกำหนดโดยพันธุกรรมตั้งแต่กำเนิด</p>
+<p>ในบทที่ 1 เราได้เรียนรู้ว่า DNA ถ่ายทอดข้อมูลไปสู่โปรตีนได้อย่างไร และในบทที่ 2 เราได้เรียนรู้กระบวนการ ADME บทนี้จะเชื่อมความรู้ทั้งสองเข้าด้วยกัน โดยศึกษา <strong>เอนไซม์ 5 ชนิดหลัก</strong> ที่รับผิดชอบการเผาผลาญยาส่วนใหญ่ที่ใช้ในทางคลินิก</p>
+<section id="ทำไมตองรจก-big-5" class="level2">
+<h2 class="anchored" data-anchor-id="ทำไมตองรจก-big-5">3.1 ทำไมต้องรู้จัก Big 5</h2>
+<p>ร่างกายมนุษย์มีเอนไซม์ในกลุ่ม <strong>Cytochrome P450 (CYP450)</strong> มากกว่า 50 ชนิด แต่มี 5 ชนิดที่มีความสำคัญทางคลินิกสูงสุด เพราะรับผิดชอบการเผาผลาญยาจำนวนมาก และความแปรผันของเอนไซม์เหล่านี้มีผลต่อประสิทธิภาพและความปลอดภัยของการรักษาอย่างมีนัยสำคัญ [1]</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>เอนไซม์</th>
+<th>สัดส่วนยาที่เกี่ยวข้อง (โดยประมาณ) [1,2]</th>
+<th>ลักษณะเด่น</th>
+<th>ตัวอย่างยา</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CYP2D6</td>
+<td>~25%</td>
+<td>มีความหลากหลายทางพันธุกรรมสูงที่สุด</td>
+<td>Codeine, Tramadol, Tamoxifen, ยาจิตเวชหลายชนิด</td>
+</tr>
+<tr class="even">
+<td>CYP2C19</td>
+<td>~15%</td>
+<td>คนไทยและชาวเอเชียจำนวนมากมีอัลลีลที่ไม่ทำงาน</td>
+<td>ยาต้านเกล็ดเลือด Clopidogrel, ยาลดกรด Omeprazole</td>
+</tr>
+<tr class="odd">
+<td>CYP2C9</td>
+<td>~15%</td>
+<td>เผาผลาญยาหลายชนิดที่มีช่วงการรักษาแคบ</td>
+<td>ยาต้านการแข็งตัวของเลือด Warfarin, ยากันชัก Phenytoin</td>
+</tr>
+<tr class="even">
+<td>CYP3A4</td>
+<td>~45%</td>
+<td>พบปริมาณมากที่สุดในตับ และเกี่ยวข้องกับปฏิกิริยาระหว่างยามากที่สุด [3]</td>
+<td>ยาลดไขมัน Simvastatin, ยาลดความดันโลหิต Amlodipine</td>
+</tr>
+<tr class="odd">
+<td>CYP3A5</td>
+<td>—</td>
+<td>การแสดงออกแตกต่างกันมากตามชาติพันธุ์</td>
+<td>ยากดภูมิคุ้มกัน Tacrolimus</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><strong>หมายเหตุ:</strong> สัดส่วนในตารางเป็นค่าประมาณจากรายงานทบทวนวรรณกรรม และแตกต่างกันเล็กน้อยในแต่ละการศึกษา ผลรวมเกิน 100% เพราะยาหนึ่งชนิดอาจถูกเผาผลาญด้วยเอนไซม์หลายชนิด [1,2]</p>
+</blockquote>
+</section>
+<section id="ยาทยบยงและกระตนเอนไซม" class="level2">
+<h2 class="anchored" data-anchor-id="ยาทยบยงและกระตนเอนไซม">3.2 ยาที่ยับยั้งและกระตุ้นเอนไซม์</h2>
+<p>ก่อนศึกษาเอนไซม์แต่ละชนิด ต้องเข้าใจแนวคิด 2 ประการที่แนะนำไว้ในบทที่ 2 เพราะยาที่ใช้ร่วมกันสามารถเปลี่ยนการทำงานของเอนไซม์เหล่านี้ได้</p>
+<section id="ยาทยบยงเอนไซม-enzyme-inhibitor" class="level3">
+<h3 class="anchored" data-anchor-id="ยาทยบยงเอนไซม-enzyme-inhibitor">ยาที่ยับยั้งเอนไซม์ (Enzyme Inhibitor)</h3>
+<p>ยาหรือสารที่ขัดขวางการทำงานของเอนไซม์ ทำให้ยาตัวอื่นที่ใช้เอนไซม์เดียวกันถูกเผาผลาญช้าลง ระดับยาในเลือดจึงสูงขึ้น และเสี่ยงต่อผลข้างเคียงหรือพิษ</p>
+<ul>
+<li><strong>ตัวอย่าง:</strong> ยาต้านเศร้า Fluoxetine ยับยั้ง CYP2D6 เมื่อใช้ร่วมกับยาลดความดันโลหิต Metoprolol ซึ่งถูกเผาผลาญโดย CYP2D6 ระดับ Metoprolol ในเลือดจะสูงขึ้น อาจทำให้ความดันโลหิตต่ำและหัวใจเต้นช้าผิดปกติ</li>
+</ul>
+</section>
+<section id="ยาทกระตนเอนไซม-enzyme-inducer" class="level3">
+<h3 class="anchored" data-anchor-id="ยาทกระตนเอนไซม-enzyme-inducer">ยาที่กระตุ้นเอนไซม์ (Enzyme Inducer)</h3>
+<p>ยาหรือสารที่กระตุ้นให้ตับสร้างเอนไซม์เพิ่มขึ้น ทำให้ยาตัวอื่นที่ใช้เอนไซม์เดียวกันถูกเผาผลาญเร็วขึ้น ระดับยาในเลือดจึงต่ำลงจนอาจรักษาไม่ได้ผล</p>
+<ul>
+<li><strong>ตัวอย่าง:</strong> ยารักษาวัณโรค Rifampicin กระตุ้น CYP3A4 เมื่อใช้ร่วมกับยากดภูมิคุ้มกัน Tacrolimus ระดับ Tacrolimus ในเลือดจะต่ำลงมาก ผู้ป่วยจึงเสี่ยงต่อภาวะร่างกายปฏิเสธอวัยวะที่ปลูกถ่าย</li>
+</ul>
+</section>
+<section id="phenoconversion" class="level3">
+<h3 class="anchored" data-anchor-id="phenoconversion">Phenoconversion</h3>
+<p>หากผลตรวจยีนระบุว่าผู้ป่วยเป็น <strong>Normal Metabolizer (NM)</strong> แต่ผู้ป่วยใช้ยาที่ยับยั้งเอนไซม์ชนิดนั้นอย่างแรงร่วมด้วย เอนไซม์จะทำงานได้ใกล้เคียงกับผู้ที่เป็น <strong>Poor Metabolizer (PM)</strong> ตราบเท่าที่ยาที่ยับยั้งยังมีผลอยู่ ภาวะนี้เรียกว่า <strong>Phenoconversion</strong> [4] (รายละเอียดในบทที่ 10)</p>
+<blockquote class="blockquote">
+<p><strong>ประเด็นสำคัญ:</strong> ผลตรวจยีนเพียงอย่างเดียวไม่เพียงพอ แพทย์และเภสัชกรต้องตรวจสอบยาทุกชนิดที่ผู้ป่วยใช้ร่วม รวมถึงสมุนไพรและผลิตภัณฑ์เสริมอาหาร</p>
+</blockquote>
+</section>
+</section>
+<section id="cyp2d6-เอนไซมทมความหลากหลายทางพนธกรรมสงทสด" class="level2">
+<h2 class="anchored" data-anchor-id="cyp2d6-เอนไซมทมความหลากหลายทางพนธกรรมสงทสด">3.3 CYP2D6: เอนไซม์ที่มีความหลากหลายทางพันธุกรรมสูงที่สุด</h2>
+<section id="ภาพรวม" class="level3">
+<h3 class="anchored" data-anchor-id="ภาพรวม">ภาพรวม</h3>
+<p>แม้ CYP2D6 จะมีปริมาณในตับค่อนข้างน้อย (ประมาณ 2% ของเอนไซม์ CYP450 ทั้งหมด) แต่รับผิดชอบการเผาผลาญยาประมาณ 25% ของยาที่ใช้ในปัจจุบัน [1] และมีความหลากหลายทางพันธุกรรมสูงที่สุด โดยมีอัลลีลที่ได้รับการตั้งชื่อในระบบ Star Allele มากกว่า 100 แบบ [5]</p>
+</section>
+<section id="อลลลสำคญในประชากรไทยและเอเชย" class="level3">
+<h3 class="anchored" data-anchor-id="อลลลสำคญในประชากรไทยและเอเชย">อัลลีลสำคัญในประชากรไทยและเอเชีย</h3>
+<ul>
+<li><strong>ทำงานปกติ</strong> เช่น *1 และ *2</li>
+<li><strong>ทำงานลดลง</strong> เช่น *10 ซึ่งพบบ่อยมากในประชากรเอเชียตะวันออกและเอเชียตะวันออกเฉียงใต้ รวมถึงไทย (ความถี่อัลลีลประมาณ 40–50%) ทำให้คนไทยจำนวนมากเป็น <strong>Intermediate Metabolizer (IM)</strong> [6]</li>
+<li><strong>ไม่ทำงาน</strong> เช่น *4 ซึ่งพบน้อยในชาวเอเชียแต่พบบ่อยในชาวยุโรป และ *5 (ยีนขาดหายทั้งยีน) ซึ่งพบได้ในทุกประชากร [6]</li>
+<li><strong>มียีนหลายชุด (Gene Duplication)</strong> เช่น *1xN หรือ *2xN ทำให้เอนไซม์ทำงานมากกว่าปกติ จัดเป็น <strong>Ultrarapid Metabolizer (UM)</strong> พบน้อยในประชากรเอเชีย [6]</li>
+</ul>
+</section>
+<section id="ยาสำคญทขนกบ-cyp2d6" class="level3">
+<h3 class="anchored" data-anchor-id="ยาสำคญทขนกบ-cyp2d6">ยาสำคัญที่ขึ้นกับ CYP2D6</h3>
+<p>ยาที่ขึ้นกับ CYP2D6 แบ่งได้เป็น 2 กลุ่ม (รายละเอียดในบทที่ 5)</p>
+<ol type="1">
+<li><strong>Prodrug</strong> — ยาที่ยังไม่มีฤทธิ์หรือมีฤทธิ์น้อยเมื่อรับประทาน ต้องอาศัย CYP2D6 เปลี่ยนให้เป็นสารที่ออกฤทธิ์ (active metabolite)
+<ul>
+<li><strong>Codeine และ Tramadol (ยาแก้ปวด):</strong> ผู้ที่เป็น PM ใช้ยาแล้วแทบไม่หายปวด เพราะร่างกายเปลี่ยนยาเป็นรูปออกฤทธิ์ได้น้อยมาก ส่วนผู้ที่เป็น UM ร่างกายเปลี่ยนยาเป็นรูปออกฤทธิ์เร็วและมากเกินไปจนอาจเกิดพิษ [4]</li>
+<li><strong>Tamoxifen (ยารักษามะเร็งเต้านม):</strong> ผู้ที่เป็น PM มีระดับสารออกฤทธิ์ Endoxifen ต่ำ ประสิทธิภาพของการรักษาอาจลดลง [7]</li>
+</ul></li>
+<li><strong>Active Drug</strong> — ยาที่ออกฤทธิ์ได้ทันที และถูก CYP2D6 เผาผลาญเพื่อกำจัดออก ผู้ที่เป็น PM จะมียาสะสมในร่างกายจนเสี่ยงต่อผลข้างเคียง
+<ul>
+<li><strong>ยาต้านเศร้ากลุ่ม Tricyclic:</strong> Amitriptyline, Nortriptyline</li>
+<li><strong>ยากลุ่ม Beta-blocker:</strong> Metoprolol</li>
+</ul></li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>ข้อควรระวัง:</strong> ผู้ที่เป็น UM เสี่ยงต่อพิษจาก Morphine เมื่อได้รับ Codeine (ดูกรณีศึกษาในบทที่ 1) แนวทางของ CPIC จึงแนะนำให้หลีกเลี่ยง Codeine ในผู้ที่เป็น UM และ PM [4]</p>
+</blockquote>
+</section>
+</section>
+<section id="cyp2c19-ยนทสำคญเปนพเศษสำหรบคนไทย" class="level2">
+<h2 class="anchored" data-anchor-id="cyp2c19-ยนทสำคญเปนพเศษสำหรบคนไทย">3.4 CYP2C19: ยีนที่สำคัญเป็นพิเศษสำหรับคนไทย</h2>
+<section id="ภาพรวม-1" class="level3">
+<h3 class="anchored" data-anchor-id="ภาพรวม-1">ภาพรวม</h3>
+<p>CYP2C19 มีความสำคัญต่อคนไทยเป็นพิเศษ เพราะประชากรเอเชียมีสัดส่วน Poor Metabolizer สูงกว่าชาวยุโรปอย่างชัดเจน</p>
+<ul>
+<li>คนไทยประมาณ <strong>8–13%</strong> เป็น <strong>Poor Metabolizer (PM)</strong> [8,9] ขณะที่ชาวยุโรปพบประมาณ 2% [10]</li>
+<li>คนไทยอีกประมาณ <strong>42%</strong> เป็น <strong>Intermediate Metabolizer (IM)</strong> [8,9]</li>
+</ul>
+<p>อัลลีลที่ไม่ทำงานที่พบบ่อยคือ *2 และ *3 ส่วนอัลลีล *17 ทำให้เอนไซม์ทำงานเพิ่มขึ้น (Rapid หรือ Ultrarapid Metabolizer) พบน้อยในคนไทย [9,10]</p>
+</section>
+<section id="ยาสำคญ-clopidogrel" class="level3">
+<h3 class="anchored" data-anchor-id="ยาสำคญ-clopidogrel">ยาสำคัญ: Clopidogrel</h3>
+<p>ยาที่สำคัญที่สุดของยีนนี้คือ <strong>Clopidogrel (ยาต้านเกล็ดเลือด)</strong> ซึ่งใช้ในผู้ป่วยที่ใส่ขดลวดขยายหลอดเลือดหัวใจหรือมีโรคหลอดเลือดสมองตีบ Clopidogrel เป็น <strong>Prodrug</strong> ที่ต้องอาศัย CYP2C19 เปลี่ยนให้อยู่ในรูปออกฤทธิ์</p>
+<ul>
+<li><strong>ผู้ที่เป็น PM:</strong> ร่างกายสร้างสารออกฤทธิ์ได้น้อยมาก ยาจึงยับยั้งเกล็ดเลือดได้ไม่เพียงพอ ผู้ป่วยเสี่ยงต่อลิ่มเลือดอุดตันซ้ำ กล้ามเนื้อหัวใจขาดเลือด หรือโรคหลอดเลือดสมอง [10]</li>
+<li><strong>คำแนะนำ:</strong> แนวทางของ CPIC ฉบับปี ค.ศ. 2022 แนะนำให้ผู้ที่เป็น PM และ IM ซึ่งได้รับการรักษาภาวะหลอดเลือดหัวใจเฉียบพลันหรือใส่ขดลวด เปลี่ยนไปใช้ยาทางเลือก เช่น Prasugrel หรือ Ticagrelor หากไม่มีข้อห้ามใช้ [10] (รายละเอียดในบทที่ 7)</li>
+</ul>
+<p>นอกจากนี้ CYP2C19 ยังเผาผลาญยาลดกรดกลุ่ม Proton Pump Inhibitor (PPI) เช่น Omeprazole (ในผู้ที่เป็น PM ระดับยาในเลือดสูงกว่าปกติ ยาจึงได้ผลดีขึ้น) และยาต้านเศร้ากลุ่ม SSRIs บางชนิด (บทที่ 8)</p>
+</section>
+</section>
+<section id="cyp2c9-เอนไซมของยาทมชวงการรกษาแคบ" class="level2">
+<h2 class="anchored" data-anchor-id="cyp2c9-เอนไซมของยาทมชวงการรกษาแคบ">3.5 CYP2C9: เอนไซม์ของยาที่มีช่วงการรักษาแคบ</h2>
+<section id="ภาพรวม-2" class="level3">
+<h3 class="anchored" data-anchor-id="ภาพรวม-2">ภาพรวม</h3>
+<p>CYP2C9 เผาผลาญยาหลายชนิดที่มี <strong>ช่วงการรักษาแคบ (narrow therapeutic index)</strong> กล่าวคือ ระดับยาที่ได้ผลกับระดับยาที่เป็นพิษใกล้กันมาก ยาที่สำคัญที่สุดคือ <strong>Warfarin (ยาต้านการแข็งตัวของเลือด)</strong> [1]</p>
+</section>
+<section id="การกำหนดขนาด-warfarin-ตองพจารณา-2-ยนรวมกน" class="level3">
+<h3 class="anchored" data-anchor-id="การกำหนดขนาด-warfarin-ตองพจารณา-2-ยนรวมกน">การกำหนดขนาด Warfarin: ต้องพิจารณา 2 ยีนร่วมกัน</h3>
+<p>การกำหนดขนาด Warfarin ให้เหมาะสมต้องพิจารณาทั้งยีนที่เกี่ยวข้องกับการเผาผลาญยา และยีนที่เกี่ยวข้องกับความไวต่อยา [11]</p>
+<ol type="1">
+<li><strong>CYP2C9 (เภสัชจลนศาสตร์):</strong> อัลลีล *2 และ *3 ทำให้เอนไซม์ทำงานลดลง ยาจึงถูกเผาผลาญช้าและสะสมในร่างกาย</li>
+<li><strong>VKORC1 (เภสัชพลศาสตร์):</strong> เป็นยีนของเอนไซม์ที่เป็นเป้าหมายของ Warfarin ผู้ที่มีอัลลีล A ที่ตำแหน่ง −1639G&gt;A สร้างเอนไซม์เป้าหมายได้น้อยกว่า จึงไวต่อยามากกว่า</li>
+</ol>
+<p>ฉลากยา Warfarin ที่ได้รับอนุมัติจาก US FDA ให้ช่วงขนาดยาเริ่มต้นที่คาดว่าจะใช้ในการคงระดับยา (mg/วัน) ตามจีโนไทป์ ดังนี้ [12]</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>VKORC1 −1639</th>
+<th>CYP2C9 *1/*1</th>
+<th>*1/*2</th>
+<th>*1/*3</th>
+<th>*2/*2</th>
+<th>*2/*3</th>
+<th>*3/*3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GG</td>
+<td>5–7</td>
+<td>5–7</td>
+<td>3–4</td>
+<td>3–4</td>
+<td>3–4</td>
+<td>0.5–2</td>
+</tr>
+<tr class="even">
+<td>AG</td>
+<td>5–7</td>
+<td>3–4</td>
+<td>3–4</td>
+<td>3–4</td>
+<td>0.5–2</td>
+<td>0.5–2</td>
+</tr>
+<tr class="odd">
+<td>AA</td>
+<td>3–4</td>
+<td>3–4</td>
+<td>0.5–2</td>
+<td>0.5–2</td>
+<td>0.5–2</td>
+<td>0.5–2</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><strong>ข้อควรระวัง:</strong> ผู้ป่วยที่มี CYP2C9 ทำงานลดลงมากร่วมกับ VKORC1 แบบไวต่อยา อาจต้องการ Warfarin เพียง 0.5–2 mg/วัน หากได้รับขนาดมาตรฐานโดยไม่ทราบจีโนไทป์ จะเสี่ยงต่อระดับยาเกินและภาวะเลือดออกรุนแรง ในทางปฏิบัติ CPIC แนะนำให้ใช้สมการคำนวณขนาดยาที่รวมข้อมูลพันธุกรรมกับปัจจัยทางคลินิก และติดตามค่า INR อย่างใกล้ชิด [11]</p>
+</blockquote>
+</section>
+</section>
+<section id="cyp3a4-เอนไซมทพบมากทสดในตบ" class="level2">
+<h2 class="anchored" data-anchor-id="cyp3a4-เอนไซมทพบมากทสดในตบ">3.6 CYP3A4: เอนไซม์ที่พบมากที่สุดในตับ</h2>
+<section id="ภาพรวม-3" class="level3">
+<h3 class="anchored" data-anchor-id="ภาพรวม-3">ภาพรวม</h3>
+<p>CYP3A4 เป็นเอนไซม์ CYP450 ที่พบมากที่สุดในตับและผนังลำไส้เล็ก และเกี่ยวข้องกับการเผาผลาญยาเกือบครึ่งหนึ่งของยาที่ใช้ในทางคลินิก เนื่องจากมีบริเวณจับยาขนาดใหญ่และยืดหยุ่น จึงรองรับยาได้หลากหลายชนิด [1,3]</p>
+<p>CYP3A4 มีความแปรปรวนทางพันธุกรรมที่มีนัยสำคัญทางคลินิกค่อนข้างน้อย แต่สิ่งที่ต้องระวังเป็นพิเศษคือ <strong>ปฏิกิริยาระหว่างยา (drug–drug interaction)</strong> และปฏิกิริยาระหว่างยากับอาหาร</p>
+</section>
+<section id="สมโอและนำเกรปฟรต" class="level3">
+<h3 class="anchored" data-anchor-id="สมโอและนำเกรปฟรต">ส้มโอและน้ำเกรปฟรุต</h3>
+<p>ตำราต่างประเทศมักเตือนเรื่อง <strong>น้ำเกรปฟรุต</strong> ในบริบทไทย ผลไม้ที่ควรระวังคือ <strong>ส้มโอ</strong> ซึ่งมีสารกลุ่ม furanocoumarin เช่นเดียวกัน [13]</p>
+<blockquote class="blockquote">
+<p><strong>หมายเหตุ:</strong> Furanocoumarin เป็นสารยับยั้ง CYP3A4 แบบถาวร (mechanism-based inhibitor) ที่ผนังลำไส้เล็ก ร่างกายต้องสร้างเอนไซม์ใหม่ทดแทน ผลของการยับยั้งจึงอาจคงอยู่นานถึง 1–3 วันหลังรับประทาน [13]</p>
+</blockquote>
+<ul>
+<li><strong>ผลกระทบ:</strong> หากรับประทานยาลดไขมันที่ถูกเผาผลาญโดย CYP3A4 เช่น Simvastatin ร่วมกับเกรปฟรุตหรือส้มโอ ยาจะถูกเผาผลาญที่ลำไส้น้อยลงและดูดซึมเข้าสู่กระแสเลือดมากขึ้นหลายเท่า เพิ่มความเสี่ยงต่อผลข้างเคียงรุนแรง เช่น ภาวะกล้ามเนื้อสลาย (rhabdomyolysis) [13]</li>
+</ul>
+</section>
+</section>
+<section id="cyp3a5-เอนไซมทแตกตางกนตามชาตพนธ" class="level2">
+<h2 class="anchored" data-anchor-id="cyp3a5-เอนไซมทแตกตางกนตามชาตพนธ">3.7 CYP3A5: เอนไซม์ที่แตกต่างกันตามชาติพันธุ์</h2>
+<section id="ภาพรวม-4" class="level3">
+<h3 class="anchored" data-anchor-id="ภาพรวม-4">ภาพรวม</h3>
+<p>CYP3A5 มีโครงสร้างคล้าย CYP3A4 มาก สิ่งที่ทำให้ CYP3A5 มีความสำคัญคือ <strong>ความแตกต่างตามชาติพันธุ์</strong> ผู้ที่มีอัลลีล *1 อย่างน้อย 1 ชุดสร้างเอนไซม์นี้ได้ (Expresser) ส่วนผู้ที่มีอัลลีล *3 ทั้งสองชุดสร้างเอนไซม์ไม่ได้ (Non-expresser) [14]</p>
+<ul>
+<li><strong>ชาวยุโรปประมาณ 80–90%</strong> เป็น Non-expresser [14]</li>
+<li><strong>ประชากรเอเชีย</strong> มีสัดส่วน Expresser สูงกว่าชาวยุโรปมาก (ประมาณ 30–50%) [6,14]</li>
+</ul>
+</section>
+<section id="ความสำคญตอการปลกถายอวยวะ" class="level3">
+<h3 class="anchored" data-anchor-id="ความสำคญตอการปลกถายอวยวะ">ความสำคัญต่อการปลูกถ่ายอวัยวะ</h3>
+<p>ยาสำคัญของยีนนี้คือ <strong>Tacrolimus</strong> (ยากดภูมิคุ้มกันที่ใช้ป้องกันการปฏิเสธอวัยวะที่ปลูกถ่าย) ซึ่งมีช่วงการรักษาแคบ [14]</p>
+<ul>
+<li><strong>ผู้ที่เป็น Expresser:</strong> มี CYP3A5 ช่วยเผาผลาญยาเพิ่มเติม Tacrolimus จึงถูกกำจัดเร็วและระดับยาในเลือดต่ำกว่าเป้าหมาย เสี่ยงต่อภาวะปฏิเสธอวัยวะ</li>
+<li><strong>คำแนะนำ:</strong> CPIC แนะนำให้เพิ่มขนาดยาเริ่มต้นเป็น 1.5–2 เท่าของขนาดมาตรฐาน (ไม่เกิน 0.3 mg/kg/วัน) และติดตามระดับยาในเลือด (therapeutic drug monitoring) อย่างใกล้ชิด [14]</li>
+</ul>
+</section>
+</section>
+<section id="การนำความร-big-5-ไปใชในทางปฏบต" class="level2">
+<h2 class="anchored" data-anchor-id="การนำความร-big-5-ไปใชในทางปฏบต">3.8 การนำความรู้ Big 5 ไปใช้ในทางปฏิบัติ</h2>
+<p>ควรพิจารณาปรึกษาแพทย์หรือเภสัชกรเรื่องการตรวจยีนเอนไซม์ CYP450 เมื่อพบสถานการณ์ต่อไปนี้</p>
+<ol type="1">
+<li>ใช้ Clopidogrel แล้วยังเกิดลิ่มเลือดอุดตันซ้ำ</li>
+<li>ใช้ Warfarin แล้วควบคุมค่า INR ได้ยาก มีเลือดออกง่ายผิดปกติ หรือต้องใช้ขนาดยาต่ำหรือสูงกว่าผู้ป่วยทั่วไปมาก</li>
+<li>ใช้ Codeine หรือ Tramadol แล้วไม่หายปวด หรือในทางกลับกัน มีอาการง่วงซึม คลื่นไส้ หรือหายใจช้าผิดปกติ</li>
+</ol>
+</section>
+<section id="ขอจำกดของการตรวจยน" class="level2">
+<h2 class="anchored" data-anchor-id="ขอจำกดของการตรวจยน">3.9 ข้อจำกัดของการตรวจยีน</h2>
+<p>การตรวจทางเภสัชพันธุศาสตร์มีประโยชน์มาก แต่ต้องตระหนักว่ายีนไม่ใช่ปัจจัยเดียว</p>
+<ul>
+<li><strong>ปัจจัยอื่น:</strong> อายุ อาหาร การทำงานของตับและไต ยาที่ใช้ร่วม และโรคประจำตัว ล้วนมีผลต่อการตอบสนองต่อยา</li>
+<li><strong>ขอบเขตของการตรวจ:</strong> ชุดตรวจส่วนใหญ่ตรวจเฉพาะอัลลีลที่พบบ่อย หากผู้ป่วยมีอัลลีลที่พบได้ยากซึ่งไม่อยู่ในชุดตรวจ ผลอาจรายงานเป็นอัลลีลปกติ (*1) ทั้งที่ไม่ใช่</li>
+</ul>
+</section>
+<section id="สรปทายบท" class="level2">
+<h2 class="anchored" data-anchor-id="สรปทายบท">สรุปท้ายบท</h2>
+<p>เอนไซม์ Big 5 (CYP2D6, CYP2C19, CYP2C9, CYP3A4 และ CYP3A5) เป็นปัจจัยสำคัญที่กำหนดว่ายาจะให้ผลการรักษาตามต้องการ ไม่ได้ผล หรือเกิดพิษ ทั้งจากพันธุกรรมของผู้ป่วย และจากยาหรืออาหารที่ยับยั้งหรือกระตุ้นเอนไซม์ ในบทที่ 4 เราจะศึกษาวิธีอ่านผลตรวจยีนในระบบ Star Allele และการคำนวณ Activity Score เพื่อจัดกลุ่มฟีโนไทป์</p>
+</section>
+<section id="คำถามทบทวน" class="level2">
+<h2 class="anchored" data-anchor-id="คำถามทบทวน">คำถามทบทวน</h2>
+<ol type="1">
+<li>เหตุใดเอนไซม์เพียง 5 ชนิดจากกว่า 50 ชนิดในกลุ่ม CYP450 จึงมีความสำคัญทางคลินิกสูงสุด</li>
+<li>อธิบายความแตกต่างระหว่างยาที่ยับยั้งเอนไซม์ (enzyme inhibitor) และยาที่กระตุ้นเอนไซม์ (enzyme inducer) พร้อมยกตัวอย่างปฏิกิริยาระหว่างยาอย่างละ 1 ตัวอย่าง</li>
+<li>Phenoconversion คืออะไร เหตุใดปรากฏการณ์นี้จึงทำให้ไม่สามารถอาศัยผลตรวจยีนเพียงอย่างเดียวในการสั่งจ่ายยาได้</li>
+<li>เหตุใดการกำหนดขนาด Warfarin จึงต้องพิจารณายีน CYP2C9 และ VKORC1 ร่วมกัน</li>
+<li>เหตุใดผู้ป่วยที่มี CYP3A5 แบบ Expresser จึงต้องได้รับ Tacrolimus ในขนาดที่สูงกว่าผู้ป่วยทั่วไป</li>
+</ol>
+</section>
+<section id="เอกสารอางอง" class="level2">
+<h2 class="anchored" data-anchor-id="เอกสารอางอง">เอกสารอ้างอิง</h2>
+<ol type="1">
+<li>Zanger UM, Schwab M. Cytochrome P450 enzymes in drug metabolism: regulation of gene expression, enzyme activities, and impact of genetic variation. <em>Pharmacol Ther</em>. 2013;138(1):103–141. doi:10.1016/j.pharmthera.2012.12.007</li>
+<li>Rendic S, Di Carlo FJ. Human cytochrome P450 enzymes: a status report summarizing their reactions, substrates, inducers, and inhibitors. <em>Drug Metab Rev</em>. 1997;29(1–2):413–580. doi:10.3109/03602539709037591</li>
+<li>Guengerich FP. Cytochrome P450 and chemical toxicology. <em>Chem Res Toxicol</em>. 2008;21(1):70–83. doi:10.1021/tx700079z</li>
+<li>Crews KR, Monte AA, Huddart R, et al.&nbsp;Clinical Pharmacogenetics Implementation Consortium guideline for CYP2D6, OPRM1, and COMT genotypes and select opioid therapy. <em>Clin Pharmacol Ther</em>. 2021;110(4):888–896. doi:10.1002/cpt.2149</li>
+<li>Gaedigk A, Ingelman-Sundberg M, Miller NA, et al.&nbsp;The Pharmacogene Variation (PharmVar) Consortium: incorporation of the Human Cytochrome P450 (CYP) allele nomenclature database. <em>Clin Pharmacol Ther</em>. 2018;103(3):399–401. doi:10.1002/cpt.910</li>
+<li>Dorji PW, Tshering G, Na-Bangchang K. CYP2C9, CYP2C19, CYP2D6 and CYP3A5 polymorphisms in South-East and East Asian populations: a systematic review. <em>J Clin Pharm Ther</em>. 2019;44(4):508–524.</li>
+<li>Goetz MP, Sangkuhl K, Guchelaar HJ, et al.&nbsp;Clinical Pharmacogenetics Implementation Consortium (CPIC) guideline for CYP2D6 and tamoxifen therapy. <em>Clin Pharmacol Ther</em>. 2018;103(5):770–777. doi:10.1002/cpt.1007</li>
+<li>Nakhonsri V, John S, Panumasmontol H, et al.&nbsp;The diversity of CYP2C19 polymorphisms in the Thai population: implications for precision medicine. <em>Appl Clin Genet</em>. 2024;17:95–105. doi:10.2147/TACG.S463965</li>
+<li>Sukasem C, Tunthong R, Chamnanphon M, et al.&nbsp;CYP2C19 polymorphisms in the Thai population and the clinical response to clopidogrel in patients with atherothrombotic-risk factors. <em>Pharmgenomics Pers Med</em>. 2013;6:85–91. doi:10.2147/PGPM.S42332</li>
+<li>Lee CR, Luzum JA, Sangkuhl K, et al.&nbsp;Clinical Pharmacogenetics Implementation Consortium guideline for CYP2C19 genotype and clopidogrel therapy: 2022 update. <em>Clin Pharmacol Ther</em>. 2022;112(5):959–967. doi:10.1002/cpt.2526</li>
+<li>Johnson JA, Caudle KE, Gong L, et al.&nbsp;Clinical Pharmacogenetics Implementation Consortium (CPIC) guideline for pharmacogenetics-guided warfarin dosing: 2017 update. <em>Clin Pharmacol Ther</em>. 2017;102(3):397–404. doi:10.1002/cpt.668</li>
+<li>Bristol-Myers Squibb. COUMADIN (warfarin sodium) tablets and injection: prescribing information (Table: range of expected therapeutic warfarin doses based on CYP2C9 and VKORC1 genotypes). Princeton, NJ; 2017. เข้าถึงได้จาก Drugs@FDA: https://www.accessdata.fda.gov/scripts/cder/daf/</li>
+<li>Bailey DG, Dresser G, Arnold JMO. Grapefruit–medication interactions: forbidden fruit or avoidable consequences? <em>CMAJ</em>. 2013;185(4):309–316. doi:10.1503/cmaj.120951</li>
+<li>Birdwell KA, Decker B, Barbarino JM, et al.&nbsp;Clinical Pharmacogenetics Implementation Consortium (CPIC) guidelines for CYP3A5 genotype and tacrolimus dosing. <em>Clin Pharmacol Ther</em>. 2015;98(1):19–24. doi:10.1002/cpt.113</li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch02.html" class="pagination-link" aria-label="บทที่ 2: ร่างกายทำอะไรกับยา — เภสัชจลนศาสตร์และเภสัชพลศาสตร์">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">บทที่ 2: ร่างกายทำอะไรกับยา — เภสัชจลนศาสตร์และเภสัชพลศาสตร์</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch04.html" class="pagination-link" aria-label="บทที่ 4: ดาวนำทาง — Star Allele และฟีโนไทป์การเผาผลาญยา">
+        <span class="nav-page-text"><span class="chapter-title">บทที่ 4: ดาวนำทาง — Star Allele และฟีโนไทป์การเผาผลาญยา</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>คู่มือเภสัชพันธุศาสตร์ (PGx Handbook) · Bhoom Suktitipat Laboratory</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="th" xml:lang="th"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>บทที่ 1: รหัสชีวิตกับยา — DNA ทำงานอย่างไร – คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch02.html" rel="next">
+<link href="../index.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d9d66ecfd89cc62cac79a498701bb256.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  body, .sidebar, .toc-actions, h1, h2, h3, h4 { font-family: 'Sarabun', sans-serif; }
+  pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+</style>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch01.html"><span class="chapter-title">บทที่ 1: รหัสชีวิตกับยา — DNA ทำงานอย่างไร</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">คำนำ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">บทที่ 1: รหัสชีวิตกับยา — DNA ทำงานอย่างไร</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 2: ร่างกายทำอะไรกับยา — เภสัชจลนศาสตร์และเภสัชพลศาสตร์</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 3: เอนไซม์ Big 5</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 4: ดาวนำทาง — Star Allele และฟีโนไทป์การเผาผลาญยา</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 5: ยาเปลี่ยนรูป — Prodrug vs.&nbsp;Active Drug</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 6: แนวทาง CPIC — จากวิทยาศาสตร์สู่เตียงผู้ป่วย</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 7: ยาหัวใจและหลอดเลือด</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 8: ยาจิตเวชและยาแก้ปวด</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 9: ยีนภูมิคุ้มกัน HLA และปฏิกิริยาแพ้ยารุนแรง</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 10: ปฏิกิริยาระหว่างยา ยา และยีน (DDGI)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 11: ตัวขนส่งยา (Drug Transporters)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 12: เภสัชพันธุศาสตร์ในกลุ่มประชากรพิเศษ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 13: อนาคตของเภสัชพันธุศาสตร์</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/appendix.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ภาคผนวก (ฉบับละเอียด)</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">ในบทนี้</h2>
+   
+  <ul class="collapse">
+  <li><a href="#central-dogma-จาก-dna-สโปรตน" id="toc-central-dogma-จาก-dna-สโปรตน" class="nav-link active" data-scroll-target="#central-dogma-จาก-dna-สโปรตน">1.1 Central Dogma: จาก DNA สู่โปรตีน</a></li>
+  <li><a href="#snp-การเปลยนแปลงของเบสเพยงหนงตำแหนง" id="toc-snp-การเปลยนแปลงของเบสเพยงหนงตำแหนง" class="nav-link" data-scroll-target="#snp-การเปลยนแปลงของเบสเพยงหนงตำแหนง">1.2 SNP: การเปลี่ยนแปลงของเบสเพียงหนึ่งตำแหน่ง</a></li>
+  <li><a href="#ยน-อลลล-และ-diplotype-ศพทพนฐานของเภสชพนธศาสตร" id="toc-ยน-อลลล-และ-diplotype-ศพทพนฐานของเภสชพนธศาสตร" class="nav-link" data-scroll-target="#ยน-อลลล-และ-diplotype-ศพทพนฐานของเภสชพนธศาสตร">1.3 ยีน อัลลีล และ Diplotype: ศัพท์พื้นฐานของเภสัชพันธุศาสตร์</a></li>
+  <li><a href="#ฟโนไทปการเผาผลาญยา-จากยนสการตอบสนองตอยา" id="toc-ฟโนไทปการเผาผลาญยา-จากยนสการตอบสนองตอยา" class="nav-link" data-scroll-target="#ฟโนไทปการเผาผลาญยา-จากยนสการตอบสนองตอยา">1.4 ฟีโนไทป์การเผาผลาญยา: จากยีนสู่การตอบสนองต่อยา</a></li>
+  <li><a href="#ทำไมพนธกรรมของแตละคนจงแตกตางกน" id="toc-ทำไมพนธกรรมของแตละคนจงแตกตางกน" class="nav-link" data-scroll-target="#ทำไมพนธกรรมของแตละคนจงแตกตางกน">1.5 ทำไมพันธุกรรมของแต่ละคนจึงแตกต่างกัน</a></li>
+  <li><a href="#เอนไซม-cyp450-เอนไซมหลกในการเผาผลาญยา" id="toc-เอนไซม-cyp450-เอนไซมหลกในการเผาผลาญยา" class="nav-link" data-scroll-target="#เอนไซม-cyp450-เอนไซมหลกในการเผาผลาญยา">1.6 เอนไซม์ CYP450: เอนไซม์หลักในการเผาผลาญยา</a></li>
+  <li><a href="#ฐานขอมลสำคญของเภสชพนธศาสตร" id="toc-ฐานขอมลสำคญของเภสชพนธศาสตร" class="nav-link" data-scroll-target="#ฐานขอมลสำคญของเภสชพนธศาสตร">1.7 ฐานข้อมูลสำคัญของเภสัชพันธุศาสตร์</a></li>
+  <li><a href="#สรปทายบท" id="toc-สรปทายบท" class="nav-link" data-scroll-target="#สรปทายบท">สรุปท้ายบท</a></li>
+  <li><a href="#คำศพทสำคญ" id="toc-คำศพทสำคญ" class="nav-link" data-scroll-target="#คำศพทสำคญ">คำศัพท์สำคัญ</a></li>
+  <li><a href="#คำถามทบทวน" id="toc-คำถามทบทวน" class="nav-link" data-scroll-target="#คำถามทบทวน">คำถามทบทวน</a></li>
+  <li><a href="#เอกสารอางอง" id="toc-เอกสารอางอง" class="nav-link" data-scroll-target="#เอกสารอางอง">เอกสารอ้างอิง</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">บทที่ 1: รหัสชีวิตกับยา — DNA ทำงานอย่างไร</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>ลองนึกภาพสถานการณ์ต่อไปนี้ คุณ เพื่อนสนิท และคนในบ้านอีกคน มีอาการปวดศีรษะในคืนเดียวกัน ทั้งสามคนรับประทานยาแก้ปวดชนิดเดียวกันในขนาดเท่ากัน แต่ผลที่เกิดขึ้นกลับแตกต่างกัน คุณรู้สึกดีขึ้นภายในครึ่งชั่วโมง แต่เพื่อนของคุณยังปวดศีรษะและบอกว่ายาไม่ได้ผลเลย ขณะที่คนในบ้านอีกคนกลับมีอาการคลื่นไส้จนแทบลุกไม่ขึ้น</p>
+<p>สถานการณ์นี้ไม่ใช่เรื่องบังเอิญ ส่วนหนึ่งเป็นผลจากความแตกต่างของรหัสพันธุกรรมระหว่างบุคคล ยาส่วนใหญ่ถูกพัฒนาและกำหนดขนาดสำหรับผู้ป่วย “โดยเฉลี่ย” แต่ในความเป็นจริง ผู้ป่วยแต่ละรายตอบสนองต่อยาไม่เท่ากัน ศาสตร์ที่ศึกษาความสัมพันธ์ระหว่างพันธุกรรมกับการตอบสนองต่อยาเรียกว่า <strong>เภสัชพันธุศาสตร์ (Pharmacogenomics; PGx)</strong> ซึ่งเป็นรากฐานของแนวคิด <strong>การแพทย์แม่นยำ (Precision Medicine)</strong> ที่มุ่งให้ผู้ป่วยได้รับ “ยาที่เหมาะสม” ใน “ขนาดที่เหมาะสม” ตั้งแต่เริ่มการรักษา แทนการลองผิดลองถูกที่เสียเวลาและอาจเป็นอันตราย [1,2]</p>
+<p>บทนี้จะปูพื้นฐานที่จำเป็นที่สุด ได้แก่ DNA ถ่ายทอดข้อมูลไปสู่การสร้างโปรตีนและเอนไซม์เผาผลาญยาได้อย่างไร และความแตกต่างเพียงเล็กน้อยในรหัสพันธุกรรมเปลี่ยนผลการรักษาได้อย่างไร</p>
+<section id="central-dogma-จาก-dna-สโปรตน" class="level2">
+<h2 class="anchored" data-anchor-id="central-dogma-จาก-dna-สโปรตน">1.1 Central Dogma: จาก DNA สู่โปรตีน</h2>
+<p>หลักการพื้นฐานของชีววิทยาโมเลกุลที่เรียกว่า <strong>Central Dogma</strong> ซึ่ง Francis Crick เสนอในปี ค.ศ. 1958 อธิบายว่าข้อมูลพันธุกรรมถูกถ่ายทอดจาก DNA ไปเป็น RNA (Transcription) แล้วจึงถูกแปลเป็นโปรตีน (Translation) [3] โปรตีนหลายชนิดทำหน้าที่เป็นเอนไซม์ในร่างกาย รวมถึงเอนไซม์ที่เผาผลาญยา</p>
+<section id="dna" class="level3">
+<h3 class="anchored" data-anchor-id="dna">DNA</h3>
+<p>DNA (Deoxyribonucleic acid) ประกอบด้วยเบส 4 ชนิด ได้แก่ A (Adenine), T (Thymine), G (Guanine) และ C (Cytosine) เรียงต่อกันเป็นสายยาวในลักษณะเกลียวคู่ จีโนมมนุษย์มีลำดับเบสประมาณ 3,200 ล้านคู่เบส DNA ถูกเก็บรักษาอยู่ในนิวเคลียสของเซลล์ และไม่ถูกนำออกไปใช้โดยตรง แต่จะถูกคัดลอกเป็น mRNA เพื่อใช้สร้างโปรตีนแทน</p>
+</section>
+<section id="mrna" class="level3">
+<h3 class="anchored" data-anchor-id="mrna">mRNA</h3>
+<p>เมื่อเซลล์ต้องการสร้างโปรตีนชนิดใด จะเริ่มกระบวนการ <strong>Transcription</strong> โดยเอนไซม์ RNA Polymerase อ่านลำดับเบสจาก DNA และสร้างเป็น <strong>mRNA (messenger RNA)</strong> จากนั้น mRNA จะเคลื่อนออกจากนิวเคลียสไปยังไรโบโซมในไซโทพลาซึม</p>
+</section>
+<section id="โปรตน" class="level3">
+<h3 class="anchored" data-anchor-id="โปรตน">โปรตีน</h3>
+<p>ในขั้นตอน <strong>Translation</strong> ไรโบโซมจะอ่านรหัสบน mRNA และนำกรดอะมิโนมาต่อกันทีละหน่วยจนได้โปรตีนที่มีโครงสร้างและหน้าที่เฉพาะ โปรตีนบางชนิดทำหน้าที่เป็นเอนไซม์ที่ขับเคลื่อนปฏิกิริยาทางชีวเคมีในร่างกาย รวมถึงการเผาผลาญยา</p>
+<p>ความสำคัญของ Central Dogma ต่อเภสัชพันธุศาสตร์คือ เอนไซม์ที่เผาผลาญยาในตับและอวัยวะอื่นล้วนเป็นโปรตีนที่สร้างจากกระบวนการนี้ หาก DNA ของบุคคลหนึ่งแตกต่างจากผู้อื่นในตำแหน่งที่สำคัญ เอนไซม์ที่สร้างขึ้นอาจทำงานได้มากขึ้น น้อยลง หรือไม่ทำงานเลย ซึ่งส่งผลโดยตรงต่อการจัดการยาของร่างกาย</p>
+</section>
+</section>
+<section id="snp-การเปลยนแปลงของเบสเพยงหนงตำแหนง" class="level2">
+<h2 class="anchored" data-anchor-id="snp-การเปลยนแปลงของเบสเพยงหนงตำแหนง">1.2 SNP: การเปลี่ยนแปลงของเบสเพียงหนึ่งตำแหน่ง</h2>
+<p>จีโนมของมนุษย์แต่ละคนเหมือนกันประมาณ 99.9% เมื่อพิจารณาเฉพาะความแตกต่างของเบสเดี่ยว และประมาณ 99.6% เมื่อนับรวมความแปรผันรูปแบบอื่น เช่น การขาดหายหรือการเพิ่มขึ้นของชิ้นส่วน DNA [4] ความแตกต่างเพียงเล็กน้อยนี้กำหนดลักษณะเฉพาะบุคคล รวมถึงการตอบสนองต่อยา</p>
+<p><strong>SNP (Single Nucleotide Polymorphism)</strong> คือการเปลี่ยนแปลงของเบสเพียงหนึ่งตำแหน่งใน DNA เช่น A เปลี่ยนเป็น G และพบในประชากรตั้งแต่ประมาณ 1% ขึ้นไป จีโนมของแต่ละคนมีตำแหน่งที่แตกต่างจากจีโนมอ้างอิงประมาณ 4–5 ล้านตำแหน่ง ซึ่งส่วนใหญ่เป็น SNP [4]</p>
+<p>ตัวอย่างเช่น ประโยค THE CAT SAT ON THE MAT หากตัวอักษร C เปลี่ยนเป็น B ประโยคจะกลายเป็น THE BAT SAT ON THE MAT ซึ่งความหมายเปลี่ยนไปทันที ในทำนองเดียวกัน SNP ในยีนอาจทำให้โปรตีนที่สร้างขึ้นเปลี่ยนแปลงไป</p>
+<p>SNP ส่วนใหญ่ไม่มีผลต่อร่างกาย เพราะอยู่ในบริเวณที่ไม่ได้ใช้สร้างโปรตีน แต่หาก SNP เกิดใน coding region (บริเวณที่ใช้สร้างโปรตีน) หรือบริเวณที่ควบคุมการตัดต่อ mRNA ของยีนที่สร้างเอนไซม์เผาผลาญยา เช่น ยีนในกลุ่ม Cytochrome P450 (CYP450) ก็อาจเปลี่ยนโครงสร้างและการทำงานของเอนไซม์อย่างมีนัยสำคัญทางคลินิก</p>
+<p>ตัวอย่างที่มีการศึกษามากที่สุดคือ <strong>CYP2D6*4</strong> ซึ่งเกิดจาก SNP ที่ตำแหน่ง c.1846G&gt;A ทำให้เกิดความผิดปกติในการตัดต่อ mRNA (splicing defect) และเอนไซม์ไม่ทำงาน [5]</p>
+</section>
+<section id="ยน-อลลล-และ-diplotype-ศพทพนฐานของเภสชพนธศาสตร" class="level2">
+<h2 class="anchored" data-anchor-id="ยน-อลลล-และ-diplotype-ศพทพนฐานของเภสชพนธศาสตร">1.3 ยีน อัลลีล และ Diplotype: ศัพท์พื้นฐานของเภสัชพันธุศาสตร์</h2>
+<section id="ยน" class="level3">
+<h3 class="anchored" data-anchor-id="ยน">ยีน</h3>
+<p>ยีนคือหน่วยพื้นฐานของการถ่ายทอดพันธุกรรม หมายถึงส่วนหนึ่งของ DNA ที่มีรหัสสำหรับสร้างโปรตีนหรือ RNA ชนิดใดชนิดหนึ่ง</p>
+<blockquote class="blockquote">
+<p><strong>หมายเหตุ:</strong> ในอดีตเคยประมาณว่ามนุษย์มียีนที่สร้างโปรตีนประมาณ 25,000 ยีน แต่ข้อมูลปัจจุบันจากเทคโนโลยีใหม่ เช่น RNA-seq และ long-read sequencing ยืนยันว่ามีประมาณ 19,000–20,000 ยีน ตัวเลขที่สูงกว่าในอดีตเกิดจากการนับรวมยีนเทียม (pseudogene) และยีนที่ไม่ได้สร้างโปรตีน (non-coding RNA) [6]</p>
+</blockquote>
+</section>
+<section id="อลลลและ-star-allele" class="level3">
+<h3 class="anchored" data-anchor-id="อลลลและ-star-allele">อัลลีลและ Star Allele</h3>
+<p>มนุษย์มีโครโมโซมเป็นคู่ (diploid) จึงมียีนแต่ละยีน 2 ชุด ชุดหนึ่งได้รับจากบิดาและอีกชุดหนึ่งได้รับจากมารดา รูปแบบต่าง ๆ ของยีนเดียวกันเรียกว่า <strong>อัลลีล (Allele)</strong> ในเภสัชพันธุศาสตร์ อัลลีลของยีนที่เกี่ยวข้องกับยาถูกตั้งชื่อด้วยระบบ <strong>Star Allele</strong> ซึ่งดูแลโดย PharmVar Consortium [5] เช่น</p>
+<ul>
+<li>CYP2D6*1 — อัลลีลที่ทำงานปกติ</li>
+<li>CYP2D6*4 — อัลลีลที่ไม่ทำงาน</li>
+<li>CYP2D6*10 — อัลลีลที่ทำงานลดลง พบบ่อยในชาวเอเชีย</li>
+</ul>
+</section>
+<section id="diplotype-และ-activity-score" class="level3">
+<h3 class="anchored" data-anchor-id="diplotype-และ-activity-score">Diplotype และ Activity Score</h3>
+<p>อัลลีลทั้งสองชุดที่ได้รับจากบิดาและมารดา เมื่อระบุร่วมกันเรียกว่า <strong>Diplotype</strong> เช่น CYP2D6 *1/*4 หมายถึงบุคคลนั้นมีอัลลีลปกติ 1 ชุด และอัลลีลที่ไม่ทำงาน 1 ชุด</p>
+<p>สำหรับยีน CYP2D6 อัลลีลแต่ละแบบจะได้รับค่า <strong>Activity Value</strong> ตามระดับการทำงาน ได้แก่ อัลลีลปกติ = 1.0, อัลลีลที่ทำงานลดลง = 0.25 หรือ 0.5 และอัลลีลที่ไม่ทำงาน = 0 ผลรวมของอัลลีลทั้งสองชุดเรียกว่า <strong>Activity Score (AS)</strong> ซึ่งใช้จัดกลุ่มฟีโนไทป์ในหัวข้อถัดไป [7] รายละเอียดการคำนวณจะกล่าวถึงในบทที่ 4</p>
+</section>
+</section>
+<section id="ฟโนไทปการเผาผลาญยา-จากยนสการตอบสนองตอยา" class="level2">
+<h2 class="anchored" data-anchor-id="ฟโนไทปการเผาผลาญยา-จากยนสการตอบสนองตอยา">1.4 ฟีโนไทป์การเผาผลาญยา: จากยีนสู่การตอบสนองต่อยา</h2>
+<p>เมื่อทราบ Diplotype หรือ Activity Score แล้ว จะสามารถจัดบุคคลเป็นกลุ่มตามความสามารถในการเผาผลาญยา เรียกว่า <strong>ฟีโนไทป์การเผาผลาญยา (Metabolizer Phenotype)</strong> ซึ่งกำหนดเป็นคำศัพท์มาตรฐานโดย CPIC [8] ดังนี้</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ฟีโนไทป์</th>
+<th>ความหมาย</th>
+<th>Activity Score ของ CYP2D6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Poor Metabolizer (PM)</td>
+<td>เอนไซม์ไม่ทำงานหรือทำงานน้อยมาก</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Intermediate Metabolizer (IM)</td>
+<td>เอนไซม์ทำงานลดลง</td>
+<td>0.25–1.0</td>
+</tr>
+<tr class="odd">
+<td>Normal Metabolizer (NM)</td>
+<td>เอนไซม์ทำงานปกติ</td>
+<td>1.25–2.25</td>
+</tr>
+<tr class="even">
+<td>Rapid Metabolizer (RM)</td>
+<td>เอนไซม์ทำงานมากกว่าปกติเล็กน้อย</td>
+<td>ไม่มีกลุ่มนี้สำหรับ CYP2D6</td>
+</tr>
+<tr class="odd">
+<td>Ultrarapid Metabolizer (UM)</td>
+<td>เอนไซม์ทำงานมากกว่าปกติมาก</td>
+<td>&gt; 2.25</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Poor Metabolizer (PM)</strong> เอนไซม์ไม่ทำงานหรือทำงานน้อยมาก ผลที่เกิดขึ้นขึ้นกับชนิดของยา หากเป็น <strong>Active Drug</strong> (ยาที่ออกฤทธิ์ได้ทันที) ยาจะถูกเผาผลาญช้าและสะสมในร่างกายจนอาจเกิดพิษ แต่หากเป็น <strong>Prodrug</strong> (ยาที่ต้องถูกเอนไซม์เปลี่ยนเป็นรูปออกฤทธิ์ก่อน) ยาจะแทบไม่ได้ผล</p>
+<p><strong>Intermediate Metabolizer (IM)</strong> เอนไซม์ทำงานได้บางส่วน การเผาผลาญยาช้ากว่าปกติ อาจต้องปรับขนาดยาบางชนิด โดยเฉพาะยาที่มีช่วงการรักษาแคบ (narrow therapeutic index)</p>
+<p><strong>Normal Metabolizer (NM)</strong> เอนไซม์ทำงานตามปกติ การใช้ยาในขนาดมาตรฐานตามเอกสารกำกับยามักได้ผลดี เนื่องจากขนาดยามาตรฐานส่วนใหญ่กำหนดจากข้อมูลของคนกลุ่มนี้</p>
+<p><strong>Rapid Metabolizer (RM)</strong> เอนไซม์ทำงานมากกว่าปกติเล็กน้อย พบในบางยีน เช่น CYP2C19 (อัลลีล *17) ยาอาจถูกกำจัดเร็วกว่าปกติ</p>
+<p><strong>Ultrarapid Metabolizer (UM)</strong> เอนไซม์ทำงานมากกว่าปกติมาก สำหรับ CYP2D6 มักเกิดจากการมียีนหลายชุด (Gene Duplication) หากเป็น Active Drug ยาจะถูกกำจัดเร็วจนอาจไม่ได้ผล แต่หากเป็น Prodrug เช่น Codeine ร่างกายจะเปลี่ยน Codeine เป็น Morphine เร็วและมากเกินไป จนเกิดภาวะกดการหายใจซึ่งอาจเป็นอันตรายถึงชีวิต โดยเฉพาะในเด็ก</p>
+<blockquote class="blockquote">
+<p><strong>หมายเหตุ:</strong> ค่า Activity Value ของอัลลีลและเกณฑ์การแบ่งฟีโนไทป์แตกต่างกันในแต่ละยีน เช่น CYP2D6, CYP2C19 และ CYP2C9 ในทางปฏิบัติจึงต้องแปลผลตามตารางมาตรฐานของ CPIC หรือ PharmGKB สำหรับยีนนั้น ๆ เสมอ [8]</p>
+</blockquote>
+<section id="กรณศกษา-codeine-หลงผาตดตอมทอนซลในเดก" class="level3">
+<h3 class="anchored" data-anchor-id="กรณศกษา-codeine-หลงผาตดตอมทอนซลในเดก">กรณีศึกษา: Codeine หลังผ่าตัดต่อมทอนซิลในเด็ก</h3>
+<p>ในปี ค.ศ. 2009 มีรายงานเด็กชายอายุ 2 ปีเสียชีวิตหลังได้รับ Codeine ในขนาดปกติเพื่อบรรเทาปวดหลังผ่าตัดต่อมทอนซิลและต่อมอะดีนอยด์ ซึ่งทำเพื่อรักษาภาวะหยุดหายใจขณะหลับจากการอุดกั้น (obstructive sleep apnea) ผลตรวจพันธุกรรมพบว่าเด็กมียีน CYP2D6 หลายชุด จัดเป็น Ultrarapid Metabolizer (UM) [9] ต่อมามีรายงานเด็กเสียชีวิตเพิ่มอีก 2 ราย และเกิดภาวะกดการหายใจรุนแรงอีก 1 รายในอเมริกาเหนือ จากสาเหตุเดียวกัน [10]</p>
+<p>กรณีเหล่านี้แสดงให้เห็นว่าการใช้ Codeine หรือยาแก้ปวดกลุ่ม opioid ที่ต้องอาศัย CYP2D6 หลังผ่าตัดต่อมทอนซิลอาจไม่ปลอดภัยในเด็กเล็ก และนำไปสู่การที่องค์การอาหารและยาสหรัฐอเมริกา (US FDA) ออกคำเตือนระดับ Boxed Warning ในปี ค.ศ. 2013 และประกาศห้ามใช้ Codeine ในเด็กอายุต่ำกว่า 12 ปี พร้อมแนะนำให้หลีกเลี่ยงในมารดาที่ให้นมบุตรในปี ค.ศ. 2017 [11]</p>
+</section>
+</section>
+<section id="ทำไมพนธกรรมของแตละคนจงแตกตางกน" class="level2">
+<h2 class="anchored" data-anchor-id="ทำไมพนธกรรมของแตละคนจงแตกตางกน">1.5 ทำไมพันธุกรรมของแต่ละคนจึงแตกต่างกัน</h2>
+<p>ความหลากหลายทางพันธุกรรมเป็นผลจากวิวัฒนาการ และเกิดขึ้นใหม่ทุกครั้งที่มีการสืบพันธุ์ ในกระบวนการแบ่งเซลล์สืบพันธุ์ (Meiosis) มีการสลับชิ้นส่วนของโครโมโซมจากบิดาและมารดา ทำให้ลูกแต่ละคนได้รับชุดยีนที่แตกต่างกัน แม้จะเป็นพี่น้องกันก็ตาม</p>
+<p>ผลลัพธ์ในระดับประชากรคือ ความถี่ของอัลลีลแตกต่างกันระหว่างกลุ่มประชากรในแต่ละภูมิภาค ซึ่งมีความสำคัญทางคลินิกอย่างมาก ตัวอย่างที่ชัดเจนในบริบทไทยคือ อัลลีล <strong>CYP2C19*2</strong> ซึ่งทำให้เอนไซม์ CYP2C19 ไม่ทำงาน พบในคนไทยประมาณ 25% [12] สูงกว่าชาวยุโรปที่พบประมาณ 15% [13] เมื่อนับเฉพาะผู้ที่เป็น Poor Metabolizer พบในคนไทยประมาณ 8–13% [12,14] ขณะที่ชาวยุโรปพบประมาณ 2% [13]</p>
+<p>ความแตกต่างนี้หมายความว่าผู้ป่วยไทยที่ได้รับยาต้านเกล็ดเลือด Clopidogrel เพื่อป้องกันลิ่มเลือดอุดตันในหลอดเลือดหัวใจ มีโอกาสไม่ได้รับประโยชน์จากยาสูงกว่าผู้ป่วยชาวยุโรป เนื่องจาก Clopidogrel เป็น Prodrug ที่ต้องอาศัย CYP2C19 เปลี่ยนให้อยู่ในรูปออกฤทธิ์ (รายละเอียดในบทที่ 5 และ 7)</p>
+</section>
+<section id="เอนไซม-cyp450-เอนไซมหลกในการเผาผลาญยา" class="level2">
+<h2 class="anchored" data-anchor-id="เอนไซม-cyp450-เอนไซมหลกในการเผาผลาญยา">1.6 เอนไซม์ CYP450: เอนไซม์หลักในการเผาผลาญยา</h2>
+<p>กลุ่มยีนที่มีความสำคัญมากที่สุดในเภสัชพันธุศาสตร์คือ <strong>Cytochrome P450 (CYP450)</strong> ซึ่งสร้างเอนไซม์ที่เผาผลาญยาและสารแปลกปลอม โดยพบมากที่สุดในตับ ชื่อ P450 มาจากคุณสมบัติของโปรตีนที่มีธาตุเหล็กเป็นองค์ประกอบ เมื่อจับกับก๊าซคาร์บอนมอนอกไซด์จะดูดกลืนแสงได้สูงสุดที่ความยาวคลื่น 450 นาโนเมตร เอนไซม์กลุ่มนี้รับผิดชอบการเผาผลาญยาประมาณ 70–80% ของยาที่ใช้ในทางคลินิก [15]</p>
+<p>จากเอนไซม์ CYP450 มากกว่า 50 ชนิดในมนุษย์ มี 5 ชนิดที่มีความสำคัญทางคลินิกสูงสุด ซึ่งหนังสือเล่มนี้เรียกว่า <strong>Big 5</strong> [15,16]</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>เอนไซม์</th>
+<th>ตำแหน่งยีน</th>
+<th>ตัวอย่างยาที่เกี่ยวข้อง</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CYP2D6</td>
+<td>โครโมโซม 22</td>
+<td>ยาต้านเศร้าบางชนิด ยาแก้ปวดกลุ่ม opioid (เผาผลาญยาประมาณ 25% ของยาที่ใช้)</td>
+</tr>
+<tr class="even">
+<td>CYP2C19</td>
+<td>โครโมโซม 10</td>
+<td>Clopidogrel, ยาต้านเศร้ากลุ่ม SSRIs, ยาลดกรดกลุ่ม PPIs</td>
+</tr>
+<tr class="odd">
+<td>CYP2C9</td>
+<td>โครโมโซม 10</td>
+<td>ยาต้านการแข็งตัวของเลือด Warfarin, ยาแก้ปวดกลุ่ม NSAIDs</td>
+</tr>
+<tr class="even">
+<td>CYP3A4</td>
+<td>โครโมโซม 7</td>
+<td>พบมากที่สุดในตับ เผาผลาญยาประมาณ 40–50% ของยาที่ใช้</td>
+</tr>
+<tr class="odd">
+<td>CYP3A5</td>
+<td>โครโมโซม 7</td>
+<td>Tacrolimus</td>
+</tr>
+</tbody>
+</table>
+<p>รายละเอียดของ Big 5 จะกล่าวถึงในบทที่ 3</p>
+</section>
+<section id="ฐานขอมลสำคญของเภสชพนธศาสตร" class="level2">
+<h2 class="anchored" data-anchor-id="ฐานขอมลสำคญของเภสชพนธศาสตร">1.7 ฐานข้อมูลสำคัญของเภสัชพันธุศาสตร์</h2>
+<p>ปัจจุบันมีฐานข้อมูลกลางที่เปิดให้เข้าถึงได้ฟรี ทำให้นักวิจัย แพทย์ เภสัชกร และผู้สนใจทั่วไปเข้าถึงข้อมูลที่ผ่านการตรวจสอบแล้วได้โดยตรง</p>
+<p><strong>PharmVar</strong> (pharmvar.org) หรือ Pharmacogene Variation Consortium เป็นกลุ่มผู้เชี่ยวชาญนานาชาติและฐานข้อมูลกลางที่ดูแลระบบการตั้งชื่อ Star Allele และจัดเก็บข้อมูลความแปรผันของยีนที่เกี่ยวข้องกับยา (pharmacogenes) เป็นแหล่งอ้างอิงหลักที่ห้องปฏิบัติการทั่วโลกใช้ [5]</p>
+<p><strong>PharmGKB</strong> (pharmgkb.org) หรือ Pharmacogenomics Knowledgebase เป็นฐานข้อมูลที่รวบรวมและวิเคราะห์ความสัมพันธ์ระหว่างความแปรผันทางพันธุกรรมกับการตอบสนองต่อยา ได้รับการสนับสนุนจากสถาบันสุขภาพแห่งชาติสหรัฐอเมริกา (NIH) และดูแลโดยมหาวิทยาลัยสแตนฟอร์ด</p>
+<p><strong>CPIC</strong> (cpicpgx.org) หรือ Clinical Pharmacogenetics Implementation Consortium เป็นกลุ่มความร่วมมือนานาชาติของผู้เชี่ยวชาญด้านเภสัชพันธุศาสตร์ ก่อตั้งในปี ค.ศ. 2009 มีหน้าที่หลักคือจัดทำแนวทางปฏิบัติทางคลินิก (clinical practice guideline) ที่ระบุวิธีเลือกยาหรือปรับขนาดยาตามผลตรวจพันธุกรรม แนวทางของ CPIC จัดระดับคู่ยีน–ยาเป็น Level A ถึง D โดย Level A หมายถึงมีหลักฐานเพียงพอสำหรับการเปลี่ยนยาหรือปรับขนาดยาตามผลตรวจ (รายละเอียดในบทที่ 6)</p>
+</section>
+<section id="สรปทายบท" class="level2">
+<h2 class="anchored" data-anchor-id="สรปทายบท">สรุปท้ายบท</h2>
+<p>Central Dogma อธิบายการถ่ายทอดข้อมูลจาก DNA ไปเป็น mRNA และโปรตีน ซึ่งรวมถึงเอนไซม์ที่เผาผลาญยา SNP คือการเปลี่ยนแปลงของเบสเพียงหนึ่งตำแหน่ง ซึ่งอาจเปลี่ยนการทำงานของเอนไซม์ได้อย่างมีนัยสำคัญ อัลลีลของยีนที่เกี่ยวข้องกับยาถูกตั้งชื่อด้วยระบบ Star Allele และอัลลีลทั้งสองชุด (Diplotype) ใช้กำหนดฟีโนไทป์การเผาผลาญยา 5 กลุ่ม ได้แก่ PM, IM, NM, RM และ UM</p>
+<p>ความถี่ของอัลลีลแตกต่างกันระหว่างประชากร โดยเฉพาะ CYP2C19*2 ที่พบบ่อยในคนไทยและชาวเอเชีย ทำให้เภสัชพันธุศาสตร์มีความสำคัญเป็นพิเศษในบริบทของประเทศไทย ในบทที่ 2 เราจะศึกษาเภสัชจลนศาสตร์ เพื่อเข้าใจว่าร่างกายจัดการกับยาอย่างไร และพันธุกรรมมีผลต่อขั้นตอนใดบ้าง</p>
+</section>
+<section id="คำศพทสำคญ" class="level2">
+<h2 class="anchored" data-anchor-id="คำศพทสำคญ">คำศัพท์สำคัญ</h2>
+<ul>
+<li><strong>เภสัชพันธุศาสตร์ (Pharmacogenomics; PGx)</strong> — ศาสตร์ที่ศึกษาผลของความแตกต่างทางพันธุกรรมต่อการตอบสนองต่อยาของแต่ละบุคคล</li>
+<li><strong>Central Dogma</strong> — หลักการที่อธิบายการถ่ายทอดข้อมูลพันธุกรรมจาก DNA ไปเป็น mRNA และโปรตีน</li>
+<li><strong>SNP (Single Nucleotide Polymorphism)</strong> — ความแปรผันของเบสเพียงหนึ่งตำแหน่ง ซึ่งเป็นความแตกต่างทางพันธุกรรมที่พบบ่อยที่สุดในมนุษย์</li>
+<li><strong>Star Allele</strong> — ระบบการตั้งชื่ออัลลีลของยีนที่เกี่ยวข้องกับยา เช่น CYP2D6*1 หรือ CYP2D6*4</li>
+<li><strong>Diplotype</strong> — อัลลีลทั้งสองชุดที่ได้รับจากบิดาและมารดา เช่น CYP2D6 *1/*4</li>
+<li><strong>Activity Score (AS)</strong> — ผลรวมของ Activity Value ของอัลลีลทั้งสองชุด ใช้บ่งบอกระดับการทำงานของเอนไซม์</li>
+<li><strong>Poor Metabolizer (PM)</strong> — ผู้ที่มีเอนไซม์ไม่ทำงานหรือทำงานน้อยมาก (CYP2D6 AS = 0)</li>
+<li><strong>Ultrarapid Metabolizer (UM)</strong> — ผู้ที่มีเอนไซม์ทำงานมากกว่าปกติมาก มักเกิดจากการมียีนหลายชุด (Gene Duplication)</li>
+<li><strong>Cytochrome P450 (CYP450)</strong> — กลุ่มเอนไซม์ที่เผาผลาญยาและสารแปลกปลอม รับผิดชอบการเผาผลาญยาประมาณ 70–80% ของยาที่ใช้ในทางคลินิก</li>
+</ul>
+</section>
+<section id="คำถามทบทวน" class="level2">
+<h2 class="anchored" data-anchor-id="คำถามทบทวน">คำถามทบทวน</h2>
+<ol type="1">
+<li>อธิบาย Central Dogma และเชื่อมโยงว่ากระบวนการนี้เกี่ยวข้องกับการเผาผลาญยาของร่างกายอย่างไร</li>
+<li>SNP คืออะไร เหตุใด SNP เพียงหนึ่งตำแหน่งในยีน CYP2D6 จึงเปลี่ยนผลการรักษาด้วย Codeine ได้อย่างสิ้นเชิง</li>
+<li>หากผู้ป่วยมี Diplotype CYP2D6 *4/*4 จะมี Activity Score เท่าใด จัดอยู่ในฟีโนไทป์ใด และผลต่อการใช้ Codeine และ Tamoxifen เป็นอย่างไร</li>
+<li>เหตุใดการที่ CYP2C19*2 พบบ่อยในคนไทยจึงมีความสำคัญทางคลินิกในการรักษาโรคหัวใจ</li>
+<li>PharmVar, CPIC และ PharmGKB มีบทบาทแตกต่างกันอย่างไรในการนำเภสัชพันธุศาสตร์ไปใช้ในทางคลินิก</li>
+</ol>
+</section>
+<section id="เอกสารอางอง" class="level2">
+<h2 class="anchored" data-anchor-id="เอกสารอางอง">เอกสารอ้างอิง</h2>
+<ol type="1">
+<li>Relling MV, Evans WE. Pharmacogenomics in the clinic. <em>Nature</em>. 2015;526(7573):343–350. doi:10.1038/nature15817</li>
+<li>ธาวิณี จันทรรวงทอง. Personalized Medicine: การรักษาสมัยใหม่ลึกถึงระดับยีน [เอกสารประกอบคำบรรยาย]. ภาควิชาพยาธิวิทยา คณะแพทยศาสตร์โรงพยาบาลรามาธิบดี มหาวิทยาลัยมหิดล; 2564. https://www.rama.mahidol.ac.th/academic/sites/default/files/academic/pdf/Personalized%20Medicine_2.pdf</li>
+<li>Crick F. Central dogma of molecular biology. <em>Nature</em>. 1970;227(5258):561–563. doi:10.1038/227561a0</li>
+<li>1000 Genomes Project Consortium. A global reference for human genetic variation. <em>Nature</em>. 2015;526(7571):68–74. doi:10.1038/nature15393</li>
+<li>Gaedigk A, Ingelman-Sundberg M, Miller NA, et al.&nbsp;The Pharmacogene Variation (PharmVar) Consortium: incorporation of the Human Cytochrome P450 (CYP) allele nomenclature database. <em>Clin Pharmacol Ther</em>. 2018;103(3):399–401. doi:10.1002/cpt.910</li>
+<li>Amaral P, Carbonell-Sala S, De La Vega FM, et al.&nbsp;The status of the human gene catalogue. <em>Nature</em>. 2023;622(7981):41–47. doi:10.1038/s41586-023-06490-x</li>
+<li>Crews KR, Monte AA, Huddart R, et al.&nbsp;Clinical Pharmacogenetics Implementation Consortium guideline for CYP2D6, OPRM1, and COMT genotypes and select opioid therapy. <em>Clin Pharmacol Ther</em>. 2021;110(4):888–896. doi:10.1002/cpt.2149</li>
+<li>Caudle KE, Dunnenberger HM, Freimuth RR, et al.&nbsp;Standardizing terms for clinical pharmacogenetic test results: consensus terms from the Clinical Pharmacogenetics Implementation Consortium (CPIC). <em>Genet Med</em>. 2017;19(2):215–223. doi:10.1038/gim.2016.87</li>
+<li>Ciszkowski C, Madadi P, Phillips MS, Lauwers AE, Koren G. Codeine, ultrarapid-metabolism genotype, and postoperative death. <em>N Engl J Med</em>. 2009;361(8):827–828. doi:10.1056/NEJMc0904266</li>
+<li>Kelly LE, Rieder M, van den Anker J, et al.&nbsp;More codeine fatalities after tonsillectomy in North American children. <em>Pediatrics</em>. 2012;129(5):e1343–e1347. doi:10.1542/peds.2011-2538</li>
+<li>U.S. Food and Drug Administration. FDA Drug Safety Communication: FDA restricts use of prescription codeine pain and cough medicines and tramadol pain medicines in children; recommends against use in breastfeeding women. April 20, 2017. https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-restricts-use-prescription-codeine-pain-and-cough-medicines-and</li>
+<li>Nakhonsri V, John S, Panumasmontol H, et al.&nbsp;The diversity of CYP2C19 polymorphisms in the Thai population: implications for precision medicine. <em>Appl Clin Genet</em>. 2024;17:95–105. doi:10.2147/TACG.S463965</li>
+<li>Lee CR, Luzum JA, Sangkuhl K, et al.&nbsp;Clinical Pharmacogenetics Implementation Consortium guideline for CYP2C19 genotype and clopidogrel therapy: 2022 update. <em>Clin Pharmacol Ther</em>. 2022;112(5):959–967. doi:10.1002/cpt.2526</li>
+<li>Sukasem C, Tunthong R, Chamnanphon M, et al.&nbsp;CYP2C19 polymorphisms in the Thai population and the clinical response to clopidogrel in patients with atherothrombotic-risk factors. <em>Pharmgenomics Pers Med</em>. 2013;6:85–91. doi:10.2147/PGPM.S42332</li>
+<li>Zanger UM, Schwab M. Cytochrome P450 enzymes in drug metabolism: regulation of gene expression, enzyme activities, and impact of genetic variation. <em>Pharmacol Ther</em>. 2013;138(1):103–141. doi:10.1016/j.pharmthera.2012.12.007</li>
+<li>Zhou SF, Liu JP, Chowbay B. Polymorphism of human cytochrome P450 enzymes and its clinical impact. <em>Drug Metab Rev</em>. 2009;41(2):89–295. doi:10.1080/03602530902843483</li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../index.html" class="pagination-link" aria-label="คำนำ">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">คำนำ</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch02.html" class="pagination-link" aria-label="บทที่ 2: ร่างกายทำอะไรกับยา — เภสัชจลนศาสตร์และเภสัชพลศาสตร์">
+        <span class="nav-page-text"><span class="chapter-title">บทที่ 2: ร่างกายทำอะไรกับยา — เภสัชจลนศาสตร์และเภสัชพลศาสตร์</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>คู่มือเภสัชพันธุศาสตร์ (PGx Handbook) · Bhoom Suktitipat Laboratory</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
