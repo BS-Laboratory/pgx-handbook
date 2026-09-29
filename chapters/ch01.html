@@ -52,6 +52,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-6b142e7faa852efe82cf055f57d87643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-95863237d9acc750b64c3c49c9e6d325.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-6b142e7faa852efe82cf055f57d87643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -454,6 +457,16 @@ ul.task-list li input[type="checkbox"] {
 <p>ลองนึกภาพสถานการณ์ต่อไปนี้ คุณ เพื่อนสนิท และคนในบ้านอีกคน มีอาการปวดศีรษะในคืนเดียวกัน ทั้งสามคนรับประทานยาแก้ปวดชนิดเดียวกันในขนาดเท่ากัน แต่ผลที่เกิดขึ้นกลับแตกต่างกัน คุณรู้สึกดีขึ้นภายในครึ่งชั่วโมง แต่เพื่อนของคุณยังปวดศีรษะและบอกว่ายาไม่ได้ผลเลย ขณะที่คนในบ้านอีกคนกลับมีอาการคลื่นไส้จนแทบลุกไม่ขึ้น</p>
 <p>สถานการณ์นี้ไม่ใช่เรื่องบังเอิญ ส่วนหนึ่งเป็นผลจากความแตกต่างของรหัสพันธุกรรมระหว่างบุคคล ยาส่วนใหญ่ถูกพัฒนาและกำหนดขนาดสำหรับผู้ป่วย “โดยเฉลี่ย” แต่ในความเป็นจริง ผู้ป่วยแต่ละรายตอบสนองต่อยาไม่เท่ากัน ศาสตร์ที่ศึกษาความสัมพันธ์ระหว่างพันธุกรรมกับการตอบสนองต่อยาเรียกว่า <strong>เภสัชพันธุศาสตร์ (Pharmacogenomics; PGx)</strong> ซึ่งเป็นรากฐานของแนวคิด <strong>การแพทย์แม่นยำ (Precision Medicine)</strong> ที่มุ่งให้ผู้ป่วยได้รับ “ยาที่เหมาะสม” ใน “ขนาดที่เหมาะสม” ตั้งแต่เริ่มการรักษา แทนการลองผิดลองถูกที่เสียเวลาและอาจเป็นอันตราย [1,2]</p>
 <p>บทนี้จะปูพื้นฐานที่จำเป็นที่สุด ได้แก่ DNA ถ่ายทอดข้อมูลไปสู่การสร้างโปรตีนและเอนไซม์เผาผลาญยาได้อย่างไร และความแตกต่างเพียงเล็กน้อยในรหัสพันธุกรรมเปลี่ยนผลการรักษาได้อย่างไร</p>
+<div id="fig-central-dogma" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-central-dogma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/central-dogma-snp.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1.1: ภาพรวมบทที่ 1: Central Dogma (DNA → mRNA → โปรตีน/เอนไซม์) และ SNP การเปลี่ยนตัวอักษรเพียงหนึ่งตำแหน่งที่อาจเปลี่ยนกรดอะมิโนในโปรตีน"><img src="../images/central-dogma-snp.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-central-dogma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: ภาพรวมบทที่ 1: Central Dogma (DNA → mRNA → โปรตีน/เอนไซม์) และ SNP การเปลี่ยนตัวอักษรเพียงหนึ่งตำแหน่งที่อาจเปลี่ยนกรดอะมิโนในโปรตีน
+</figcaption>
+</figure>
+</div>
 <section id="central-dogma-จาก-dna-สโปรตน" class="level2">
 <h2 class="anchored" data-anchor-id="central-dogma-จาก-dna-สโปรตน">1.1 Central Dogma: จาก DNA สู่โปรตีน</h2>
 <p>หลักการพื้นฐานของชีววิทยาโมเลกุลที่เรียกว่า <strong>Central Dogma</strong> ซึ่ง Francis Crick เสนอในปี ค.ศ. 1958 อธิบายว่าข้อมูลพันธุกรรมถูกถ่ายทอดจาก DNA ไปเป็น RNA (Transcription) แล้วจึงถูกแปลเป็นโปรตีน (Translation) [3] โปรตีนหลายชนิดทำหน้าที่เป็นเอนไซม์ในร่างกาย รวมถึงเอนไซม์ที่เผาผลาญยา</p>
@@ -505,7 +518,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="ฟโนไทปการเผาผลาญยา-จากยนสการตอบสนองตอยา" class="level2">
 <h2 class="anchored" data-anchor-id="ฟโนไทปการเผาผลาญยา-จากยนสการตอบสนองตอยา">1.4 ฟีโนไทป์การเผาผลาญยา: จากยีนสู่การตอบสนองต่อยา</h2>
-<p>เมื่อทราบ Diplotype หรือ Activity Score แล้ว จะสามารถจัดบุคคลเป็นกลุ่มตามความสามารถในการเผาผลาญยา เรียกว่า <strong>ฟีโนไทป์การเผาผลาญยา (Metabolizer Phenotype)</strong> ซึ่งกำหนดเป็นคำศัพท์มาตรฐานโดย CPIC [8] ดังนี้</p>
+<p>เมื่อทราบ Diplotype หรือ Activity Score แล้ว จะสามารถจัดบุคคลเป็นกลุ่มตามความสามารถในการเผาผลาญยา เรียกว่า <strong>ฟีโนไทป์การเผาผลาญยา (Metabolizer Phenotype)</strong> ซึ่งกำหนดเป็นคำศัพท์มาตรฐานโดย CPIC [8] อาจเปรียบฟีโนไทป์ทั้งห้ากลุ่มได้กับความเร็วในการทำงานที่ต่างกัน ตั้งแต่ช้ามาก (PM) ไปจนถึงเร็วมาก (UM) ดังนี้</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -1114,6 +1127,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

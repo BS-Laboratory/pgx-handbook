@@ -52,6 +52,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-6b142e7faa852efe82cf055f57d87643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-95863237d9acc750b64c3c49c9e6d325.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-6b142e7faa852efe82cf055f57d87643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -449,11 +452,21 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>ยาบางชนิดยังไม่มีฤทธิ์เมื่อรับประทานเข้าไป ต้องถูกเอนไซม์ในร่างกายเปลี่ยนให้อยู่ในรูปออกฤทธิ์ก่อน และยีนของแต่ละคนเป็นตัวกำหนดว่าการเปลี่ยนรูปนั้นจะเกิดได้เร็ว ช้า มาก น้อย หรือไม่เกิดขึ้นเลย บทนี้จะอธิบายความแตกต่างระหว่าง Prodrug กับ Active Drug และศึกษายา Prodrug สำคัญ 4 ชนิดที่เกี่ยวข้องกับเภสัชพันธุศาสตร์</p>
+<div id="fig-prodrug" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-prodrug-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/prodrug-vs-active.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;5.1: ภาพรวมบทที่ 5: Codeine เป็น Prodrug ที่ต้องอาศัยเอนไซม์ CYP2D6 ในตับเปลี่ยนเป็น Morphine (Active Drug) จึงจะออกฤทธิ์ระงับปวด"><img src="../images/prodrug-vs-active.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-prodrug-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.1: ภาพรวมบทที่ 5: Codeine เป็น Prodrug ที่ต้องอาศัยเอนไซม์ CYP2D6 ในตับเปลี่ยนเป็น Morphine (Active Drug) จึงจะออกฤทธิ์ระงับปวด
+</figcaption>
+</figure>
+</div>
 <section id="prodrug-และ-active-drug" class="level2">
 <h2 class="anchored" data-anchor-id="prodrug-และ-active-drug">5.1 Prodrug และ Active Drug</h2>
 <section id="นยาม" class="level3">
 <h3 class="anchored" data-anchor-id="นยาม">นิยาม</h3>
-<p><strong>Prodrug</strong> คือยาที่ยังไม่มีฤทธิ์หรือมีฤทธิ์น้อยมากเมื่อรับประทานเข้าไป ร่างกายต้องเปลี่ยนให้เป็น <strong>สารที่ออกฤทธิ์ (active metabolite)</strong> ก่อน จึงจะออกฤทธิ์ได้ [1]</p>
+<p><strong>Prodrug</strong> คือยาที่ยังไม่มีฤทธิ์หรือมีฤทธิ์น้อยมากเมื่อรับประทานเข้าไป ร่างกายต้องเปลี่ยนให้เป็น <strong>สารที่ออกฤทธิ์ (active metabolite)</strong> ก่อน จึงจะออกฤทธิ์ได้ [1] เปรียบได้กับยาที่ยังต้องถูกเอนไซม์ “เปิดใช้งาน” ก่อนจึงจะรักษาได้</p>
 <p><strong>Active Drug</strong> คือยาที่ออกฤทธิ์ได้ทันทีโดยไม่ต้องเปลี่ยนรูป จากนั้นจึงถูกเอนไซม์เผาผลาญให้หมดฤทธิ์และขับออกจากร่างกาย</p>
 <pre><code>Prodrug:      ยาที่รับประทาน (ไม่มีฤทธิ์)
                   │  เอนไซม์ CYP450 เปลี่ยนรูป
@@ -1344,6 +1357,38 @@ NM (*1/*1), RM (*1/*17), UM (*17/*17)
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

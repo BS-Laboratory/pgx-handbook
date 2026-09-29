@@ -52,6 +52,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-6b142e7faa852efe82cf055f57d87643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-95863237d9acc750b64c3c49c9e6d325.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-6b142e7faa852efe82cf055f57d87643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -448,6 +451,16 @@ ul.task-list li input[type="checkbox"] {
 <p>ผู้ป่วยชายอายุ 62 ปี (เคสสมมติ) ได้รับการใส่ขดลวดขยายหลอดเลือดหัวใจเมื่อสองสัปดาห์ก่อน แพทย์สั่ง Clopidogrel เพื่อป้องกันลิ่มเลือดอุดตันซ้ำ ผู้ป่วยรับประทานยาสม่ำเสมอ แต่ในสัปดาห์ที่สี่กลับมีอาการเจ็บหน้าอกและตรวจพบว่าหลอดเลือดอุดตันซ้ำ</p>
 <p>คำถามแรกของแพทย์มักเป็น “ผู้ป่วยรับประทานยาไม่สม่ำเสมอหรือไม่” แต่ในกรณีนี้สาเหตุคือ ผู้ป่วยเป็น <strong>CYP2C19 Poor Metabolizer</strong> ร่างกายจึงเปลี่ยน Clopidogrel ให้อยู่ในรูปออกฤทธิ์ได้น้อยมาก สถานการณ์นี้ไม่ใช่เรื่องแปลกในประเทศไทย เพราะคนไทยเกือบ 1 ใน 10 คนเป็น CYP2C19 Poor Metabolizer [1,2]</p>
 <p>บทนี้จะศึกษาคู่ยีน–ยาในกลุ่มยาโรคหัวใจและหลอดเลือดที่มีความสำคัญทางคลินิกสูง ได้แก่ Clopidogrel, ยากลุ่ม Statin และ Warfarin</p>
+<div id="fig-cardio" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cardio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/cardio-genes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;7.1: ภาพรวมบทที่ 7: ยาโรคหัวใจและหลอดเลือด 3 กลุ่มกับยีนสำคัญ — Clopidogrel (CYP2C19), Statin (SLCO1B1) และ Warfarin (CYP2C9 + VKORC1)"><img src="../images/cardio-genes.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cardio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: ภาพรวมบทที่ 7: ยาโรคหัวใจและหลอดเลือด 3 กลุ่มกับยีนสำคัญ — Clopidogrel (CYP2C19), Statin (SLCO1B1) และ Warfarin (CYP2C9 + VKORC1)
+</figcaption>
+</figure>
+</div>
 <section id="ภาพรวม" class="level2">
 <h2 class="anchored" data-anchor-id="ภาพรวม">7.1 ภาพรวม</h2>
 <p>โรคหัวใจและหลอดเลือดเป็นสาเหตุการเสียชีวิตอันดับต้นของโลก และยาหลายชนิดในกลุ่มนี้มีความสัมพันธ์กับพันธุกรรมอย่างชัดเจน [3]</p>
@@ -1215,6 +1228,38 @@ VKORC1 (PD)
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
