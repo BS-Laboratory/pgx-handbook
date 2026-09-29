@@ -61,6 +61,24 @@ RM/UM  → Clopidogrel ขนาดมาตรฐาน
 
 คำแนะนำสำหรับทั้ง PM และ IM อยู่ในระดับ strong [4] Ticagrelor เป็น Active Drug ที่ไม่ต้องอาศัย CYP2C19 ในการเปลี่ยนรูป จึงเป็นทางเลือกที่ได้ผลในทุกฟีโนไทป์ของ CYP2C19
 
+### แผนภาพการตัดสินใจ (Decision Tree)
+
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+  A["ผู้ป่วย ACS หรือ PCI<br/>ทราบผลตรวจ CYP2C19"]:::start --> B{"ฟีโนไทป์ CYP2C19"}
+  B -->|"NM / RM / UM"| C["Clopidogrel ขนาดมาตรฐาน<br/>75 mg/วัน"]:::ok
+  B -->|"IM"| D["หลีกเลี่ยง Clopidogrel ขนาดมาตรฐาน"]:::caution
+  B -->|"PM"| E["หลีกเลี่ยง Clopidogrel"]:::avoid
+  D --> F["ใช้ Prasugrel หรือ Ticagrelor<br/>หากไม่มีข้อห้ามใช้"]:::alt
+  E --> F
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+  classDef caution fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
+  classDef alt fill:#e3f2fd,stroke:#1565c0,color:#111;
+  classDef start fill:#eceff1,stroke:#455a64,color:#111;
+```
+
 ## 7.3 ยากลุ่ม Statin: SLCO1B1 และ ABCG2
 
 ### ผลข้างเคียงต่อกล้ามเนื้อ
@@ -124,6 +142,25 @@ VKORC1 (PD)
 - ผู้ที่มี CYP2C9 ทำงานลดลงมาก (เช่น \*3/\*3) หรือมีทั้ง CYP2C9 ทำงานลดลงและ VKORC1 AA มักต้องการเพียง 0.5–2 mg/วัน
 
 > **ข้อควรระวัง:** ผู้ป่วยที่มี CYP2C9 ทำงานลดลงร่วมกับ VKORC1 แบบไวต่อยา หากได้รับขนาดมาตรฐานโดยไม่ทราบจีโนไทป์ จะเสี่ยงต่อระดับยาเกินและเลือดออกรุนแรง CPIC แนะนำให้ใช้สมการคำนวณขนาดยาที่รวมข้อมูลพันธุกรรมกับปัจจัยทางคลินิก เช่น อายุ น้ำหนัก และยาที่ใช้ร่วม และติดตามค่า INR อย่างใกล้ชิด [7]
+
+### แผนภาพการตัดสินใจ (Decision Tree)
+
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+  A["เริ่มยา Warfarin<br/>ทราบผลตรวจ CYP2C9 และ VKORC1"]:::start --> B{"ระดับการทำงานรวมของ 2 ยีน"}
+  B -->|"CYP2C9 ปกติ + VKORC1 ไวต่อยาน้อย"| C["ขนาดสูง<br/>ประมาณ 5–7 mg/วัน"]:::ok
+  B -->|"ค่ากลาง"| D["ขนาดปานกลาง<br/>ประมาณ 3–4 mg/วัน"]:::caution
+  B -->|"CYP2C9 ทำงานลดลงมาก และ/หรือ VKORC1 ไวต่อยามาก"| E["ขนาดต่ำ<br/>ประมาณ 0.5–2 mg/วัน"]:::avoid
+  C --> F["ใช้สมการคำนวณขนาดยาที่รวมพันธุกรรม + ปัจจัยทางคลินิก<br/>และติดตามค่า INR อย่างใกล้ชิด"]:::alt
+  D --> F
+  E --> F
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+  classDef caution fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
+  classDef alt fill:#e3f2fd,stroke:#1565c0,color:#111;
+  classDef start fill:#eceff1,stroke:#455a64,color:#111;
+```
 
 ## 7.5 สถานการณ์ที่ควรพิจารณาตรวจยีน
 

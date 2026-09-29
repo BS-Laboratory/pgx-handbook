@@ -96,6 +96,22 @@ CPIC แนะนำให้หลีกเลี่ยง Carbamazepine แล
 | ปวดเส้นประสาท | Gabapentin, Pregabalin |
 | โรคอารมณ์สองขั้ว | Valproate, Lithium, Quetiapine |
 
+### แผนภาพการตัดสินใจ (Decision Tree)
+
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+  A["แพทย์จะสั่ง Carbamazepine หรือ Oxcarbazepine"]:::start --> B{"ตรวจ HLA-B*15:02"}
+  B -->|"ไม่พบ"| C["ใช้ยาได้<br/>เฝ้าระวังอาการแพ้ยาตามปกติ"]:::ok
+  B -->|"พบ"| D["หลีกเลี่ยง Carbamazepine/Oxcarbazepine<br/>เสี่ยง SJS/TEN"]:::avoid
+  D --> E["เลือกยาทางเลือก เช่น<br/>Valproate, Levetiracetam, Gabapentin"]:::alt
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+  classDef caution fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
+  classDef alt fill:#e3f2fd,stroke:#1565c0,color:#111;
+  classDef start fill:#eceff1,stroke:#455a64,color:#111;
+```
+
 ## 9.5 อัลลีล HLA อื่นที่สำคัญ
 
 | อัลลีล HLA | ยา | ปฏิกิริยา | สถานะในประเทศไทย |

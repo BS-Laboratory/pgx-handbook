@@ -102,6 +102,25 @@ PM (เอนไซม์ไม่ทำงาน)
         หรือใช้ยาแก้ปวดที่ไม่ใช่ opioid
 ```
 
+### แผนภาพการตัดสินใจ (Decision Tree)
+
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+  A["ผู้ป่วยต้องการยาแก้ปวดกลุ่ม opioid<br/>ทราบผลตรวจ CYP2D6"]:::start --> B{"ฟีโนไทป์ CYP2D6"}
+  B -->|"UM"| C["หลีกเลี่ยง Codeine<br/>เสี่ยงพิษจาก Morphine"]:::avoid
+  B -->|"PM"| D["หลีกเลี่ยง Codeine<br/>ยาไม่ระงับปวด"]:::avoid
+  B -->|"NM"| E["ใช้ Codeine ขนาดตามฉลาก"]:::ok
+  B -->|"IM"| F["ใช้ Codeine ขนาดตามฉลาก<br/>หากไม่ได้ผล พิจารณาเปลี่ยนยา"]:::caution
+  C --> G["เลือกยาที่ไม่ต้องอาศัย CYP2D6<br/>เช่น Morphine หรือยาที่ไม่ใช่ opioid"]:::alt
+  D --> G
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+  classDef caution fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
+  classDef alt fill:#e3f2fd,stroke:#1565c0,color:#111;
+  classDef start fill:#eceff1,stroke:#455a64,color:#111;
+```
+
 ## 5.4 Tramadol
 
 ### กลไกการออกฤทธิ์ 2 ทาง

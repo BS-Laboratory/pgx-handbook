@@ -1,0 +1,26 @@
+/*-- scss:defaults --*/
+// ธีมสะอาด แนวการแพทย์ (โหมดสว่าง)
+$font-family-sans-serif: "Sarabun", "IBM Plex Sans Thai", -apple-system, "Segoe UI", sans-serif;
+$primary: #0b6e99;          // ฟ้าน้ำเงินโทนการแพทย์
+$body-color: #1f2933;
+$link-color: #0b6e99;
+$border-color: #e2e8f0;
+$code-bg: #f5f7fa;
+
+/*-- scss:rules --*/
+body { font-family: $font-family-sans-serif; }
+h1, h2, h3, h4 { font-family: $font-family-sans-serif; font-weight: 600; }
+pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+// แถบหัวข้อและลิงก์ในเมนูข้าง
+.sidebar-title { color: $primary; }
+#quarto-sidebar .sidebar-item-container .active { font-weight: 600; }
+
+// ตารางให้อ่านง่ายขึ้น
+table { border-collapse: collapse; }
+thead tr { background: #eef4f8; }
+table th, table td { padding: 0.45rem 0.7rem; }
+tbody tr:nth-child(even) { background: #f8fafc; }
+
+// กล่อง callout ให้ดูนุ่มนวล
+.callout { border-radius: 8px; }

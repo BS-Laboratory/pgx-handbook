@@ -25,7 +25,9 @@ book:
   date: today
   search: true
   reader-mode: true
-  page-footer: "คู่มือเภสัชพันธุศาสตร์ (PGx Handbook) · Bhoom Suktitipat Laboratory"
+  page-footer:
+    left: "คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)"
+    right: "Bhoom Suktitipat Laboratory"
   chapters:
     - index.qmd
     - chapters/ch01.qmd
@@ -47,22 +49,21 @@ lang: th
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: [cosmo, custom.scss]
+      dark: [darkly, custom-dark.scss]
     toc: true
     toc-depth: 2
     toc-title: "ในบทนี้"
     number-sections: false
     fontsize: 1.05rem
-    linestretch: 1.5
+    linestretch: 1.6
+    code-copy: true
     include-in-header:
       text: |
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <style>
-          body, .sidebar, .toc-actions, h1, h2, h3, h4 { font-family: 'Sarabun', sans-serif; }
-          pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
   pdf:
     documentclass: report
     pdf-engine: xelatex
@@ -74,3 +75,7 @@ format:
     geometry: margin=1in
     linestretch: 1.2
     include-in-header: pdf-header.tex
+
+# ธีมของ Mermaid decision tree ให้เข้ากับเว็บ
+mermaid:
+  theme: neutral

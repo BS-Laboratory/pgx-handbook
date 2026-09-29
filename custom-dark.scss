@@ -1,0 +1,19 @@
+/*-- scss:defaults --*/
+// ธีมสะอาด แนวการแพทย์ (โหมดกลางคืน)
+$font-family-sans-serif: "Sarabun", "IBM Plex Sans Thai", -apple-system, "Segoe UI", sans-serif;
+$primary: #4fb0d4;
+$body-bg: #12181f;
+$body-color: #e6edf3;
+$link-color: #6fc3e6;
+$border-color: #2a3541;
+$code-bg: #1b232c;
+
+/*-- scss:rules --*/
+body { font-family: $font-family-sans-serif; }
+h1, h2, h3, h4 { font-family: $font-family-sans-serif; font-weight: 600; }
+pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+thead tr { background: #1c2732; }
+tbody tr:nth-child(even) { background: #171f28; }
+table th, table td { padding: 0.45rem 0.7rem; }
+.callout { border-radius: 8px; }
