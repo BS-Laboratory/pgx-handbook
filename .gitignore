@@ -3,3 +3,6 @@ _freeze/
 *.rds
 .DS_Store
 /_book/
+
+/.quarto/
+**/*.quarto_ipynb
