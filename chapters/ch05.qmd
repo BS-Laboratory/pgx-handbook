@@ -1,307 +1,258 @@
 # บทที่ 5: ยาเปลี่ยนรูป — Prodrug vs. Active Drug
 
-ยาบางชนิดยังไม่มีฤทธิ์เมื่อกลืนเข้าไป ต้องถูกเอนไซม์ในร่างกายเปลี่ยนให้อยู่ในรูปออกฤทธิ์ก่อน และยีนของแต่ละคนเป็นตัวกำหนดว่าการเปลี่ยนรูปนั้นจะเกิดได้เร็ว ช้า มาก น้อย หรือไม่เกิดขึ้นเลย บทนี้จะอธิบายความแตกต่างระหว่าง Prodrug กับ Active Drug และยา Prodrug สำคัญ 4 ชนิดที่เกี่ยวข้องกับเภสัชพันธุศาสตร์
+ยาบางชนิดยังไม่มีฤทธิ์เมื่อรับประทานเข้าไป ต้องถูกเอนไซม์ในร่างกายเปลี่ยนให้อยู่ในรูปออกฤทธิ์ก่อน และยีนของแต่ละคนเป็นตัวกำหนดว่าการเปลี่ยนรูปนั้นจะเกิดได้เร็ว ช้า มาก น้อย หรือไม่เกิดขึ้นเลย บทนี้จะอธิบายความแตกต่างระหว่าง Prodrug กับ Active Drug และศึกษายา Prodrug สำคัญ 4 ชนิดที่เกี่ยวข้องกับเภสัชพันธุศาสตร์
 
-***
-
-## 5.1 Prodrug คืออะไร?
+## 5.1 Prodrug และ Active Drug
 
 ### นิยาม
 
-**Prodrug** คือยาที่**ยังไม่มีฤทธิ์** หรือมีฤทธิ์น้อยมากเมื่อกลืนเข้าไป ร่างกายต้องเปลี่ยนให้เป็น **สารที่ออกฤทธิ์ (Active Metabolite)** ก่อน จึงจะออกฤทธิ์ได้จริง
+**Prodrug** คือยาที่ยังไม่มีฤทธิ์หรือมีฤทธิ์น้อยมากเมื่อรับประทานเข้าไป ร่างกายต้องเปลี่ยนให้เป็น **สารที่ออกฤทธิ์ (active metabolite)** ก่อน จึงจะออกฤทธิ์ได้ [1]
 
-**Active Drug** คือยาที่ออกฤทธิ์ได้ทันทีโดยไม่ต้องผ่านการเปลี่ยนรูป จากนั้นจึงถูกเอนไซม์เผาผลาญให้หมดฤทธิ์และขับออกจากร่างกาย
-
-### ความแตกต่างระหว่าง Prodrug และ Active Drug
+**Active Drug** คือยาที่ออกฤทธิ์ได้ทันทีโดยไม่ต้องเปลี่ยนรูป จากนั้นจึงถูกเอนไซม์เผาผลาญให้หมดฤทธิ์และขับออกจากร่างกาย
 
 ```
-Prodrug:      ยาที่กลืนเข้าไป (ไม่มีฤทธิ์)
+Prodrug:      ยาที่รับประทาน (ไม่มีฤทธิ์)
                   │  เอนไซม์ CYP450 เปลี่ยนรูป
                   ▼
-              สารที่ออกฤทธิ์ (Active Metabolite)  →  ออกฤทธิ์รักษา
+              สารที่ออกฤทธิ์ (active metabolite)  →  ออกฤทธิ์รักษา
 
-Active Drug:  ยาที่กลืนเข้าไป (ออกฤทธิ์ได้ทันที)  →  ออกฤทธิ์รักษา
+Active Drug:  ยาที่รับประทาน (ออกฤทธิ์ได้ทันที)  →  ออกฤทธิ์รักษา
                   │  เอนไซม์ CYP450 เผาผลาญ
                   ▼
-              สารที่ไม่มีฤทธิ์ (Inactive Metabolite)  →  ขับออก
+              สารที่ไม่มีฤทธิ์ (inactive metabolite)  →  ขับออก
 ```
 
 ความแตกต่างนี้ทำให้ผลของพันธุกรรม **กลับทิศกัน** ระหว่างยาสองกลุ่ม
 
 | ฟีโนไทป์ | Prodrug | Active Drug (ที่ถูกเผาผลาญโดยเอนไซม์ตัวนั้น) |
 |---|---|---|
-| Poor Metabolizer (PM) | ได้สารออกฤทธิ์น้อย → **ยาไม่ได้ผล** | ยาถูกเผาผลาญช้า → **ยาสะสม เสี่ยงพิษ** |
-| Ultrarapid Metabolizer (UM) | ได้สารออกฤทธิ์มากเกินไป → **เสี่ยงพิษ** | ยาถูกเผาผลาญเร็ว → **ยาไม่ได้ผล** |
+| Poor Metabolizer (PM) | ได้สารออกฤทธิ์น้อย → ยาไม่ได้ผล | ยาถูกเผาผลาญช้า → ยาสะสม เสี่ยงพิษ |
+| Ultrarapid Metabolizer (UM) | ได้สารออกฤทธิ์มากเกินไป → เสี่ยงพิษ | ยาถูกเผาผลาญเร็ว → ยาไม่ได้ผล |
 
-### ทำไมยาบางตัวจึงเป็น Prodrug?
+### เหตุผลของการพัฒนายาในรูป Prodrug
 
-นักเคมียาออกแบบ Prodrug ด้วยเหตุผลหลายประการ เช่น
+นักเคมียาออกแบบ Prodrug ด้วยเหตุผลหลายประการ [1]
 
 | เหตุผล | ตัวอย่าง |
-|--------|---------|
+|---|---|
 | ช่วยให้ดูดซึมผ่านผนังลำไส้ได้ดีขึ้น | Enalapril (Prodrug ของ Enalaprilat) |
-| เพิ่มสัดส่วนยาที่เข้าสู่กระแสเลือด (Bioavailability) | Valacyclovir → Acyclovir |
-| รูปที่ออกฤทธิ์ไม่เสถียร จึงต้องให้ในรูปที่ยังไม่ออกฤทธิ์ | Clopidogrel (รูป Thiol ที่ออกฤทธิ์ไม่เสถียร) |
+| เพิ่ม bioavailability | Valacyclovir → Acyclovir |
+| รูปที่ออกฤทธิ์ไม่เสถียร จึงต้องให้ในรูปที่ยังไม่ออกฤทธิ์ | Clopidogrel (สารออกฤทธิ์รูป thiol ไม่เสถียร) |
 
 อย่างไรก็ตาม ยาหลายตัวในบทนี้ เช่น Codeine และ Tamoxifen ไม่ได้ถูกออกแบบให้เป็น Prodrug ตั้งแต่แรก แต่ค้นพบภายหลังว่าฤทธิ์หลักมาจากสารที่เกิดจากการเผาผลาญยา
 
-***
-
 ## 5.2 Prodrug สำคัญในเภสัชพันธุศาสตร์
 
-ต่อไปนี้คือ Prodrug 4 ชนิดที่มีความสำคัญทางคลินิกสูงสุด เพราะล้วนขึ้นกับเอนไซม์ที่มีความหลากหลายทางพันธุกรรมสูง
+Prodrug 4 ชนิดต่อไปนี้มีความสำคัญทางคลินิกสูง เพราะขึ้นกับเอนไซม์ที่มีความหลากหลายทางพันธุกรรม และแนวทางของ CPIC จัดเป็น Level A ทั้งหมด
 
-| Prodrug | เอนไซม์ | รูปออกฤทธิ์ | CPIC Level | ใช้รักษา |
-|---------|---------|------------|-----------|---------|
-| **Codeine** | CYP2D6 | Morphine | **A** | ยาแก้ปวด, แก้ไอ |
-| **Tramadol** | CYP2D6 | O-desmethyltramadol (M1) | **A** | ยาแก้ปวดปานกลาง-รุนแรง |
-| **Tamoxifen** | CYP2D6 | Endoxifen | **A** | มะเร็งเต้านม (ER+) |
-| **Clopidogrel** | CYP2C19 | Thiol metabolite | **A** | ยาต้านเกล็ดเลือด ป้องกันลิ่มเลือดอุดตัน |
+| Prodrug | เอนไซม์ | รูปออกฤทธิ์ | ข้อบ่งใช้ |
+|---|---|---|---|
+| Codeine | CYP2D6 | Morphine | ยาแก้ปวด ยาแก้ไอ |
+| Tramadol | CYP2D6 | O-desmethyltramadol (M1) | ยาแก้ปวดระดับปานกลางถึงรุนแรง |
+| Tamoxifen | CYP2D6 | Endoxifen | มะเร็งเต้านมชนิด ER-positive |
+| Clopidogrel | CYP2C19 | Thiol metabolite | ยาต้านเกล็ดเลือด ป้องกันลิ่มเลือดอุดตัน |
 
-***
-
-## 5.3 Codeine: Prodrug ที่คนไทยต้องรู้ให้ชัด
+## 5.3 Codeine
 
 ### กลไกการออกฤทธิ์
 
 ```
-Codeine (กินเข้าไป — ฤทธิ์แก้ปวดต่ำมาก)
-    │
+Codeine (ฤทธิ์ระงับปวดต่ำมาก)
     │  CYP2D6 เปลี่ยนประมาณ 5–10% ของ Codeine
     ▼
-Morphine (ออกฤทธิ์แก้ปวด — จับกับ μ-opioid receptor ได้ดีกว่า Codeine ~200 เท่า)
-    │
+Morphine (จับกับ μ-opioid receptor ได้ดีกว่า Codeine ประมาณ 200 เท่า)
     │  UGT2B7 เปลี่ยนต่อ
     ▼
-Morphine-6-glucuronide (M6G) → ออกฤทธิ์ด้วย
+Morphine-6-glucuronide (M6G) — ออกฤทธิ์ด้วย
 ```
-> 💡 **จุดสำคัญ:** CYP2D6 เปลี่ยน Codeine เป็น Morphine เพียงส่วนน้อย แต่ Morphine จับกับตัวรับ opioid ได้ดีกว่า Codeine ประมาณ **200 เท่า** ดังนั้นแม้ปริมาณน้อย แต่ผลทางคลินิกสูงมาก [[^ch05-1]]
+
+แม้ CYP2D6 จะเปลี่ยน Codeine เป็น Morphine เพียงส่วนน้อย แต่ Morphine จับกับตัวรับ opioid ได้ดีกว่า Codeine ประมาณ 200 เท่า ปริมาณที่เปลี่ยนได้จึงมีผลทางคลินิกสูง [2]
 
 ### ผลตามฟีโนไทป์ของ CYP2D6
 
 | ฟีโนไทป์ | Activity Score | Morphine ที่ได้ | ผลทางคลินิก |
-|---------------------|---------------|----------------|------------|
-| Poor Metabolizer (PM) | 0 | แทบไม่มี | ยาแทบไม่แก้ปวด |
-| Intermediate Metabolizer (IM) | 0.25–1.0 | น้อยกว่าปกติ | แก้ปวดได้น้อยกว่าที่คาด |
-| Normal Metabolizer (NM) | 1.25–2.25 | ปกติ | แก้ปวดได้ตามที่คาด |
-| **Ultrarapid Metabolizer (UM)** | **> 2.25** | **มากผิดปกติ** | **⚠️ เสี่ยงพิษจาก Morphine (กดการหายใจ)** |
+|---|---|---|---|
+| Poor Metabolizer (PM) | 0 | แทบไม่มี | ยาแทบไม่ระงับปวด |
+| Intermediate Metabolizer (IM) | 0.25–1.0 | น้อยกว่าปกติ | ระงับปวดได้น้อยกว่าที่คาด |
+| Normal Metabolizer (NM) | 1.25–2.25 | ปกติ | ระงับปวดได้ตามที่คาด |
+| Ultrarapid Metabolizer (UM) | > 2.25 | มากผิดปกติ | เสี่ยงพิษจาก Morphine (กดการหายใจ) |
 
-> 📌 **หมายเหตุ:** สำหรับ CYP2D6 แนวทาง CPIC ไม่มีกลุ่ม Rapid Metabolizer (RM) แยก มีเพียง 4 กลุ่มตามตารางข้างต้น [[^ch05-1]]
+> **หมายเหตุ:** สำหรับ CYP2D6 แนวทาง CPIC ไม่มีกลุ่ม Rapid Metabolizer แยก มีเพียง 4 กลุ่มตามตาราง [2]
 
-กรณีเด็กที่เสียชีวิตจากการได้รับ Codeine หลังผ่าตัดต่อมทอนซิล ซึ่งเป็นตัวอย่างสำคัญของความเสี่ยงในกลุ่ม UM ได้กล่าวไว้แล้วในบทที่ 1 เหตุการณ์เหล่านี้นำไปสู่การที่ US FDA ออกคำเตือน Boxed Warning ห้ามใช้ Codeine เพื่อบรรเทาปวดหลังผ่าตัดทอนซิลในเด็ก (ค.ศ. 2013) และต่อมาห้ามใช้ Codeine ในเด็กอายุต่ำกว่า 12 ปี และแนะนำให้หลีกเลี่ยงในมารดาที่ให้นมบุตร (ค.ศ. 2017) [[^ch05-2]]
+กรณีเด็กที่เสียชีวิตจากการได้รับ Codeine หลังผ่าตัดต่อมทอนซิล ซึ่งเป็นตัวอย่างสำคัญของความเสี่ยงในกลุ่ม UM ได้กล่าวไว้ในบทที่ 1 เหตุการณ์เหล่านี้นำไปสู่การที่ US FDA ออกคำเตือน Boxed Warning ห้ามใช้ Codeine เพื่อบรรเทาปวดหลังผ่าตัดต่อมทอนซิลในเด็ก (ค.ศ. 2013) และต่อมาห้ามใช้ Codeine ในเด็กอายุต่ำกว่า 12 ปี และแนะนำให้หลีกเลี่ยงในมารดาที่ให้นมบุตร (ค.ศ. 2017) [3]
 
-### คำแนะนำ CPIC 2021 สำหรับ Codeine [[^ch05-1]]
+### คำแนะนำของ CPIC สำหรับ Codeine [2]
 
 ```
 UM (เอนไซม์ทำงานมากกว่าปกติมาก)
-└── ❌ หลีกเลี่ยง Codeine — เสี่ยงพิษจาก Morphine
-    └── ✅ หากจำเป็นต้องใช้ opioid ให้เลือกตัวอื่นที่ไม่ใช่ Tramadol
+└── หลีกเลี่ยง Codeine — เสี่ยงพิษจาก Morphine
+    └── หากจำเป็นต้องใช้ opioid ให้เลือกตัวอื่นที่ไม่ใช่ Tramadol
         หรือใช้ยาแก้ปวดที่ไม่ใช่ opioid
 
 NM (เอนไซม์ทำงานปกติ)
-└── ✅ ใช้ขนาดตามฉลากยา
+└── ใช้ขนาดตามฉลากยา
 
 IM (เอนไซม์ทำงานลดลง)
-└── ✅ ใช้ขนาดตามฉลากยา
-    └── ⚠️ หากไม่ได้ผล ให้พิจารณา opioid ตัวอื่นที่ไม่ใช่ Tramadol
+└── ใช้ขนาดตามฉลากยา
+    └── หากไม่ได้ผล ให้พิจารณา opioid ตัวอื่นที่ไม่ใช่ Tramadol
 
 PM (เอนไซม์ไม่ทำงาน)
-└── ❌ หลีกเลี่ยง Codeine — แทบไม่ออกฤทธิ์แก้ปวด
-    └── ✅ หากจำเป็นต้องใช้ opioid ให้เลือกตัวอื่นที่ไม่ใช่ Tramadol
+└── หลีกเลี่ยง Codeine — แทบไม่ออกฤทธิ์ระงับปวด
+    └── หากจำเป็นต้องใช้ opioid ให้เลือกตัวอื่นที่ไม่ใช่ Tramadol
         หรือใช้ยาแก้ปวดที่ไม่ใช่ opioid
 ```
 
-***
-## 5.4 Tramadol: Prodrug ที่ออกฤทธิ์ได้ 2 กลไก
+## 5.4 Tramadol
 
-### กลไกการออกฤทธิ์
+### กลไกการออกฤทธิ์ 2 ทาง
 
 ```
 Tramadol (ตัวยาเดิม)
-    │
-    ├── ออกฤทธิ์เองผ่านการยับยั้งการเก็บกลับ Serotonin และ Norepinephrine
-    │   (ช่วยแก้ปวดได้บางส่วน — ไม่ขึ้นกับ CYP2D6)
+    ├── ออกฤทธิ์เองโดยยับยั้งการเก็บกลับ serotonin และ norepinephrine
+    │   (ระงับปวดได้บางส่วน — ไม่ขึ้นกับ CYP2D6)
     │
     ├── CYP2D6 (O-demethylation)
     │   └── O-desmethyltramadol (M1)
-    │       └── จับ μ-opioid receptor ได้ดีกว่า Tramadol ~200 เท่า
-    │           (ฤทธิ์แก้ปวดหลัก)
+    │       └── จับกับ μ-opioid receptor ได้ดีกว่า Tramadol ประมาณ 200 เท่า
+    │           (ฤทธิ์ระงับปวดหลัก)
     │
     └── CYP3A4, CYP2B6 (N-demethylation)
         └── N-desmethyltramadol (M2) — ไม่มีฤทธิ์
 ```
 
-Tramadol ต่างจาก Codeine ตรงที่ **ตัวยาเดิมมีฤทธิ์แก้ปวดได้เองบางส่วน** ผ่านระบบ Serotonin และ Norepinephrine คนที่เป็น PM จึงยังแก้ปวดได้บ้าง แต่น้อยกว่าคนปกติมาก เพราะขาดฤทธิ์ opioid จาก M1 [[^ch05-1]]
+Tramadol ต่างจาก Codeine ตรงที่ **ตัวยาเดิมมีฤทธิ์ระงับปวดบางส่วน** ผ่านระบบ serotonin และ norepinephrine ผู้ที่เป็น PM จึงยังระงับปวดได้บ้าง แต่น้อยกว่าปกติมาก เพราะขาดฤทธิ์ opioid จาก M1 [2]
 
-> ⚠️ **สำคัญ:** กลุ่ม UM ที่ได้รับ Tramadol จะได้ M1 มากเกินไป เสี่ยงต่อพิษจาก opioid เช่น ภาวะกดการหายใจ แนวทาง CPIC จึงแนะนำให้หลีกเลี่ยง Tramadol ในกลุ่ม UM และ PM [[^ch05-1]]
+> **ข้อควรระวัง:** ผู้ที่เป็น UM เมื่อได้รับ Tramadol จะได้ M1 มากเกินไป เสี่ยงต่อพิษจาก opioid เช่น ภาวะกดการหายใจ แนวทางของ CPIC จึงแนะนำให้หลีกเลี่ยง Tramadol ทั้งในผู้ที่เป็น UM และ PM [2]
 
-***
-## 5.5 Tamoxifen: Prodrug สำหรับมะเร็งเต้านม
+## 5.5 Tamoxifen
 
 ### ความสำคัญของ Endoxifen
 
-Tamoxifen เป็นยาหลักสำหรับรักษา **มะเร็งเต้านมชนิด ER+** ซึ่งพบในผู้ป่วยมะเร็งเต้านมประมาณ 70–80%
+Tamoxifen เป็นยาหลักสำหรับรักษา **มะเร็งเต้านมชนิด ER-positive** ซึ่งพบประมาณ 70–80% ของผู้ป่วยมะเร็งเต้านม [4]
 
 ```
 Tamoxifen (ฤทธิ์ต่ำ)
+    ├── CYP2D6 ──► 4-Hydroxytamoxifen (ฤทธิ์สูง แต่มีปริมาณน้อย)
     │
-    ├── CYP2D6 ──────────────────────── 4-Hydroxytamoxifen
-    │                                       (ฤทธิ์สูง แต่มีปริมาณน้อย)
-    │
-    └── CYP3A4/3A5 ── N-Desmethyltamoxifen
-                              │
-                              │ CYP2D6 ← ขั้นตอนสำคัญที่สุด!
-                              ▼
-                         ⭐ Endoxifen (ฤทธิ์สูง + ระดับในเลือดสูง)
-                         รูปออกฤทธิ์หลักในการต้านมะเร็ง
+    └── CYP3A4/5 ──► N-Desmethyltamoxifen
+                          │  CYP2D6 (ขั้นตอนสำคัญที่สุด)
+                          ▼
+                     Endoxifen (ฤทธิ์สูงและมีระดับในเลือดสูง)
+                     สารออกฤทธิ์หลักในการต้านมะเร็ง
 ```
 
-**Endoxifen** มีฤทธิ์ต้านเอสโตรเจน **สูงกว่า Tamoxifen ประมาณ 30–100 เท่า** และมีการศึกษาที่เสนอว่าระดับ Endoxifen ≥ **5.9 ng/mL** สัมพันธ์กับผลการรักษาที่ดีกว่า [[^ch05-3]]
+**Endoxifen** มีฤทธิ์ต้านเอสโตรเจนสูงกว่า Tamoxifen ประมาณ 30–100 เท่า [4] มีการศึกษาที่พบว่าระดับ Endoxifen ในเลือดต่ำกว่าประมาณ 5.9 ng/mL สัมพันธ์กับความเสี่ยงการกลับเป็นซ้ำที่สูงขึ้น [5]
 
-### ⚠️ ข้อควรระวังสำหรับผู้ป่วยมะเร็งเต้านมชาวไทย
+### ความสำคัญในผู้ป่วยไทย
 
-> คนไทยมีอัลลีล `CYP2D6*10` สูงถึง **ประมาณ 40%** ซึ่งเป็นอัลลีลที่ทำงานลดลง (Activity Value = 0.25) ทำให้ผู้ป่วยชาวไทยจำนวนมากเป็น Intermediate Metabolizer (IM) มีระดับ Endoxifen ต่ำกว่าเกณฑ์ และอาจได้รับประโยชน์จาก Tamoxifen น้อยกว่าที่คาด [[^ch05-3]]
->
-> ควรปรึกษาแพทย์เกี่ยวกับการตรวจยีน CYP2D6 ก่อนเริ่มใช้ Tamoxifen ระยะยาว
+อัลลีล CYP2D6\*10 ซึ่งทำงานลดลง (Activity Value = 0.25) พบในประชากรเอเชียตะวันออกเฉียงใต้รวมถึงไทยสูงถึงประมาณ 40–50% [6] ผู้ป่วยไทยจำนวนมากจึงเป็น Intermediate Metabolizer และอาจมีระดับ Endoxifen ต่ำกว่าเกณฑ์ ควรปรึกษาแพทย์เรื่องการตรวจยีน CYP2D6 ก่อนเริ่มใช้ Tamoxifen ระยะยาว ชื่ออัลลีลที่ใช้ในบทนี้เป็นระบบมาตรฐานสากลที่ดูแลโดย PharmVar [7]
 
-ชื่ออัลลีลแบบ `*10` ที่ใช้ทั่วทั้งบทนี้เป็นระบบการตั้งชื่อมาตรฐานสากล ที่ดูแลโดย The Pharmacogene Variation (PharmVar) Consortium [[^ch05-4]]
-
-### คำแนะนำ CPIC 2018 [[^ch05-3]]
+### คำแนะนำของ CPIC สำหรับ Tamoxifen [4]
 
 ```
-PM หรือ IM (รวมถึงกลุ่ม *10/*10 ที่พบบ่อยในคนไทย)
-└── ⚠️ พิจารณาทางเลือก:
+PM หรือ IM
+└── พิจารณาทางเลือก:
     ├── เปลี่ยนเป็นยากลุ่ม Aromatase Inhibitor (AI)
     │   เช่น Letrozole, Anastrozole, Exemestane
-    │   (AI ไม่ขึ้นกับ CYP2D6 — ใช้ในหญิงวัยหมดประจำเดือน
-    │    หรือร่วมกับการกดการทำงานของรังไข่)
-    └── หากใช้ AI ไม่ได้ พิจารณาเพิ่มขนาด Tamoxifen เป็น 40 mg/วัน
-        (เฉพาะกลุ่ม IM)
+    │   (ใช้ในหญิงวัยหมดประจำเดือน หรือร่วมกับการกดการทำงานของรังไข่)
+    └── หากใช้ AI ไม่ได้ ใน IM อาจพิจารณาเพิ่มขนาด Tamoxifen เป็น 40 mg/วัน
 
 NM หรือ UM
-└── ✅ Tamoxifen 20 mg/วัน ขนาดปกติ
+└── Tamoxifen 20 mg/วัน ตามขนาดมาตรฐาน
 
-⚠️ ทุกกลุ่ม: หลีกเลี่ยงยาที่ยับยั้ง CYP2D6 อย่างแรง
-   (Strong CYP2D6 Inhibitor) ร่วมกับ Tamoxifen
-   └── เช่น Fluoxetine, Paroxetine, Bupropion
-       (ลดระดับ Endoxifen ได้มาก)
+ทุกกลุ่ม: หลีกเลี่ยงยาที่ยับยั้ง CYP2D6 อย่างแรงหรือปานกลางร่วมด้วย
+         เช่น Fluoxetine, Paroxetine, Bupropion
 ```
 
-***
+## 5.6 Clopidogrel
 
-## 5.6 Clopidogrel: Prodrug หัวใจที่คนไทย 1 ใน 10 ต้องระวัง
+### ความสำคัญในประเทศไทย
 
-### บริบทที่สำคัญสำหรับประเทศไทย
+**Clopidogrel** เป็นยาต้านเกล็ดเลือดที่ใช้มากในผู้ป่วยโรคหัวใจและหลอดเลือด คนไทยประมาณ 8–13% เป็น Poor Metabolizer ของ CYP2C19 และอีกประมาณ 42% เป็น Intermediate Metabolizer [8,9] ผู้ป่วยไทยเกือบ 1 ใน 10 คนที่ได้รับ Clopidogrel จึงอาจได้รับการป้องกันลิ่มเลือดไม่เพียงพอ
 
-**Clopidogrel (Plavix)** เป็นยาต้านเกล็ดเลือดที่ใช้มากในผู้ป่วยโรคหัวใจ แต่ในคนไทย **ประมาณ 9.2% เป็น Poor Metabolizer (PM) ของ CYP2C19** [[^ch05-5]] หมายความว่าผู้ป่วยชาวไทยเกือบ **1 ใน 10 คน** ที่ได้รับ Clopidogrel อาจไม่ได้รับการป้องกันลิ่มเลือดที่เพียงพอ
-
-### การเปลี่ยนรูป 2 ขั้นตอนที่ขึ้นกับ CYP2C19
+### การเปลี่ยนรูป 2 ขั้นตอน
 
 ```
 Clopidogrel (ไม่มีฤทธิ์)
     │  ประมาณ 85% ถูกเอนไซม์ CES1 เปลี่ยนเป็นสารที่ไม่มีฤทธิ์
-    │  เหลือประมาณ 15% เข้าสู่เส้นทางที่ให้สารออกฤทธิ์
+    │  ประมาณ 15% เข้าสู่เส้นทางที่ให้สารออกฤทธิ์
     │
-    │ ขั้น 1: CYP2C19 + CYP1A2, CYP2B6
+    │  ขั้นที่ 1: CYP2C19, CYP1A2, CYP2B6
     ▼
 2-Oxo-clopidogrel (สารกลาง)
     │
-    │ ขั้น 2: CYP2C19 (สำคัญที่สุด!) + CYP3A4, CYP2B6, CYP2C9
+    │  ขั้นที่ 2: CYP2C19, CYP3A4, CYP2B6, CYP2C9
     ▼
-Thiol metabolite (ออกฤทธิ์) → จับ P2Y12 บนเกล็ดเลือด
-                            → ยับยั้งการเกาะกลุ่มของเกล็ดเลือด
-                            → ป้องกันการเกิดลิ่มเลือด ✓
+Thiol metabolite (สารออกฤทธิ์)
+    │  จับกับตัวรับ P2Y12 บนเกล็ดเลือด
+    ▼
+ยับยั้งการเกาะกลุ่มของเกล็ดเลือด → ป้องกันลิ่มเลือด
 ```
 
-> ⚠️ **CYP2C19 มีบทบาททั้ง 2 ขั้น!** ผู้ที่เป็น PM จึงสร้างสารออกฤทธิ์ได้น้อยมาก จนยาแทบไม่มีฤทธิ์ป้องกันลิ่มเลือด
+CYP2C19 มีบทบาททั้ง 2 ขั้นตอน ผู้ที่เป็น PM จึงสร้างสารออกฤทธิ์ได้น้อยมาก [10]
 
-### ผลทางคลินิกตามฟีโนไทป์
+### ผลทางคลินิกตามฟีโนไทป์ [10]
 
-| ฟีโนไทป์ | Thiol metabolite | ผลต่อเกล็ดเลือด | ความเสี่ยง |
-|---------|----------------|--------------|-----------|
-| PM | ต่ำมาก | ยับยั้งได้น้อย | MACE↑↑ (กล้ามเนื้อหัวใจขาดเลือด, โรคหลอดเลือดสมอง) |
-| IM | ต่ำกว่าปกติ | ยับยั้งได้ลดลง | MACE↑ |
-| NM | ปกติ | ยับยั้งได้ดี | ปกติ |
-| RM/UM | สูงกว่าปกติ | ยับยั้งได้ดีมาก | ปกติ |
+| ฟีโนไทป์ | สารออกฤทธิ์ | การยับยั้งเกล็ดเลือด | ความเสี่ยงต่อ MACE |
+|---|---|---|---|
+| PM | ต่ำมาก | น้อย | สูงขึ้นมาก |
+| IM | ต่ำกว่าปกติ | ลดลง | สูงขึ้น |
+| NM | ปกติ | ดี | ปกติ |
+| RM/UM | ปกติหรือสูงกว่าปกติ | ดี | ปกติ |
 
-*MACE = Major Adverse Cardiovascular Events (เหตุการณ์ไม่พึงประสงค์ทางหัวใจและหลอดเลือดที่รุนแรง)*
+*MACE = major adverse cardiovascular events (เหตุการณ์ไม่พึงประสงค์ทางหัวใจและหลอดเลือดที่รุนแรง)*
 
-### คำแนะนำ CPIC 2022 (สำหรับ ACS/PCI) [[^ch05-6]]
+### คำแนะนำของ CPIC ฉบับปี ค.ศ. 2022 (ภาวะหลอดเลือดหัวใจเฉียบพลันหรือใส่ขดลวด) [10]
+
 ```
-PM (*2/*2, *2/*3, *3/*3)
-└── ❌ หลีกเลี่ยง Clopidogrel หากทำได้
-    └── ✅ เปลี่ยนเป็น Prasugrel หรือ Ticagrelor
+PM (เช่น *2/*2, *2/*3, *3/*3)
+└── หลีกเลี่ยง Clopidogrel หากทำได้ → ใช้ Prasugrel หรือ Ticagrelor
 
-IM (*1/*2, *1/*3)
-└── ❌ หลีกเลี่ยง Clopidogrel ขนาดมาตรฐานหากทำได้ (คำแนะนำระดับ Strong)
-    └── ✅ เปลี่ยนเป็น Prasugrel หรือ Ticagrelor
+IM (เช่น *1/*2, *1/*3)
+└── หลีกเลี่ยง Clopidogrel ขนาดมาตรฐานหากทำได้ → ใช้ Prasugrel หรือ Ticagrelor
 
-NM (*1/*1)
-└── ✅ Clopidogrel ขนาดมาตรฐาน (75 mg/วัน)
-
-RM/UM (*1/*17, *17/*17)
-└── ✅ Clopidogrel ขนาดมาตรฐาน (75 mg/วัน)
+NM (*1/*1), RM (*1/*17), UM (*17/*17)
+└── Clopidogrel ขนาดมาตรฐาน (75 mg/วัน)
 ```
 
-> 💡 **ทำไม Ticagrelor จึงเป็นทางเลือกที่ดีสำหรับ PM และ IM?**
-> Ticagrelor เป็น Active Drug ที่ออกฤทธิ์ได้โดยตรง ไม่ต้องอาศัย CYP2C19 ในการเปลี่ยนรูป จึงได้ผลเท่ากันในทุกฟีโนไทป์ของ CYP2C19
+> **หมายเหตุ:** Ticagrelor เป็น Active Drug ที่ไม่ต้องอาศัย CYP2C19 ในการเปลี่ยนรูป จึงได้ผลเท่ากันในทุกฟีโนไทป์ของ CYP2C19
 
-***
-## 5.7 หลักสำคัญ 5 ข้อสำหรับ Prodrug ในทางคลินิก
+## 5.7 หลักสำคัญ 5 ข้อสำหรับ Prodrug
 
-> **ข้อที่ 1:** PM + Prodrug = ยาไม่ได้ผล
-> เอนไซม์ไม่ทำงาน → ได้สารออกฤทธิ์น้อย → ผู้ป่วยไม่ได้รับประโยชน์จากยา โดยอาจไม่รู้ตัว
-
-> **ข้อที่ 2:** UM + Prodrug = เสี่ยงพิษ
-> เอนไซม์ทำงานมากเกิน → สารออกฤทธิ์สูงเกินระดับปลอดภัย → เกิดพิษ
-
-> **ข้อที่ 3:** ทางเลือกที่ดีคือยาที่ไม่ต้องอาศัยเอนไซม์ตัวนั้น
-> เช่น Morphine แทน Codeine หรือ Ticagrelor แทน Clopidogrel
-> (แต่ถ้าเป็น Active Drug ที่ถูกเผาผลาญโดยเอนไซม์ตัวนั้น ผลจะกลับทิศ คือ PM เสี่ยงยาสะสม ดูบทที่ 3)
-
-> **ข้อที่ 4:** ยาที่ยับยั้งเอนไซม์ (Enzyme Inhibitor) ทำให้ Prodrug ได้ผลลดลง
-> Fluoxetine + Tamoxifen → Endoxifen ลดลง → รักษามะเร็งได้ผลน้อยลง (Phenoconversion ดูบทที่ 10)
-
-> **ข้อที่ 5:** ตรวจยีนก่อนเริ่มยา ดีกว่าแก้ไขภายหลัง
-> การรู้ฟีโนไทป์ก่อนเริ่มยาช่วยเลือกยาที่เหมาะสมตั้งแต่แรก
-***
+1. **PM + Prodrug = ยาไม่ได้ผล** เอนไซม์ไม่ทำงาน สร้างสารออกฤทธิ์ได้น้อย ผู้ป่วยไม่ได้รับประโยชน์จากยาโดยอาจไม่รู้ตัว
+2. **UM + Prodrug = เสี่ยงพิษ** เอนไซม์ทำงานมาก สารออกฤทธิ์สูงเกินระดับปลอดภัย
+3. **ทางเลือกที่ดีคือยาที่ไม่ต้องอาศัยเอนไซม์ตัวนั้น** เช่น Morphine แทน Codeine หรือ Ticagrelor แทน Clopidogrel (แต่หากเป็น Active Drug ที่ถูกเผาผลาญโดยเอนไซม์ตัวนั้น ผลจะกลับทิศ คือผู้ที่เป็น PM เสี่ยงยาสะสม ดูบทที่ 3)
+4. **ยาที่ยับยั้งเอนไซม์ทำให้ Prodrug ได้ผลลดลง** เช่น Fluoxetine ร่วมกับ Tamoxifen ทำให้ Endoxifen ลดลง (Phenoconversion ดูบทที่ 10)
+5. **ตรวจยีนก่อนเริ่มยาดีกว่าแก้ไขภายหลัง** การทราบฟีโนไทป์ก่อนเริ่มยาช่วยเลือกยาที่เหมาะสมตั้งแต่แรก
 
 ## สรุปท้ายบท
 
-| ยา | เอนไซม์ | ผลใน PM | ผลใน UM | คำแนะนำ CPIC |
-|----|---------|--------|--------|------|
-| Codeine | CYP2D6 | ไม่แก้ปวด | พิษจาก Morphine | หลีกเลี่ยงทั้ง PM และ UM |
-| Tramadol | CYP2D6 | แก้ปวดได้น้อย | พิษจาก opioid | หลีกเลี่ยงทั้ง PM และ UM |
-| Tamoxifen | CYP2D6 | Endoxifen ต่ำ → ได้ผลการรักษาลดลง | Endoxifen สูงขึ้น (ใช้ขนาดปกติ) | PM/IM พิจารณาเปลี่ยนเป็น AI |
-| Clopidogrel | CYP2C19 | ป้องกันลิ่มเลือดได้น้อย | ใช้ขนาดปกติ | PM/IM เปลี่ยนเป็น Prasugrel/Ticagrelor |
+| ยา | เอนไซม์ | ผลใน PM | ผลใน UM | คำแนะนำหลักของ CPIC |
+|---|---|---|---|---|
+| Codeine | CYP2D6 | ไม่ระงับปวด | พิษจาก Morphine | หลีกเลี่ยงทั้ง PM และ UM |
+| Tramadol | CYP2D6 | ระงับปวดได้น้อย | พิษจาก opioid | หลีกเลี่ยงทั้ง PM และ UM |
+| Tamoxifen | CYP2D6 | Endoxifen ต่ำ ผลการรักษาอาจลดลง | ใช้ขนาดมาตรฐาน | PM/IM พิจารณาเปลี่ยนเป็น AI |
+| Clopidogrel | CYP2C19 | ป้องกันลิ่มเลือดได้น้อย | ใช้ขนาดมาตรฐาน | PM/IM เปลี่ยนเป็น Prasugrel หรือ Ticagrelor |
 
-บทที่ 6 จะพาไปสำรวจว่า CPIC แปลงงานวิจัยเหล่านี้เป็นคำแนะนำที่แพทย์ใช้งานจริงได้อย่างไร
+ความเข้าใจความแตกต่างระหว่าง Prodrug และ Active Drug เป็นพื้นฐานของการแปลผลตรวจยีนทุกคู่ยีน–ยา ในบทที่ 6 เราจะศึกษาว่า CPIC แปลงหลักฐานงานวิจัยเหล่านี้เป็นคำแนะนำที่ใช้ในเวชปฏิบัติได้อย่างไร
 
-***
+## คำถามทบทวน
 
-## เอกสารอ้างอิง บทที่ 5
+1. เหตุใดผู้ที่เป็น CYP2D6 Ultrarapid Metabolizer จึงเสี่ยงต่อพิษจาก Codeine ทั้งที่ CYP2D6 เปลี่ยน Codeine เป็น Morphine ได้เพียงส่วนน้อย
+2. เปรียบเทียบกลไกการออกฤทธิ์ของ Tramadol กับ Codeine และอธิบายว่าเหตุใดผู้ที่เป็น PM ที่ได้รับ Tramadol จึงยังระงับปวดได้บ้าง
+3. เหตุใดความถี่สูงของ CYP2D6\*10 ในคนไทยจึงมีความสำคัญต่อการใช้ Tamoxifen และมีทางเลือกในการรักษาอย่างไร
+4. อธิบายเหตุผลที่ผู้ที่เป็น CYP2C19 Poor Metabolizer ซึ่งได้รับ Clopidogrel ควรเปลี่ยนไปใช้ Ticagrelor โดยอธิบายจากกลไกที่ Ticagrelor ไม่ใช่ Prodrug
+5. อธิบายหลักสำคัญ 5 ข้อสำหรับ Prodrug และยกตัวอย่างยาที่สอดคล้องกับแต่ละข้ออย่างน้อยข้อละ 1 ตัวอย่าง
 
-[^ch05-1]: Crews KR, Monte AA, Huddart R, et al. Clinical Pharmacogenetics
-Implementation Consortium Guideline for CYP2D6, OPRM1, and COMT
-Genotypes and Select Opioid Therapy. *Clin Pharmacol Ther*.
-2021;110(4):888–896. doi:10.1002/cpt.2149
+## เอกสารอ้างอิง
 
-[^ch05-2]: U.S. Food and Drug Administration. FDA Drug Safety Communication:
-FDA restricts use of prescription codeine pain and cough medicines and
-tramadol pain medicines in children; recommends against use in
-breastfeeding women. April 20, 2017.
-
-[^ch05-3]: Goetz MP, Sangkuhl K, Guchelaar H-J, et al. CPIC Guideline for
-CYP2D6 and Tamoxifen Therapy. *Clin Pharmacol Ther*.
-2018;103(5):770–777. doi:10.1002/cpt.1007
-
-[^ch05-4]: Gaedigk A, et al. The Pharmacogene Variation (PharmVar) Consortium.
-*Clin Pharmacol Ther*. 2018;103(3):399–401. doi:10.1002/cpt.910
-
-[^ch05-5]: Sukasem C, et al. High prevalence of CYP2C19 poor and intermediate
-metabolizers in Thai population. *Pharmacogenomics J*.
-2013;13(6):527–531. doi:10.1038/tpj.2012.50
-
-[^ch05-6]: Lee CR, et al. CPIC Guideline for CYP2C19 Genotype and Clopidogrel
-Therapy: 2022 Update. *Clin Pharmacol Ther*.
-2022;112(5):959–967. doi:10.1002/cpt.2526
+1. Rautio J, Kumpulainen H, Heimbach T, et al. Prodrugs: design and clinical applications. *Nat Rev Drug Discov*. 2008;7(3):255–270. doi:10.1038/nrd2468
+2. Crews KR, Monte AA, Huddart R, et al. Clinical Pharmacogenetics Implementation Consortium guideline for CYP2D6, OPRM1, and COMT genotypes and select opioid therapy. *Clin Pharmacol Ther*. 2021;110(4):888–896. doi:10.1002/cpt.2149
+3. U.S. Food and Drug Administration. FDA Drug Safety Communication: FDA restricts use of prescription codeine pain and cough medicines and tramadol pain medicines in children; recommends against use in breastfeeding women. April 20, 2017. https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-fda-restricts-use-prescription-codeine-pain-and-cough-medicines-and
+4. Goetz MP, Sangkuhl K, Guchelaar HJ, et al. Clinical Pharmacogenetics Implementation Consortium (CPIC) guideline for CYP2D6 and tamoxifen therapy. *Clin Pharmacol Ther*. 2018;103(5):770–777. doi:10.1002/cpt.1007
+5. Madlensky L, Natarajan L, Tchu S, et al. Tamoxifen metabolite concentrations, CYP2D6 genotype, and breast cancer outcomes. *Clin Pharmacol Ther*. 2011;89(5):718–725. doi:10.1038/clpt.2011.32
+6. Dorji PW, Tshering G, Na-Bangchang K. CYP2C9, CYP2C19, CYP2D6 and CYP3A5 polymorphisms in South-East and East Asian populations: a systematic review. *J Clin Pharm Ther*. 2019;44(4):508–524.
+7. Gaedigk A, Ingelman-Sundberg M, Miller NA, et al. The Pharmacogene Variation (PharmVar) Consortium: incorporation of the Human Cytochrome P450 (CYP) allele nomenclature database. *Clin Pharmacol Ther*. 2018;103(3):399–401. doi:10.1002/cpt.910
+8. Nakhonsri V, John S, Panumasmontol H, et al. The diversity of CYP2C19 polymorphisms in the Thai population: implications for precision medicine. *Appl Clin Genet*. 2024;17:95–105. doi:10.2147/TACG.S463965
+9. Sukasem C, Tunthong R, Chamnanphon M, et al. CYP2C19 polymorphisms in the Thai population and the clinical response to clopidogrel in patients with atherothrombotic-risk factors. *Pharmgenomics Pers Med*. 2013;6:85–91. doi:10.2147/PGPM.S42332
+10. Lee CR, Luzum JA, Sangkuhl K, et al. Clinical Pharmacogenetics Implementation Consortium guideline for CYP2C19 genotype and clopidogrel therapy: 2022 update. *Clin Pharmacol Ther*. 2022;112(5):959–967. doi:10.1002/cpt.2526
