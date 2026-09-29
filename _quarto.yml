@@ -47,6 +47,9 @@ book:
 
 lang: th
 
+# คลิกที่รูปเพื่อขยายเต็มจอ (lightbox) ทุกรูปในเว็บ
+lightbox: auto
+
 format:
   html:
     theme:
