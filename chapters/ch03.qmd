@@ -70,7 +70,7 @@
    * **ยาต้านเศร้าบางกลุ่ม:** Amitriptyline, Nortriptyline
    * **ยาโรคหัวใจและความดัน:** Metoprolol, Carvedilol
 
-🔬 **กรณีศึกษา:** ในปี ค.ศ. 2012 มีรายงานทางการแพทย์พบทารกชายอายุ 2 ขวบเสียชีวิตหลังจากได้รับนมแม่ โดยคุณแม่ได้รับยาแก้ปวด Codeine หลังผ่าตัด เมื่อตรวจยีนย้อนหลังพบว่าคุณแม่เป็น **Ultrarapid Metabolizer (UM)** ร่างกายจึงเปลี่ยน Codeine เป็นมอร์ฟีนปริมาณมากและส่งผ่านน้ำนมไปสู่ลูก [[^ch03-4]] กรณีลักษณะนี้นำไปสู่การที่หน่วยงานด้านอาหารและยาหลายประเทศ รวมถึงไทย ออกประกาศ **ห้ามใช้ยา Codeine ในเด็กอายุต่ำกว่า 12 ปี และในมารดาที่กำลังให้นมบุตร** [[^ch03-3]]
+**คน UM เสี่ยงพิษจากมอร์ฟีน ให้ดูกรณีศึกษาในบทที่ 1 และ CPIC แนะนำให้หลีกเลี่ยง Codeine ในคน UM และ PM*** [[^ch03-3]]
 
 ***
 
@@ -172,7 +172,6 @@ CYP3A5 มีโครงสร้างคล้าย CYP3A4 มาก แต�
 [^ch03-1]: Zanger UM, Schwab M. Cytochrome P450 enzymes in drug metabolism: regulation of gene expression, enzyme activities, and impact of genetic variation. *Pharmacol Ther*. 2013;138(1):103–141. doi:10.1016/j.pharmthera.2012.12.007
 [^ch03-2]: Ingelman-Sundberg M, Sim SC, Gomez A, Rodriguez-Antona C. Influence of cytochrome P450 polymorphisms on drug therapies: pharmacogenetic, pharmacoepigenetic and clinical aspects. *Pharmacol Ther*. 2007;116(3):496–526.
 [^ch03-3]: Crews KR, Gaedigk A, Dunnenberger HM, et al. Clinical Pharmacogenetics Implementation Consortium guidelines for cytochrome P450 2D6 genotype and codeine therapy: 2014 update. *Clin Pharmacol Ther*. 2014;95(4):376–382. doi:10.1038/clpt.2013.254
-[^ch03-4]: Kelly LE, Rieder M, van den Anker J, et al. More codeine fatalities after tonsillectomy in North American children. *Pediatrics*. 2012;129(5):e1343–e1347. doi:10.1542/peds.2011-2538
 [^ch03-5]: Caudle KE, Dunnenberger HM, Freimuth RR, et al. Standardizing terms for clinical pharmacogenomic test results: findings of the Clinical Pharmacogenetics Implementation Consortium (CPIC). *Genet Med*. 2017;19(2):215–223. doi:10.1038/gim.2016.87
 [^ch03-6]: Sukasem C, Chamnanphol M, Koomdee N, et al. High prevalence of CYP2C19 poor and intermediate metabolizers in Thai population: implications for clopidogrel therapy. *Pharmacogenomics J*. 2013;13(6):527–531. doi:10.1038/tpj.2012.50
 [^ch03-7]: Scott SA, Sangkuhl K, Stein CM, et al. Clinical Pharmacogenetics Implementation Consortium guidelines for CYP2C19 genotype and clopidogrel therapy: 2013 update. *Clin Pharmacol Ther*. 2013;94(3):317–323. doi:10.1038/clpt.2013.105
