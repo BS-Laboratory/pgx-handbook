@@ -1,0 +1,76 @@
+project:
+  type: book
+  output-dir: _book
+  # เรนเดอร์เฉพาะไฟล์ของหนังสือ ไม่รวม README.qmd (ซึ่งไว้สร้างหน้า GitHub + PDF เล่มเดียวแยกต่างหาก)
+  render:
+    - chapters/index.qmd
+    - chapters/ch01.qmd
+    - chapters/ch02.qmd
+    - chapters/ch03.qmd
+    - chapters/ch04.qmd
+    - chapters/ch05.qmd
+    - chapters/ch06.qmd
+    - chapters/ch07.qmd
+    - chapters/ch08.qmd
+    - chapters/ch09.qmd
+    - chapters/ch10.qmd
+    - chapters/ch11.qmd
+    - chapters/ch12.qmd
+    - chapters/ch13.qmd
+    - chapters/appendix.qmd
+
+book:
+  title: "คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)"
+  author: "Bhoom Suktitipat Laboratory"
+  date: today
+  search: true
+  reader-mode: true
+  page-footer: "คู่มือเภสัชพันธุศาสตร์ (PGx Handbook) · Bhoom Suktitipat Laboratory"
+  chapters:
+    - chapters/index.qmd
+    - chapters/ch01.qmd
+    - chapters/ch02.qmd
+    - chapters/ch03.qmd
+    - chapters/ch04.qmd
+    - chapters/ch05.qmd
+    - chapters/ch06.qmd
+    - chapters/ch07.qmd
+    - chapters/ch08.qmd
+    - chapters/ch09.qmd
+    - chapters/ch10.qmd
+    - chapters/ch11.qmd
+    - chapters/ch12.qmd
+    - chapters/ch13.qmd
+    - chapters/appendix.qmd
+
+lang: th
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 2
+    toc-title: "ในบทนี้"
+    number-sections: false
+    fontsize: 1.05rem
+    linestretch: 1.5
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+          body, .sidebar, .toc-actions, h1, h2, h3, h4 { font-family: 'Sarabun', sans-serif; }
+          pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+        </style>
+  pdf:
+    documentclass: report
+    pdf-engine: xelatex
+    mainfont: "Thonburi"
+    fontsize: 11pt
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    geometry: margin=1in
+    linestretch: 1.2
+    include-in-header: pdf-header.tex

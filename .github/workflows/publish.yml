@@ -1,0 +1,30 @@
+name: Publish PGx Handbook (Quarto Book to GitHub Pages)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      # เรนเดอร์เฉพาะ HTML (ฉบับเว็บ) — ไม่เรนเดอร์ PDF บน CI
+      # เพราะ PDF ตั้งค่าใช้ฟอนต์ Thonburi ซึ่งมีเฉพาะบนเครื่อง macOS
+      - name: Render book (HTML only)
+        run: quarto render --to html
+
+      - name: Deploy to GitHub Pages (gh-pages branch)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_book

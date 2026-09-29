@@ -2,3 +2,4 @@
 _freeze/
 *.rds
 .DS_Store
+/_book/
