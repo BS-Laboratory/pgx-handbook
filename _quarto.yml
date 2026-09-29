@@ -3,7 +3,7 @@ project:
   output-dir: _book
   # เรนเดอร์เฉพาะไฟล์ของหนังสือ ไม่รวม README.qmd (ซึ่งไว้สร้างหน้า GitHub + PDF เล่มเดียวแยกต่างหาก)
   render:
-    - chapters/index.qmd
+    - index.qmd
     - chapters/ch01.qmd
     - chapters/ch02.qmd
     - chapters/ch03.qmd
@@ -27,7 +27,7 @@ book:
   reader-mode: true
   page-footer: "คู่มือเภสัชพันธุศาสตร์ (PGx Handbook) · Bhoom Suktitipat Laboratory"
   chapters:
-    - chapters/index.qmd
+    - index.qmd
     - chapters/ch01.qmd
     - chapters/ch02.qmd
     - chapters/ch03.qmd

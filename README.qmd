@@ -19,7 +19,7 @@ format:
     include-in-header: pdf-header.tex
 ---
 
-{{< include chapters/index.qmd >}}
+{{< include index.qmd >}}
 
 {{< include chapters/ch01.qmd >}}
 
