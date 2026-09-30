@@ -4,6 +4,7 @@ project:
   # เรนเดอร์เฉพาะไฟล์ของหนังสือ ไม่รวม README.qmd (ซึ่งไว้สร้างหน้า GitHub + PDF เล่มเดียวแยกต่างหาก)
   render:
     - index.qmd
+    - chapters/preface.qmd
     - chapters/ch01.qmd
     - chapters/ch02.qmd
     - chapters/ch03.qmd
@@ -30,6 +31,7 @@ book:
     right: "Bhoom Suktitipat Laboratory"
   chapters:
     - index.qmd
+    - chapters/preface.qmd
     - chapters/ch01.qmd
     - chapters/ch02.qmd
     - chapters/ch03.qmd

@@ -86,6 +86,8 @@ Activity Score เปรียบได้กับการให้คะแ�
 
 **Activity Score (AS)** = Activity Value ของอัลลีลชุดที่ 1 + Activity Value ของอัลลีลชุดที่ 2
 
+![ตัวอย่างการรวม Activity Score: อัลลีล \*1 (ค่า 1.0) รวมกับ \*4 (ค่า 0) ได้ Activity Score = 1.0 จัดเป็น Intermediate Metabolizer](/images/activity-score.png){#fig-activity-score fig-align="center"}
+
 ### ตัวอย่างการคำนวณ
 
 ```

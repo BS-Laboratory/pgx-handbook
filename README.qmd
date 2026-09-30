@@ -21,6 +21,8 @@ format:
 
 {{< include index.qmd >}}
 
+{{< include chapters/preface.qmd >}}
+
 {{< include chapters/ch01.qmd >}}
 
 {{< include chapters/ch02.qmd >}}
