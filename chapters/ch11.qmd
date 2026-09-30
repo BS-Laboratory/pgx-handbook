@@ -166,9 +166,9 @@ Metformin
 
 ## เอกสารอ้างอิง
 
-1. International Transporter Consortium; Giacomini KM, Huang SM, Tweedie DJ, et al. Membrane transporters in drug development. *Nat Rev Drug Discov*. 2010;9(3):215–236. doi:10.1038/nrd3028
-2. Niemi M, Pasanen MK, Neuvonen PJ. Organic anion transporting polypeptide 1B1: a genetically polymorphic transporter of major importance for hepatic drug uptake. *Pharmacol Rev*. 2011;63(1):157–181. doi:10.1124/pr.110.002857
-3. SEARCH Collaborative Group. SLCO1B1 variants and statin-induced myopathy—a genomewide study. *N Engl J Med*. 2008;359(8):789–799. doi:10.1056/NEJMoa0801936
-4. Cooper-DeHoff RM, Niemi M, Ramsey LB, et al. The Clinical Pharmacogenetics Implementation Consortium guideline for SLCO1B1, ABCG2, and CYP2C9 genotypes and statin-associated musculoskeletal symptoms. *Clin Pharmacol Ther*. 2022;111(5):1007–1021. doi:10.1002/cpt.2557
-5. Ieiri I. Functional significance of genetic polymorphisms in P-glycoprotein (MDR1, ABCB1), BCRP (ABCG2) and MRP2 (ABCC2). *Drug Metab Pharmacokinet*. 2012;27(1):85–105. doi:10.2133/dmpk.dmpk-11-rv-098
-6. Sundelin E, Gormsen LC, Jensen JB, et al. Genetic polymorphisms in organic cation transporter 1 attenuates hepatic metformin exposure in humans. *Clin Pharmacol Ther*. 2017;102(5):841–848. doi:10.1002/cpt.701
+1. International Transporter Consortium; Giacomini KM, Huang SM, Tweedie DJ, et al. Membrane transporters in drug development. *Nat Rev Drug Discov*. 2010;9(3):215–236. [doi:10.1038/nrd3028](https://doi.org/10.1038/nrd3028)
+2. Niemi M, Pasanen MK, Neuvonen PJ. Organic anion transporting polypeptide 1B1: a genetically polymorphic transporter of major importance for hepatic drug uptake. *Pharmacol Rev*. 2011;63(1):157–181. [doi:10.1124/pr.110.002857](https://doi.org/10.1124/pr.110.002857)
+3. SEARCH Collaborative Group. SLCO1B1 variants and statin-induced myopathy—a genomewide study. *N Engl J Med*. 2008;359(8):789–799. [doi:10.1056/NEJMoa0801936](https://doi.org/10.1056/NEJMoa0801936)
+4. Cooper-DeHoff RM, Niemi M, Ramsey LB, et al. The Clinical Pharmacogenetics Implementation Consortium guideline for SLCO1B1, ABCG2, and CYP2C9 genotypes and statin-associated musculoskeletal symptoms. *Clin Pharmacol Ther*. 2022;111(5):1007–1021. [doi:10.1002/cpt.2557](https://doi.org/10.1002/cpt.2557)
+5. Ieiri I. Functional significance of genetic polymorphisms in P-glycoprotein (MDR1, ABCB1), BCRP (ABCG2) and MRP2 (ABCC2). *Drug Metab Pharmacokinet*. 2012;27(1):85–105. [doi:10.2133/dmpk.dmpk-11-rv-098](https://doi.org/10.2133/dmpk.dmpk-11-rv-098)
+6. Sundelin E, Gormsen LC, Jensen JB, et al. Genetic polymorphisms in organic cation transporter 1 attenuates hepatic metformin exposure in humans. *Clin Pharmacol Ther*. 2017;102(5):841–848. [doi:10.1002/cpt.701](https://doi.org/10.1002/cpt.701)

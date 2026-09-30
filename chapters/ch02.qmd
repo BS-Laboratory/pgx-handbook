@@ -139,8 +139,8 @@ PD ศึกษาว่าเมื่อยาไปถึงตำแหน�
 
 ## เอกสารอ้างอิง
 
-1. Ernstmeyer K, Christman E, editors. Chapter 1: Pharmacokinetics & pharmacodynamics. In: *Nursing Pharmacology*. 2nd ed. Chippewa Valley Technical College; 2023. https://www.ncbi.nlm.nih.gov/books/NBK595006/
-2. Grogan S, Preuss CV. Pharmacokinetics. In: *StatPearls*. StatPearls Publishing; 2023. https://www.ncbi.nlm.nih.gov/books/NBK557744/
-3. Patel T, Rahimi N, Cassagnol M. Biochemistry, cytochrome P450. In: *StatPearls*. StatPearls Publishing; 2026. https://www.ncbi.nlm.nih.gov/books/NBK557698/
-4. กุสุมา ณ อยุธยา ศ, คงคา ร. เภสัชจลนศาสตร์ (Pharmacokinetics) และเภสัชพลศาสตร์ (Pharmacodynamics) [เอกสารประกอบการสอน]. คณะพยาบาลศาสตร์ มหาวิทยาลัยมหิดล; ม.ป.ป. https://ns.mahidol.ac.th/english/th/departments/MN/th/doc/km54/เภสัชจลนศาสตร์%20(Pharmacokinetics).pdf
-5. Zhao M, Ma J, Li M, et al. Cytochrome P450 enzymes and drug metabolism in humans. *Int J Mol Sci*. 2021;22(23):12808. doi:10.3390/ijms222312808
+1. Ernstmeyer K, Christman E, editors. Chapter 1: Pharmacokinetics & pharmacodynamics. In: *Nursing Pharmacology*. 2nd ed. Chippewa Valley Technical College; 2023. <https://www.ncbi.nlm.nih.gov/books/NBK595006/>
+2. Grogan S, Preuss CV. Pharmacokinetics. In: *StatPearls*. StatPearls Publishing; 2023. <https://www.ncbi.nlm.nih.gov/books/NBK557744/>
+3. Patel T, Rahimi N, Cassagnol M. Biochemistry, cytochrome P450. In: *StatPearls*. StatPearls Publishing; 2026. <https://www.ncbi.nlm.nih.gov/books/NBK557698/>
+4. กุสุมา ณ อยุธยา ศ, คงคา ร. เภสัชจลนศาสตร์ (Pharmacokinetics) และเภสัชพลศาสตร์ (Pharmacodynamics) [เอกสารประกอบการสอน]. คณะพยาบาลศาสตร์ มหาวิทยาลัยมหิดล; ม.ป.ป. <https://ns.mahidol.ac.th/english/th/departments/MN/th/doc/km54/เภสัชจลนศาสตร์%20(Pharmacokinetics>).pdf
+5. Zhao M, Ma J, Li M, et al. Cytochrome P450 enzymes and drug metabolism in humans. *Int J Mol Sci*. 2021;22(23):12808. [doi:10.3390/ijms222312808](https://doi.org/10.3390/ijms222312808)

@@ -26,8 +26,13 @@ book:
   date: today
   search: true
   reader-mode: true
+  repo-url: https://github.com/BS-Laboratory/pgx-handbook
+  repo-actions: [source, issue]
   page-footer:
     left: "คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)"
+    center:
+      - text: "GitHub Repository"
+        href: https://github.com/BS-Laboratory/pgx-handbook
     right: "Bhoom Suktitipat Laboratory"
   chapters:
     - index.qmd

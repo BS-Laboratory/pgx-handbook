@@ -93,11 +93,11 @@ CYP2D6 มีรูปแบบความแตกต่างระหว่�
 
 ## เอกสารอ้างอิง
 
-1. Hines RN. The ontogeny of drug metabolism enzymes and implications for adverse drug events. *Pharmacol Ther*. 2008;118(2):250–267. doi:10.1016/j.pharmthera.2008.02.005
-2. Johnson TN, Rostami-Hodjegan A, Tucker GT. Prediction of the clearance of eleven drugs and associated variability in neonates, infants and children. *Clin Pharmacokinet*. 2006;45(9):931–956. doi:10.2165/00003088-200645090-00005
-3. Sukprasong R, Chuwongwattana S, Koomdee N, et al. Allele frequencies of single nucleotide polymorphisms of clinically important drug-metabolizing enzymes CYP2C9, CYP2C19, and CYP3A4 in a Thai population. *Sci Rep*. 2021;11(1):12343. doi:10.1038/s41598-021-90969-y
-4. Nakhonsri V, John S, Panumasmontol H, et al. The diversity of CYP2C19 polymorphisms in the Thai population: implications for precision medicine. *Appl Clin Genet*. 2024;17:95–105. doi:10.2147/TACG.S463965
-5. Tassaneeyakul W, Mahatthanatrakul W, Niwatananun K, et al. CYP2C19 genetic polymorphism in Thai, Burmese and Karen populations. *Drug Metab Pharmacokinet*. 2006;21(4):286–290. doi:10.2133/dmpk.21.286
-6. Bradford LD. CYP2D6 allele frequency in European Caucasians, Asians, Africans and their descendants. *Pharmacogenomics*. 2002;3(2):229–243. doi:10.1517/14622416.3.2.229
+1. Hines RN. The ontogeny of drug metabolism enzymes and implications for adverse drug events. *Pharmacol Ther*. 2008;118(2):250–267. [doi:10.1016/j.pharmthera.2008.02.005](https://doi.org/10.1016/j.pharmthera.2008.02.005)
+2. Johnson TN, Rostami-Hodjegan A, Tucker GT. Prediction of the clearance of eleven drugs and associated variability in neonates, infants and children. *Clin Pharmacokinet*. 2006;45(9):931–956. [doi:10.2165/00003088-200645090-00005](https://doi.org/10.2165/00003088-200645090-00005)
+3. Sukprasong R, Chuwongwattana S, Koomdee N, et al. Allele frequencies of single nucleotide polymorphisms of clinically important drug-metabolizing enzymes CYP2C9, CYP2C19, and CYP3A4 in a Thai population. *Sci Rep*. 2021;11(1):12343. [doi:10.1038/s41598-021-90969-y](https://doi.org/10.1038/s41598-021-90969-y)
+4. Nakhonsri V, John S, Panumasmontol H, et al. The diversity of CYP2C19 polymorphisms in the Thai population: implications for precision medicine. *Appl Clin Genet*. 2024;17:95–105. [doi:10.2147/TACG.S463965](https://doi.org/10.2147/TACG.S463965)
+5. Tassaneeyakul W, Mahatthanatrakul W, Niwatananun K, et al. CYP2C19 genetic polymorphism in Thai, Burmese and Karen populations. *Drug Metab Pharmacokinet*. 2006;21(4):286–290. [doi:10.2133/dmpk.21.286](https://doi.org/10.2133/dmpk.21.286)
+6. Bradford LD. CYP2D6 allele frequency in European Caucasians, Asians, Africans and their descendants. *Pharmacogenomics*. 2002;3(2):229–243. [doi:10.1517/14622416.3.2.229](https://doi.org/10.1517/14622416.3.2.229)
 7. Dorji PW, Tshering G, Na-Bangchang K. CYP2C9, CYP2C19, CYP2D6 and CYP3A5 polymorphisms in South-East and East Asian populations: a systematic review. *J Clin Pharm Ther*. 2019;44(4):508–524.
-8. Klotz U. Pharmacokinetics and drug metabolism in the elderly. *Drug Metab Rev*. 2009;41(2):67–76. doi:10.1080/03602530902722679
+8. Klotz U. Pharmacokinetics and drug metabolism in the elderly. *Drug Metab Rev*. 2009;41(2):67–76. [doi:10.1080/03602530902722679](https://doi.org/10.1080/03602530902722679)

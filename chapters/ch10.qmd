@@ -110,7 +110,7 @@ Phenoconversion คือภาวะที่ฟีโนไทป์ที่�
 
 ## เอกสารอ้างอิง
 
-1. Klomp SD, Manson ML, Guchelaar HJ, Swen JJ. Phenoconversion of cytochrome P450 metabolism: a systematic review. *J Clin Med*. 2020;9(9):2890. doi:10.3390/jcm9092890
-2. Cicali EJ, Elchynski AL, Cook KJ, et al. How to integrate CYP2D6 phenoconversion into clinical pharmacogenetics: a tutorial. *Clin Pharmacol Ther*. 2021;110(3):677–687. doi:10.1002/cpt.2354
-3. Flockhart DA, Thacker D, McDonald C, Desta Z. The Flockhart cytochrome P450 drug–drug interaction table. Division of Clinical Pharmacology, Indiana University School of Medicine; 2021. https://drug-interactions.medicine.iu.edu
-4. Bahar MA, Setiawan D, Hak E, Wilffert B. Pharmacogenetics of drug–drug interaction and drug–drug–gene interaction: a systematic review on CYP2C9, CYP2C19 and CYP2D6. *Pharmacogenomics*. 2017;18(7):701–739. doi:10.2217/pgs-2017-0194
+1. Klomp SD, Manson ML, Guchelaar HJ, Swen JJ. Phenoconversion of cytochrome P450 metabolism: a systematic review. *J Clin Med*. 2020;9(9):2890. [doi:10.3390/jcm9092890](https://doi.org/10.3390/jcm9092890)
+2. Cicali EJ, Elchynski AL, Cook KJ, et al. How to integrate CYP2D6 phenoconversion into clinical pharmacogenetics: a tutorial. *Clin Pharmacol Ther*. 2021;110(3):677–687. [doi:10.1002/cpt.2354](https://doi.org/10.1002/cpt.2354)
+3. Flockhart DA, Thacker D, McDonald C, Desta Z. The Flockhart cytochrome P450 drug–drug interaction table. Division of Clinical Pharmacology, Indiana University School of Medicine; 2021. <https://drug-interactions.medicine.iu.edu>
+4. Bahar MA, Setiawan D, Hak E, Wilffert B. Pharmacogenetics of drug–drug interaction and drug–drug–gene interaction: a systematic review on CYP2C9, CYP2C19 and CYP2D6. *Pharmacogenomics*. 2017;18(7):701–739. [doi:10.2217/pgs-2017-0194](https://doi.org/10.2217/pgs-2017-0194)

@@ -188,15 +188,15 @@ flowchart TD
 
 ## เอกสารอ้างอิง
 
-1. Phillips EJ, Sukasem C, Whirl-Carrillo M, et al. Clinical Pharmacogenetics Implementation Consortium guideline for HLA genotype and use of carbamazepine and oxcarbazepine: 2017 update. *Clin Pharmacol Ther*. 2018;103(4):574–581. doi:10.1002/cpt.1004
-2. Illing PT, Vivian JP, Dudek NL, et al. Immune self-reactivity triggered by drug-modified HLA-peptide repertoire. *Nature*. 2012;486(7404):554–558. doi:10.1038/nature11147
-3. Robinson J, et al. IPD-IMGT/HLA Database. *Nucleic Acids Res*. 2020;48(D1):D948–D955. doi:10.1093/nar/gkz950
-4. Harr T, French LE. Toxic epidermal necrolysis and Stevens-Johnson syndrome. *Orphanet J Rare Dis*. 2010;5:39. doi:10.1186/1750-1172-5-39
-5. Martin MA, Hoffman JM, Freimuth RR, et al. Clinical Pharmacogenetics Implementation Consortium guidelines for HLA-B genotype and abacavir dosing: 2014 update. *Clin Pharmacol Ther*. 2014;95(5):499–500. doi:10.1038/clpt.2014.38
-6. Mallal S, Phillips E, Carosi G, et al. HLA-B\*5701 screening for hypersensitivity to abacavir. *N Engl J Med*. 2008;358(6):568–579. doi:10.1056/NEJMoa0706135
-7. Tassaneeyakul W, et al. Association between HLA-B\*1502 and carbamazepine-induced severe cutaneous adverse drug reactions in a Thai population. *Epilepsia*. 2010;51(5):926–930. doi:10.1111/j.1528-1167.2010.02533.x
-8. Sukasem C, et al. Implementation of HLA-B\*15:02 genotyping as standard-of-care for reducing carbamazepine/oxcarbazepine induced cutaneous adverse drug reactions in Thailand. *Front Pharmacol*. 2022;13:867490. doi:10.3389/fphar.2022.867490
-9. Tassaneeyakul W, et al. Strong association between HLA-B\*5801 and allopurinol-induced Stevens-Johnson syndrome and toxic epidermal necrolysis in a Thai population. *Pharmacogenet Genomics*. 2009;19(9):704–709. doi:10.1097/FPC.0b013e328330a3b8
-10. Saito Y, Stamp LK, Caudle KE, et al. Clinical Pharmacogenetics Implementation Consortium (CPIC) guidelines for human leukocyte antigen B (HLA-B) genotype and allopurinol dosing: 2015 update. *Clin Pharmacol Ther*. 2016;99(1):36–37. doi:10.1002/cpt.161
-11. Zhang FR, Liu H, Irwanto A, et al. HLA-B\*13:01 and the dapsone hypersensitivity syndrome. *N Engl J Med*. 2013;369(17):1620–1628. doi:10.1056/NEJMoa1213096
-12. Jaruthamsophon K, et al. HLA-B\*15:21 and carbamazepine-induced Stevens-Johnson syndrome: pooled-data and in silico analysis. *Sci Rep*. 2017;7:45553. doi:10.1038/srep45553
+1. Phillips EJ, Sukasem C, Whirl-Carrillo M, et al. Clinical Pharmacogenetics Implementation Consortium guideline for HLA genotype and use of carbamazepine and oxcarbazepine: 2017 update. *Clin Pharmacol Ther*. 2018;103(4):574–581. [doi:10.1002/cpt.1004](https://doi.org/10.1002/cpt.1004)
+2. Illing PT, Vivian JP, Dudek NL, et al. Immune self-reactivity triggered by drug-modified HLA-peptide repertoire. *Nature*. 2012;486(7404):554–558. [doi:10.1038/nature11147](https://doi.org/10.1038/nature11147)
+3. Robinson J, et al. IPD-IMGT/HLA Database. *Nucleic Acids Res*. 2020;48(D1):D948–D955. [doi:10.1093/nar/gkz950](https://doi.org/10.1093/nar/gkz950)
+4. Harr T, French LE. Toxic epidermal necrolysis and Stevens-Johnson syndrome. *Orphanet J Rare Dis*. 2010;5:39. [doi:10.1186/1750-1172-5-39](https://doi.org/10.1186/1750-1172-5-39)
+5. Martin MA, Hoffman JM, Freimuth RR, et al. Clinical Pharmacogenetics Implementation Consortium guidelines for HLA-B genotype and abacavir dosing: 2014 update. *Clin Pharmacol Ther*. 2014;95(5):499–500. [doi:10.1038/clpt.2014.38](https://doi.org/10.1038/clpt.2014.38)
+6. Mallal S, Phillips E, Carosi G, et al. HLA-B\*5701 screening for hypersensitivity to abacavir. *N Engl J Med*. 2008;358(6):568–579. [doi:10.1056/NEJMoa0706135](https://doi.org/10.1056/NEJMoa0706135)
+7. Tassaneeyakul W, et al. Association between HLA-B\*1502 and carbamazepine-induced severe cutaneous adverse drug reactions in a Thai population. *Epilepsia*. 2010;51(5):926–930. [doi:10.1111/j.1528-1167.2010.02533.x](https://doi.org/10.1111/j.1528-1167.2010.02533.x)
+8. Sukasem C, et al. Implementation of HLA-B\*15:02 genotyping as standard-of-care for reducing carbamazepine/oxcarbazepine induced cutaneous adverse drug reactions in Thailand. *Front Pharmacol*. 2022;13:867490. [doi:10.3389/fphar.2022.867490](https://doi.org/10.3389/fphar.2022.867490)
+9. Tassaneeyakul W, et al. Strong association between HLA-B\*5801 and allopurinol-induced Stevens-Johnson syndrome and toxic epidermal necrolysis in a Thai population. *Pharmacogenet Genomics*. 2009;19(9):704–709. [doi:10.1097/FPC.0b013e328330a3b8](https://doi.org/10.1097/FPC.0b013e328330a3b8)
+10. Saito Y, Stamp LK, Caudle KE, et al. Clinical Pharmacogenetics Implementation Consortium (CPIC) guidelines for human leukocyte antigen B (HLA-B) genotype and allopurinol dosing: 2015 update. *Clin Pharmacol Ther*. 2016;99(1):36–37. [doi:10.1002/cpt.161](https://doi.org/10.1002/cpt.161)
+11. Zhang FR, Liu H, Irwanto A, et al. HLA-B\*13:01 and the dapsone hypersensitivity syndrome. *N Engl J Med*. 2013;369(17):1620–1628. [doi:10.1056/NEJMoa1213096](https://doi.org/10.1056/NEJMoa1213096)
+12. Jaruthamsophon K, et al. HLA-B\*15:21 and carbamazepine-induced Stevens-Johnson syndrome: pooled-data and in silico analysis. *Sci Rep*. 2017;7:45553. [doi:10.1038/srep45553](https://doi.org/10.1038/srep45553)

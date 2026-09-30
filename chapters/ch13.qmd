@@ -185,10 +185,10 @@ flowchart LR
 
 ## เอกสารอ้างอิง
 
-1. Pirmohamed M. Pharmacogenomics: current status and future perspectives. *Nat Rev Genet*. 2023;24(6):350–362. doi:10.1038/s41576-022-00572-8
-2. Swen JJ, van der Wouden CH, Manson LE, et al. A 12-gene pharmacogenetic panel to prevent adverse drug reactions: an open-label, multicentre, controlled, cluster-randomised crossover implementation study (PREPARE). *Lancet*. 2023;401(10374):347–356. doi:10.1016/S0140-6736(22)01841-4
+1. Pirmohamed M. Pharmacogenomics: current status and future perspectives. *Nat Rev Genet*. 2023;24(6):350–362. [doi:10.1038/s41576-022-00572-8](https://doi.org/10.1038/s41576-022-00572-8)
+2. Swen JJ, van der Wouden CH, Manson LE, et al. A 12-gene pharmacogenetic panel to prevent adverse drug reactions: an open-label, multicentre, controlled, cluster-randomised crossover implementation study (PREPARE). *Lancet*. 2023;401(10374):347–356. [doi:10.1016/S0140-6736(22](https://doi.org/10.1016/S0140-6736(22))01841-4
 3. Dagli-Hernandez C, et al. Implementation of pre-emptive pharmacogenomic testing in outpatient clinics: experience from Asia. (ผู้เขียนควรตรวจสอบและแทนที่ด้วยการอ้างอิงฉบับสมบูรณ์ก่อนตีพิมพ์)
-4. National Human Genome Research Institute. The cost of sequencing a human genome. https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost
-5. Saokaew S, Tassaneeyakul W, Maenthaisong R, Chaiyakunapruk N. Cost-effectiveness analysis of HLA-B\*5801 testing in preventing allopurinol-induced SJS/TEN in Thai population. *PLoS One*. 2014;9(4):e94294. doi:10.1371/journal.pone.0094294
-6. Kanegusuku AG, Chan CW, O'Donnell PH, Yeo KJ. Implementation of pharmacogenomics testing for precision medicine. *Crit Rev Clin Lab Sci*. 2024;61(2):89–106. doi:10.1080/10408363.2023.2255279
-7. Medwid S, Kim RB. Implementation of pharmacogenomics: where are we now? *Br J Clin Pharmacol*. 2024. doi:10.1111/bcp.15591
+4. National Human Genome Research Institute. The cost of sequencing a human genome. <https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost>
+5. Saokaew S, Tassaneeyakul W, Maenthaisong R, Chaiyakunapruk N. Cost-effectiveness analysis of HLA-B\*5801 testing in preventing allopurinol-induced SJS/TEN in Thai population. *PLoS One*. 2014;9(4):e94294. [doi:10.1371/journal.pone.0094294](https://doi.org/10.1371/journal.pone.0094294)
+6. Kanegusuku AG, Chan CW, O'Donnell PH, Yeo KJ. Implementation of pharmacogenomics testing for precision medicine. *Crit Rev Clin Lab Sci*. 2024;61(2):89–106. [doi:10.1080/10408363.2023.2255279](https://doi.org/10.1080/10408363.2023.2255279)
+7. Medwid S, Kim RB. Implementation of pharmacogenomics: where are we now? *Br J Clin Pharmacol*. 2024. [doi:10.1111/bcp.15591](https://doi.org/10.1111/bcp.15591)

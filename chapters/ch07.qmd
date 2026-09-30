@@ -209,11 +209,11 @@ flowchart TD
 
 ## เอกสารอ้างอิง
 
-1. Nakhonsri V, John S, Panumasmontol H, et al. The diversity of CYP2C19 polymorphisms in the Thai population: implications for precision medicine. *Appl Clin Genet*. 2024;17:95–105. doi:10.2147/TACG.S463965
-2. Sukasem C, Tunthong R, Chamnanphon M, et al. CYP2C19 polymorphisms in the Thai population and the clinical response to clopidogrel in patients with atherothrombotic-risk factors. *Pharmgenomics Pers Med*. 2013;6:85–91. doi:10.2147/PGPM.S42332
-3. Relling MV, Evans WE. Pharmacogenomics in the clinic. *Nature*. 2015;526(7573):343–350. doi:10.1038/nature15817
-4. Lee CR, Luzum JA, Sangkuhl K, et al. Clinical Pharmacogenetics Implementation Consortium guideline for CYP2C19 genotype and clopidogrel therapy: 2022 update. *Clin Pharmacol Ther*. 2022;112(5):959–967. doi:10.1002/cpt.2526
-5. Cooper-DeHoff RM, Niemi M, Ramsey LB, et al. The Clinical Pharmacogenetics Implementation Consortium guideline for SLCO1B1, ABCG2, and CYP2C9 genotypes and statin-associated musculoskeletal symptoms. *Clin Pharmacol Ther*. 2022;111(5):1007–1021. doi:10.1002/cpt.2557
-6. SEARCH Collaborative Group. SLCO1B1 variants and statin-induced myopathy—a genomewide study. *N Engl J Med*. 2008;359(8):789–799. doi:10.1056/NEJMoa0801936
-7. Johnson JA, Caudle KE, Gong L, et al. Clinical Pharmacogenetics Implementation Consortium (CPIC) guideline for pharmacogenetics-guided warfarin dosing: 2017 update. *Clin Pharmacol Ther*. 2017;102(3):397–404. doi:10.1002/cpt.668
-8. Bristol-Myers Squibb. COUMADIN (warfarin sodium) tablets and injection: prescribing information. Princeton, NJ; 2017. เข้าถึงได้จาก Drugs@FDA: https://www.accessdata.fda.gov/scripts/cder/daf/
+1. Nakhonsri V, John S, Panumasmontol H, et al. The diversity of CYP2C19 polymorphisms in the Thai population: implications for precision medicine. *Appl Clin Genet*. 2024;17:95–105. [doi:10.2147/TACG.S463965](https://doi.org/10.2147/TACG.S463965)
+2. Sukasem C, Tunthong R, Chamnanphon M, et al. CYP2C19 polymorphisms in the Thai population and the clinical response to clopidogrel in patients with atherothrombotic-risk factors. *Pharmgenomics Pers Med*. 2013;6:85–91. [doi:10.2147/PGPM.S42332](https://doi.org/10.2147/PGPM.S42332)
+3. Relling MV, Evans WE. Pharmacogenomics in the clinic. *Nature*. 2015;526(7573):343–350. [doi:10.1038/nature15817](https://doi.org/10.1038/nature15817)
+4. Lee CR, Luzum JA, Sangkuhl K, et al. Clinical Pharmacogenetics Implementation Consortium guideline for CYP2C19 genotype and clopidogrel therapy: 2022 update. *Clin Pharmacol Ther*. 2022;112(5):959–967. [doi:10.1002/cpt.2526](https://doi.org/10.1002/cpt.2526)
+5. Cooper-DeHoff RM, Niemi M, Ramsey LB, et al. The Clinical Pharmacogenetics Implementation Consortium guideline for SLCO1B1, ABCG2, and CYP2C9 genotypes and statin-associated musculoskeletal symptoms. *Clin Pharmacol Ther*. 2022;111(5):1007–1021. [doi:10.1002/cpt.2557](https://doi.org/10.1002/cpt.2557)
+6. SEARCH Collaborative Group. SLCO1B1 variants and statin-induced myopathy—a genomewide study. *N Engl J Med*. 2008;359(8):789–799. [doi:10.1056/NEJMoa0801936](https://doi.org/10.1056/NEJMoa0801936)
+7. Johnson JA, Caudle KE, Gong L, et al. Clinical Pharmacogenetics Implementation Consortium (CPIC) guideline for pharmacogenetics-guided warfarin dosing: 2017 update. *Clin Pharmacol Ther*. 2017;102(3):397–404. [doi:10.1002/cpt.668](https://doi.org/10.1002/cpt.668)
+8. Bristol-Myers Squibb. COUMADIN (warfarin sodium) tablets and injection: prescribing information. Princeton, NJ; 2017. เข้าถึงได้จาก Drugs@FDA: <https://www.accessdata.fda.gov/scripts/cder/daf/>
