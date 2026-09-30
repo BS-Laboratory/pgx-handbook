@@ -297,6 +297,12 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/preface.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">คำนำ</span></a>
   </div>
 </li>
@@ -451,6 +457,33 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>เมื่อผลตรวจพันธุกรรมของผู้ป่วยระบุว่าเป็น “CYP2C19 Poor Metabolizer” คำถามที่ตามมาทันทีคือ แพทย์ควรปรับการรักษาอย่างไร ควรลดขนาดยา เปลี่ยนเป็นยาชนิดอื่น หรือไม่ต้องปรับเปลี่ยนเลย คำถามลักษณะนี้เกิดขึ้นซ้ำในเวชปฏิบัติทั่วโลก และเป็นที่มาของการก่อตั้ง <strong>Clinical Pharmacogenetics Implementation Consortium (CPIC)</strong> ซึ่งเป็นองค์กรที่มีบทบาทสำคัญที่สุดองค์กรหนึ่งในการนำเภสัชพันธุศาสตร์ไปใช้ทางคลินิก</p>
 <p>บทนี้จะอธิบายที่มา กระบวนการพัฒนาแนวทาง ระบบการจัดระดับ ตัวอย่างการปรับปรุงแนวทาง และข้อจำกัดของ CPIC ที่ผู้อ่านชาวไทยควรตระหนัก</p>
+<p><strong>เส้นทางจากรหัสพันธุกรรมสู่การสั่งจ่ายยา (Right drug · Right dose · Right patient)</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-cpic-pipeline" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cpic-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-cpic-pipeline">flowchart LR
+  A["1. Genotype&lt;br/&gt;ข้อมูลพันธุกรรม&lt;br/&gt;SNP · CNV · HLA&lt;br/&gt;เช่น CYP2C19 *2"]:::step
+  B["2. Diplotype&lt;br/&gt;รูปแบบยีนของบุคคล&lt;br/&gt;เช่น *1/*2"]:::step
+  C["3. Phenotype&lt;br/&gt;การทำงานของเอนไซม์&lt;br/&gt;PM · IM · NM · RM · UM"]:::step
+  D["4. คำแนะนำ CPIC&lt;br/&gt;ยา · ขนาด/ทางเลือก&lt;br/&gt;+ ระดับความน่าเชื่อถือ"]:::accent
+  E["5. การสั่งจ่ายยา&lt;br/&gt;เลือกยา/ปรับขนาด&lt;br/&gt;ติดตามความปลอดภัย"]:::step
+  A --&gt; B --&gt; C --&gt; D --&gt; E
+  classDef step fill:#eef4f8,stroke:#0b6e99,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cpic-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.1: เส้นทางการนำข้อมูลพันธุกรรมไปสู่การสั่งจ่ายยาตามแนวทาง CPIC
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>ตัวอย่างคำแนะนำตามฟีโนไทป์ เช่น <strong>CYP2C19 + Clopidogrel</strong> (PM/IM พิจารณาใช้ยาต้านเกล็ดเลือดทางเลือก เช่น prasugrel หรือ ticagrelor ส่วน NM/RM/UM ใช้ Clopidogrel ได้ตามปกติ), <strong>CYP2D6 + Codeine</strong> (PM หลีกเลี่ยงเพราะเสี่ยงไม่ได้ผล และ UM หลีกเลี่ยงเพราะเสี่ยงพิษจาก morphine สูง) และ <strong>HLA-B*15:02 + Carbamazepine</strong> (พบอัลลีลให้หลีกเลี่ยงยาเพราะเสี่ยง SJS/TEN) โดยแต่ละคำแนะนำมีระดับความเข้มข้น (Strong / Moderate / Optional) ตามน้ำหนักของหลักฐาน (รายละเอียดในหัวข้อ 6.4)</p>
 <section id="ทมาและโครงสรางของ-cpic" class="level2">
 <h2 class="anchored" data-anchor-id="ทมาและโครงสรางของ-cpic">6.1 ที่มาและโครงสร้างของ CPIC</h2>
 <p>CPIC ก่อตั้งในปี ค.ศ. 2009 ภายใต้ความร่วมมือของ Pharmacogenomics Research Network (PGRN) และ PharmGKB โดยมี Mary V. Relling และ Teri E. Klein เป็นผู้ริเริ่มหลัก และตีพิมพ์กรอบแนวคิดขององค์กรในวารสาร <em>Clinical Pharmacology &amp; Therapeutics</em> ในปี ค.ศ. 2011 [1] บทความดังกล่าวระบุว่าการนำการตรวจเภสัชพันธุศาสตร์ไปใช้ในเวชปฏิบัติยังอยู่ในระดับต่ำ ส่วนหนึ่งเพราะขาดแนวทางที่ชัดเจนว่าเมื่อได้ผลตรวจพันธุกรรมแล้ว ควรปรับการรักษาอย่างไร</p>

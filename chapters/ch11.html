@@ -52,6 +52,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-6b142e7faa852efe82cf055f57d87643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-95863237d9acc750b64c3c49c9e6d325.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-6b142e7faa852efe82cf055f57d87643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -297,6 +300,12 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/preface.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">คำนำ</span></a>
   </div>
 </li>
@@ -451,6 +460,16 @@ ul.task-list li input[type="checkbox"] {
 <p>ในบทที่ 2 เราเรียนรู้กระบวนการ ADME และในบทที่ 3 เรารู้จักเอนไซม์ CYP450 ที่เผาผลาญยาในตับ บทนี้จะศึกษาตัวขนส่งยาที่สำคัญ ซึ่งทำงานทั้งก่อนและหลังการเผาผลาญยา</p>
 <section id="ตวขนสงยาคออะไร" class="level2">
 <h2 class="anchored" data-anchor-id="ตวขนสงยาคออะไร">11.1 ตัวขนส่งยาคืออะไร</h2>
+<div id="fig-transporters" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-transporters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/drug-transporters.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;11.1: ตำแหน่งตัวขนส่งยาในร่างกาย: ตัวขนส่งยาที่สำคัญกระจายอยู่ตามอวัยวะต่าง ๆ — ลำไส้ (P-gp, BCRP) ควบคุมการดูดซึม, ตับ (OATP1B1/1B3, MRP2, BSEP) เกี่ยวกับการนำยาเข้าเซลล์และขับออกทางน้ำดี, Blood–Brain Barrier (P-gp, BCRP) ควบคุมการผ่านของยาสู่สมอง และไต (OAT1/3, OCT2, P-gp, MATE1/2-K) ควบคุมการขับยาทางปัสสาวะ"><img src="../images/drug-transporters.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-transporters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.1: ตำแหน่งตัวขนส่งยาในร่างกาย: ตัวขนส่งยาที่สำคัญกระจายอยู่ตามอวัยวะต่าง ๆ — ลำไส้ (P-gp, BCRP) ควบคุมการดูดซึม, ตับ (OATP1B1/1B3, MRP2, BSEP) เกี่ยวกับการนำยาเข้าเซลล์และขับออกทางน้ำดี, Blood–Brain Barrier (P-gp, BCRP) ควบคุมการผ่านของยาสู่สมอง และไต (OAT1/3, OCT2, P-gp, MATE1/2-K) ควบคุมการขับยาทางปัสสาวะ
+</figcaption>
+</figure>
+</div>
 <p>ตัวขนส่งยาแบ่งเป็น 2 กลุ่มหลักตามทิศทางการขนส่ง [1]</p>
 <p><strong>Uptake transporters</strong> นำยาเข้าสู่เซลล์</p>
 <ul>
@@ -1115,6 +1134,38 @@ P-gp ทำงานน้อย → ยาเข้าสมองมาก →
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
