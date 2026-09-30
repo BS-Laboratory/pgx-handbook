@@ -1,5 +1,5 @@
 ---
-pagetitle: "คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)"
+pagetitle: "คู่มือเภสัชพันธุศาสตร์สำหรับประชาชน (PGx Handbook)"
 anchor-sections: false
 ---
 
@@ -13,7 +13,7 @@ anchor-sections: false
   </div>
 
   <h1 style="font-size:2.7rem; font-weight:700; line-height:1.25; margin:0 0 0.6rem; border:none;">
-    คู่มือเภสัชพันธุศาสตร์
+    คู่มือเภสัชพันธุศาสตร์สำหรับประชาชน
   </h1>
 
   <div style="font-size:1.25rem; color:var(--bs-secondary-color, #6c757d); margin-bottom:2rem;">
@@ -59,7 +59,7 @@ anchor-sections: false
 
 ::: {.content-visible when-format="pdf"}
 
-# คู่มือเภสัชพันธุศาสตร์ (PGx Handbook) {.unnumbered}
+# คู่มือเภสัชพันธุศาสตร์สำหรับประชาชน (PGx Handbook) {.unnumbered}
 
 **เรียบเรียงโดย**
 

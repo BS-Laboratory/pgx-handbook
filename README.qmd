@@ -1,5 +1,5 @@
 ---
-title: "คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)"
+title: "คู่มือเภสัชพันธุศาสตร์สำหรับประชาชน (PGx Handbook)"
 author: "Bhoom Suktitipat Laboratory"
 date: today
 format:

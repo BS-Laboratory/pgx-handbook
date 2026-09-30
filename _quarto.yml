@@ -21,7 +21,7 @@ project:
     - chapters/appendix.qmd
 
 book:
-  title: "คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)"
+  title: "คู่มือเภสัชพันธุศาสตร์สำหรับประชาชน (PGx Handbook)"
   author: "Bhoom Suktitipat Laboratory"
   date: today
   search: true
@@ -29,7 +29,7 @@ book:
   repo-url: https://github.com/BS-Laboratory/pgx-handbook
   repo-actions: [source, issue]
   page-footer:
-    left: "คู่มือเภสัชพันธุศาสตร์ (PGx Handbook)"
+    left: "คู่มือเภสัชพันธุศาสตร์สำหรับประชาชน (PGx Handbook)"
     center:
       - text: "GitHub Repository"
         href: https://github.com/BS-Laboratory/pgx-handbook
