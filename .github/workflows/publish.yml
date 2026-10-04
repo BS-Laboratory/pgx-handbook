@@ -8,9 +8,15 @@ on:
 permissions:
   contents: write
 
+# ยกเลิก run เก่าที่ยังค้างอยู่อัตโนมัติเมื่อมี run ใหม่
+concurrency:
+  group: publish-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -21,7 +27,6 @@ jobs:
           tinytex: true
 
       # ติดตั้งฟอนต์ไทย Sarabun ให้ xelatex ใช้สร้าง PDF บนเซิร์ฟเวอร์
-      # (Ubuntu runner ไม่มีฟอนต์ Thonburi ของ macOS)
       - name: Install Thai font (Sarabun)
         run: |
           mkdir -p ~/.local/share/fonts
@@ -32,13 +37,15 @@ jobs:
           fc-cache -f
           fc-list | grep -i sarabun || true
 
+      # เรนเดอร์ HTML ก่อน (เว็บต้องขึ้นเสมอ)
       - name: Render book (HTML)
         run: quarto render --to html
 
-      # สร้าง PDF ด้วย ถ้าพลาดไม่ให้ล้มทั้ง workflow (เว็บ HTML ยังขึ้นปกติ)
+      # เรนเดอร์ PDF — จำกัดเวลา 8 นาที และถ้าพลาด/ค้าง ไม่ให้ล้มทั้ง workflow
       - name: Render book (PDF)
         run: quarto render --to pdf
         continue-on-error: true
+        timeout-minutes: 8
 
       - name: Deploy to GitHub Pages (gh-pages branch)
         uses: peaceiris/actions-gh-pages@v4
