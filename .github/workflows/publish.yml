@@ -16,36 +16,18 @@ concurrency:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 15
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up Quarto (with TinyTeX for PDF)
+      - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          tinytex: true
 
-      # ติดตั้งฟอนต์ไทย Sarabun ให้ xelatex ใช้สร้าง PDF บนเซิร์ฟเวอร์
-      - name: Install Thai font (Sarabun)
-        run: |
-          mkdir -p ~/.local/share/fonts
-          base="https://github.com/google/fonts/raw/main/ofl/sarabun"
-          for f in Sarabun-Regular Sarabun-Bold Sarabun-Italic Sarabun-BoldItalic; do
-            curl -fsSL "$base/$f.ttf" -o ~/.local/share/fonts/$f.ttf
-          done
-          fc-cache -f
-          fc-list | grep -i sarabun || true
-
-      # เรนเดอร์ HTML ก่อน (เว็บต้องขึ้นเสมอ)
+      # เรนเดอร์เฉพาะ HTML (เร็ว เสถียร)
+      # PDF เรนเดอร์บนเครื่อง Mac แยก เพราะ Mermaid ต้องใช้เบราว์เซอร์ซึ่งไม่เสถียรบน CI
       - name: Render book (HTML)
         run: quarto render --to html
-
-      # เรนเดอร์ PDF — จำกัดเวลา 8 นาที และถ้าพลาด/ค้าง ไม่ให้ล้มทั้ง workflow
-      - name: Render book (PDF)
-        run: quarto render --to pdf
-        continue-on-error: true
-        timeout-minutes: 8
 
       - name: Deploy to GitHub Pages (gh-pages branch)
         uses: peaceiris/actions-gh-pages@v4

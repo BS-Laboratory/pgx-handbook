@@ -26,7 +26,6 @@ book:
   date: today
   search: true
   reader-mode: true
-  downloads: [pdf]
   repo-url: https://github.com/BS-Laboratory/pgx-handbook
   repo-actions: [source, issue]
   page-footer:
@@ -78,7 +77,7 @@ format:
   pdf:
     documentclass: report
     pdf-engine: xelatex
-    mainfont: "Sarabun"
+    mainfont: "Thonburi"
     fontsize: 11pt
     toc: true
     toc-depth: 2
