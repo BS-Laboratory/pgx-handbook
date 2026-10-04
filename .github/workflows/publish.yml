@@ -15,13 +15,30 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up Quarto
+      - name: Set up Quarto (with TinyTeX for PDF)
         uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
 
-      # เรนเดอร์เฉพาะ HTML (ฉบับเว็บ) — ไม่เรนเดอร์ PDF บน CI
-      # เพราะ PDF ตั้งค่าใช้ฟอนต์ Thonburi ซึ่งมีเฉพาะบนเครื่อง macOS
-      - name: Render book (HTML only)
+      # ติดตั้งฟอนต์ไทย Sarabun ให้ xelatex ใช้สร้าง PDF บนเซิร์ฟเวอร์
+      # (Ubuntu runner ไม่มีฟอนต์ Thonburi ของ macOS)
+      - name: Install Thai font (Sarabun)
+        run: |
+          mkdir -p ~/.local/share/fonts
+          base="https://github.com/google/fonts/raw/main/ofl/sarabun"
+          for f in Sarabun-Regular Sarabun-Bold Sarabun-Italic Sarabun-BoldItalic; do
+            curl -fsSL "$base/$f.ttf" -o ~/.local/share/fonts/$f.ttf
+          done
+          fc-cache -f
+          fc-list | grep -i sarabun || true
+
+      - name: Render book (HTML)
         run: quarto render --to html
+
+      # สร้าง PDF ด้วย ถ้าพลาดไม่ให้ล้มทั้ง workflow (เว็บ HTML ยังขึ้นปกติ)
+      - name: Render book (PDF)
+        run: quarto render --to pdf
+        continue-on-error: true
 
       - name: Deploy to GitHub Pages (gh-pages branch)
         uses: peaceiris/actions-gh-pages@v4
