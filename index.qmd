@@ -53,6 +53,7 @@ anchor-sections: false
 
 ::: {.text-center}
 [เริ่มอ่าน: คำนำ →](chapters/preface.qmd){.btn .btn-primary role="button"}
+[ดาวน์โหลดฉบับ PDF](https://github.com/BS-Laboratory/pgx-handbook/releases/latest/download/PGx-Handbook.pdf){.btn .btn-outline-primary role="button"}
 :::
 
 :::

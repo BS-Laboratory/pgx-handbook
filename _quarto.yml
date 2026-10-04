@@ -33,6 +33,8 @@ book:
     center:
       - text: "GitHub Repository"
         href: https://github.com/BS-Laboratory/pgx-handbook
+      - text: "ดาวน์โหลด PDF"
+        href: https://github.com/BS-Laboratory/pgx-handbook/releases/latest/download/PGx-Handbook.pdf
     right: "Bhoom Suktitipat Laboratory"
   chapters:
     - index.qmd

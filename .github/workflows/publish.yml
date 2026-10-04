@@ -8,7 +8,6 @@ on:
 permissions:
   contents: write
 
-# ยกเลิก run เก่าที่ยังค้างอยู่อัตโนมัติเมื่อมี run ใหม่
 concurrency:
   group: publish-${{ github.ref }}
   cancel-in-progress: true
@@ -24,8 +23,7 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      # เรนเดอร์เฉพาะ HTML (เร็ว เสถียร)
-      # PDF เรนเดอร์บนเครื่อง Mac แยก เพราะ Mermaid ต้องใช้เบราว์เซอร์ซึ่งไม่เสถียรบน CI
+      # เรนเดอร์เฉพาะ HTML; ไฟล์ PDF แจกผ่าน GitHub Release (ปุ่มดาวน์โหลดลิงก์ไป release)
       - name: Render book (HTML)
         run: quarto render --to html
 
