@@ -30,16 +30,21 @@ flowchart LR
 
 **Active Drug** คือยาที่ออกฤทธิ์ได้ทันทีโดยไม่ต้องเปลี่ยนรูป จากนั้นจึงถูกเอนไซม์เผาผลาญให้หมดฤทธิ์และขับออกจากร่างกาย
 
-```
-Prodrug:      ยาที่รับประทาน (ไม่มีฤทธิ์)
-                  │  เอนไซม์ CYP450 เปลี่ยนรูป
-                  ▼
-              สารที่ออกฤทธิ์ (active metabolite)  →  ออกฤทธิ์รักษา
-
-Active Drug:  ยาที่รับประทาน (ออกฤทธิ์ได้ทันที)  →  ออกฤทธิ์รักษา
-                  │  เอนไซม์ CYP450 เผาผลาญ
-                  ▼
-              สารที่ไม่มีฤทธิ์ (inactive metabolite)  →  ขับออก
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+  subgraph PD["Prodrug"]
+    direction TB
+    A1["ยาที่รับประทาน<br/>(ไม่มีฤทธิ์)"]:::step -->|"เอนไซม์ CYP450 เปลี่ยนรูป"| A2["สารที่ออกฤทธิ์<br/>(active metabolite)"]:::accent --> A3["ออกฤทธิ์รักษา"]:::ok
+  end
+  subgraph AD["Active Drug"]
+    direction TB
+    B1["ยาที่รับประทาน<br/>(ออกฤทธิ์ได้ทันที)"]:::accent --> B2["ออกฤทธิ์รักษา"]:::ok
+    B1 -->|"เอนไซม์ CYP450 เผาผลาญ"| B3["สารที่ไม่มีฤทธิ์<br/>(inactive metabolite)"]:::step --> B4["ขับออก"]:::step
+  end
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
 ```
 
 ความแตกต่างนี้ทำให้ผลของพันธุกรรม **กลับทิศกัน** ระหว่างยาสองกลุ่ม
@@ -76,14 +81,12 @@ Prodrug 4 ชนิดต่อไปนี้มีความสำคัญ�
 
 ### กลไกการออกฤทธิ์
 
-```
-Codeine (ฤทธิ์ระงับปวดต่ำมาก)
-    │  CYP2D6 เปลี่ยนประมาณ 5–10% ของ Codeine
-    ▼
-Morphine (จับกับ μ-opioid receptor ได้ดีกว่า Codeine ประมาณ 200 เท่า)
-    │  UGT2B7 เปลี่ยนต่อ
-    ▼
-Morphine-6-glucuronide (M6G) — ออกฤทธิ์ด้วย
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+  A["Codeine<br/>(ฤทธิ์ระงับปวดต่ำมาก)"]:::step -->|"CYP2D6 เปลี่ยนประมาณ 5–10%"| B["Morphine<br/>(จับ μ-opioid receptor ได้ดีกว่า Codeine ~200 เท่า)"]:::accent -->|"UGT2B7 เปลี่ยนต่อ"| C["Morphine-6-glucuronide (M6G)<br/>— ออกฤทธิ์ด้วย"]:::accent
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
 ```
 
 แม้ CYP2D6 จะเปลี่ยน Codeine เป็น Morphine เพียงส่วนน้อย แต่ Morphine จับกับตัวรับ opioid ได้ดีกว่า Codeine ประมาณ 200 เท่า ปริมาณที่เปลี่ยนได้จึงมีผลทางคลินิกสูง [2]
@@ -128,18 +131,14 @@ flowchart TD
 
 ### กลไกการออกฤทธิ์ 2 ทาง
 
-```
-Tramadol (ตัวยาเดิม)
-    ├── ออกฤทธิ์เองโดยยับยั้งการเก็บกลับ serotonin และ norepinephrine
-    │   (ระงับปวดได้บางส่วน — ไม่ขึ้นกับ CYP2D6)
-    │
-    ├── CYP2D6 (O-demethylation)
-    │   └── O-desmethyltramadol (M1)
-    │       └── จับกับ μ-opioid receptor ได้ดีกว่า Tramadol ประมาณ 200 เท่า
-    │           (ฤทธิ์ระงับปวดหลัก)
-    │
-    └── CYP3A4, CYP2B6 (N-demethylation)
-        └── N-desmethyltramadol (M2) — ไม่มีฤทธิ์
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+  A["Tramadol (ตัวยาเดิม)"]:::step --> B["ยับยั้งการเก็บกลับ serotonin และ norepinephrine<br/>(ระงับปวดบางส่วน — ไม่ขึ้นกับ CYP2D6)"]:::accent
+  A -->|"CYP2D6 (O-demethylation)"| C["O-desmethyltramadol (M1)<br/>จับ μ-opioid receptor ได้ดีกว่า Tramadol ~200 เท่า<br/>(ฤทธิ์ระงับปวดหลัก)"]:::accent
+  A -->|"CYP3A4, CYP2B6 (N-demethylation)"| D["N-desmethyltramadol (M2)<br/>— ไม่มีฤทธิ์"]:::step
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
 ```
 
 Tramadol ต่างจาก Codeine ตรงที่ **ตัวยาเดิมมีฤทธิ์ระงับปวดบางส่วน** ผ่านระบบ serotonin และ norepinephrine ผู้ที่เป็น PM จึงยังระงับปวดได้บ้าง แต่น้อยกว่าปกติมาก เพราะขาดฤทธิ์ opioid จาก M1 [2]
@@ -152,15 +151,13 @@ Tramadol ต่างจาก Codeine ตรงที่ **ตัวยาเ�
 
 Tamoxifen เป็นยาหลักสำหรับรักษา **มะเร็งเต้านมชนิด ER-positive** ซึ่งพบประมาณ 70–80% ของผู้ป่วยมะเร็งเต้านม [4]
 
-```
-Tamoxifen (ฤทธิ์ต่ำ)
-    ├── CYP2D6 ──► 4-Hydroxytamoxifen (ฤทธิ์สูง แต่มีปริมาณน้อย)
-    │
-    └── CYP3A4/5 ──► N-Desmethyltamoxifen
-                          │  CYP2D6 (ขั้นตอนสำคัญที่สุด)
-                          ▼
-                     Endoxifen (ฤทธิ์สูงและมีระดับในเลือดสูง)
-                     สารออกฤทธิ์หลักในการต้านมะเร็ง
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+  A["Tamoxifen (ฤทธิ์ต่ำ)"]:::step -->|"CYP2D6"| B["4-Hydroxytamoxifen<br/>(ฤทธิ์สูง แต่ปริมาณน้อย)"]:::accent
+  A -->|"CYP3A4/5"| C["N-Desmethyltamoxifen"]:::step -->|"CYP2D6<br/>(ขั้นสำคัญที่สุด)"| D["Endoxifen<br/>(ฤทธิ์สูงและมีระดับในเลือดสูง)<br/>สารออกฤทธิ์หลักในการต้านมะเร็ง"]:::accent
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
 ```
 
 **Endoxifen** มีฤทธิ์ต้านเอสโตรเจนสูงกว่า Tamoxifen ประมาณ 30–100 เท่า [4] มีการศึกษาที่พบว่าระดับ Endoxifen ในเลือดต่ำกว่าประมาณ 5.9 ng/mL สัมพันธ์กับความเสี่ยงการกลับเป็นซ้ำที่สูงขึ้น [5]
@@ -171,19 +168,20 @@ Tamoxifen (ฤทธิ์ต่ำ)
 
 ### คำแนะนำของ CPIC สำหรับ Tamoxifen [4]
 
-```
-PM หรือ IM
-└── พิจารณาทางเลือก:
-    ├── เปลี่ยนเป็นยากลุ่ม Aromatase Inhibitor (AI)
-    │   เช่น Letrozole, Anastrozole, Exemestane
-    │   (ใช้ในหญิงวัยหมดประจำเดือน หรือร่วมกับการกดการทำงานของรังไข่)
-    └── หากใช้ AI ไม่ได้ ใน IM อาจพิจารณาเพิ่มขนาด Tamoxifen เป็น 40 mg/วัน
-
-NM หรือ UM
-└── Tamoxifen 20 mg/วัน ตามขนาดมาตรฐาน
-
-ทุกกลุ่ม: หลีกเลี่ยงยาที่ยับยั้ง CYP2D6 อย่างแรงหรือปานกลางร่วมด้วย
-         เช่น Fluoxetine, Paroxetine, Bupropion
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+  A{"ฟีโนไทป์ CYP2D6"}:::start
+  A -->|"PM หรือ IM"| B["พิจารณาทางเลือก"]:::caution
+  B --> C["เปลี่ยนเป็นกลุ่ม Aromatase Inhibitor (AI)<br/>เช่น Letrozole, Anastrozole, Exemestane<br/>(หญิงวัยหมดประจำเดือน หรือร่วมกับการกดการทำงานของรังไข่)"]:::alt
+  B --> D["หากใช้ AI ไม่ได้ ใน IM<br/>อาจเพิ่มขนาด Tamoxifen เป็น 40 mg/วัน"]:::alt
+  A -->|"NM หรือ UM"| E["Tamoxifen 20 mg/วัน<br/>ตามขนาดมาตรฐาน"]:::ok
+  A -->|"ทุกกลุ่ม"| F["หลีกเลี่ยงยาที่ยับยั้ง CYP2D6 แรง/ปานกลาง<br/>เช่น Fluoxetine, Paroxetine, Bupropion"]:::avoid
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+  classDef caution fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
+  classDef alt fill:#e3f2fd,stroke:#1565c0,color:#111;
+  classDef start fill:#eceff1,stroke:#455a64,color:#111;
 ```
 
 ## 5.6 Clopidogrel
@@ -194,21 +192,17 @@ NM หรือ UM
 
 ### การเปลี่ยนรูป 2 ขั้นตอน
 
-```
-Clopidogrel (ไม่มีฤทธิ์)
-    │  ประมาณ 85% ถูกเอนไซม์ CES1 เปลี่ยนเป็นสารที่ไม่มีฤทธิ์
-    │  ประมาณ 15% เข้าสู่เส้นทางที่ให้สารออกฤทธิ์
-    │
-    │  ขั้นที่ 1: CYP2C19, CYP1A2, CYP2B6
-    ▼
-2-Oxo-clopidogrel (สารกลาง)
-    │
-    │  ขั้นที่ 2: CYP2C19, CYP3A4, CYP2B6, CYP2C9
-    ▼
-Thiol metabolite (สารออกฤทธิ์)
-    │  จับกับตัวรับ P2Y12 บนเกล็ดเลือด
-    ▼
-ยับยั้งการเกาะกลุ่มของเกล็ดเลือด → ป้องกันลิ่มเลือด
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+  A["Clopidogrel (ไม่มีฤทธิ์)"]:::step
+  A -->|"~85% ถูก CES1"| X["สารที่ไม่มีฤทธิ์"]:::step
+  A -->|"~15% เข้าสู่เส้นทางออกฤทธิ์<br/>ขั้นที่ 1: CYP2C19, CYP1A2, CYP2B6"| B["2-Oxo-clopidogrel<br/>(สารกลาง)"]:::accent
+  B -->|"ขั้นที่ 2: CYP2C19, CYP3A4, CYP2B6, CYP2C9"| C["Thiol metabolite<br/>(สารออกฤทธิ์)"]:::accent
+  C -->|"จับตัวรับ P2Y12 บนเกล็ดเลือด"| D["ยับยั้งการเกาะกลุ่มของเกล็ดเลือด<br/>ป้องกันลิ่มเลือด"]:::ok
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
 ```
 
 CYP2C19 มีบทบาททั้ง 2 ขั้นตอน ผู้ที่เป็น PM จึงสร้างสารออกฤทธิ์ได้น้อยมาก [10]

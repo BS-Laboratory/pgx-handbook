@@ -45,15 +45,15 @@ OATP1B1 เป็น uptake transporter หลักที่นำยาจา�
 
 ### ความสำคัญต่อยากลุ่ม Statin
 
-```
-Statin ในกระแสเลือด
-    │  OATP1B1 (จากยีน SLCO1B1) ขนส่งเข้าเซลล์ตับ
-    ▼
-ตับ: ยับยั้งเอนไซม์ HMG-CoA reductase → ลด LDL-cholesterol
-
-หาก OATP1B1 ทำงานลดลง (เช่น อัลลีล SLCO1B1*5):
-    Statin เข้าตับได้น้อย → ระดับยาในเลือดสูงขึ้น
-    → เข้าสู่กล้ามเนื้อมากขึ้น → เสี่ยงต่ออาการทางกล้ามเนื้อ
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+  A["Statin ในกระแสเลือด"]:::step -->|"OATP1B1 (ยีน SLCO1B1)<br/>ขนส่งเข้าเซลล์ตับ"| B["ตับ: ยับยั้ง HMG-CoA reductase<br/>→ ลด LDL-cholesterol"]:::ok
+  C["หาก OATP1B1 ทำงานลดลง<br/>(เช่น อัลลีล SLCO1B1*5)"]:::caution --> D["Statin เข้าตับได้น้อย → ระดับยาในเลือดสูงขึ้น<br/>→ เข้าสู่กล้ามเนื้อมากขึ้น → เสี่ยงอาการทางกล้ามเนื้อ"]:::avoid
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+  classDef caution fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
 ```
 
 ### SNP สำคัญ: rs4149056 (c.521T>C)
@@ -76,14 +76,16 @@ P-glycoprotein (P-gp) เป็น efflux transporter ในตระกูล A
 
 ### บทบาทที่ Blood–brain barrier
 
-```
-ยาจิตเวช เช่น Risperidone, Haloperidol
-    │
-    ▼  ผ่าน BBB เข้าสมอง → ออกฤทธิ์
-    │  แต่ P-gp ขนยาบางส่วนกลับออกจากสมองตลอดเวลา
-    ▼
-P-gp ทำงานมาก  → ยาเข้าสมองน้อย  → อาจต้องใช้ขนาดสูงกว่า
-P-gp ทำงานน้อย → ยาเข้าสมองมาก → อาจเสี่ยงผลข้างเคียงต่อระบบประสาท
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+  A["ยาจิตเวช เช่น Risperidone, Haloperidol"]:::step -->|"ผ่าน BBB เข้าสมอง → ออกฤทธิ์<br/>แต่ P-gp ขนยาบางส่วนกลับออกจากสมองตลอดเวลา"| B["สมดุลระดับยาในสมอง<br/>ขึ้นกับการทำงานของ P-gp"]:::accent
+  B --> C["P-gp ทำงานมาก → ยาเข้าสมองน้อย<br/>อาจต้องใช้ขนาดสูงกว่า"]:::caution
+  B --> D["P-gp ทำงานน้อย → ยาเข้าสมองมาก<br/>อาจเสี่ยงผลข้างเคียงต่อระบบประสาท"]:::avoid
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef caution fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
 ```
 
 ### ความแปรผันของ ABCB1
@@ -111,36 +113,30 @@ BCRP (Breast Cancer Resistance Protein หรือ ABCG2) เป็น efflux t
 
 OCT1 เป็น uptake transporter ในตับสำหรับ Metformin ซึ่งเป็นยารักษาเบาหวานที่ใช้มากที่สุด
 
-```
-Metformin
-    │  OCT1 (จากยีน SLC22A1) ขนส่งเข้าเซลล์ตับ
-    ▼
-ยับยั้งกระบวนการสร้างกลูโคส (gluconeogenesis) → ลดน้ำตาลในเลือด
-
-หาก SLC22A1 มี loss-of-function variant:
-    Metformin เข้าตับน้อยลง → ประสิทธิภาพอาจลดลง
-    แต่ก็อาจลดผลข้างเคียงทางเดินอาหาร (คลื่นไส้ ท้องเสีย) ด้วย
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+  A["Metformin"]:::step -->|"OCT1 (ยีน SLC22A1)<br/>ขนส่งเข้าเซลล์ตับ"| B["ยับยั้งการสร้างกลูโคส (gluconeogenesis)<br/>→ ลดน้ำตาลในเลือด"]:::ok
+  C["หาก SLC22A1 มี loss-of-function variant"]:::caution --> D["Metformin เข้าตับน้อยลง → ประสิทธิภาพอาจลดลง<br/>แต่อาจลดผลข้างเคียงทางเดินอาหาร (คลื่นไส้ ท้องเสีย)"]:::accent
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+  classDef caution fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
 ```
 
 > **หมายเหตุ:** หลักฐานเกี่ยวกับ OCT1 และ Metformin ยังจำกัด และยังไม่มีแนวทางของ CPIC ระดับ A แต่เป็นสาขาที่กำลังมีการวิจัยเพิ่มขึ้น [6]
 
 ## 11.6 ภาพรวมตัวขนส่งยา
 
-```
-ลำไส้เล็ก
-├── P-gp (ABCB1) ── ขนยากลับออก (ลดการดูดซึม)
-└── BCRP (ABCG2) ── ขนยากลับออก (สำคัญต่อ Rosuvastatin)
-
-กระแสเลือด → ตับ
-├── OATP1B1 (SLCO1B1) ── ขนยาเข้าตับ (สำคัญต่อ Statins)
-└── OCT1 (SLC22A1) ── ขนยาเข้าตับ (Metformin)
-
-ตับ → น้ำดี
-└── MRP2 (ABCC2) ── ขนยาและเมแทบอไลต์ออก
-
-กระแสเลือด → สมอง (BBB)
-├── P-gp (ABCB1) ── ขนยาออกจากสมอง (สำคัญต่อยาจิตเวช)
-└── BCRP (ABCG2) ── ขนยาออกจากสมอง
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+  G1["<b>ลำไส้เล็ก</b><br/>P-gp (ABCB1) — ขนยากลับออก (ลดการดูดซึม)<br/>BCRP (ABCG2) — ขนยากลับออก (สำคัญต่อ Rosuvastatin)"]:::site
+  G2["<b>กระแสเลือด → ตับ</b><br/>OATP1B1 (SLCO1B1) — ขนยาเข้าตับ (สำคัญต่อ Statins)<br/>OCT1 (SLC22A1) — ขนยาเข้าตับ (Metformin)"]:::site
+  G3["<b>ตับ → น้ำดี</b><br/>MRP2 (ABCC2) — ขนยาและเมแทบอไลต์ออก"]:::site
+  G4["<b>กระแสเลือด → สมอง (BBB)</b><br/>P-gp (ABCB1) — ขนยาออกจากสมอง (สำคัญต่อยาจิตเวช)<br/>BCRP (ABCG2) — ขนยาออกจากสมอง"]:::site
+  G1 --> G2 --> G3 --> G4
+  classDef site fill:#eef4f8,stroke:#37698a,color:#111;
 ```
 
 ยาบางชนิดต้องผ่านตัวขนส่งหลายด่าน เช่น Rosuvastatin ต้องผ่าน BCRP ที่ลำไส้ (ควบคุมการดูดซึม) และ OATP1B1 ที่ตับ (ควบคุมการนำเข้าตับ) ความแปรผันของยีนทั้งสองจึงมีผลต่อระดับยาร่วมกัน

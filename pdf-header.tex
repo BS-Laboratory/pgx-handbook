@@ -1,2 +1,36 @@
 \XeTeXlinebreaklocale "th_TH"
 \XeTeXlinebreakskip = 0pt plus 1pt minus 1pt
+
+% ---- Fallback font for symbols the Thai body font (Thonburi) lacks ----
+% Thonburi has no → μ − glyphs, so they drop out of the PDF. Map just those
+% characters to a symbol-complete font that ships on every Mac (Menlo),
+% with graceful fallbacks. This affects PDF output only; HTML is untouched.
+\usepackage{newunicodechar}
+\IfFontExistsTF{Menlo}{%
+  \newfontfamily\symfallback{Menlo}[Scale=MatchLowercase]%
+}{%
+  \IfFontExistsTF{Arial Unicode MS}{%
+    \newfontfamily\symfallback{Arial Unicode MS}[Scale=MatchLowercase]%
+  }{%
+    \IfFontExistsTF{DejaVu Sans}{%
+      \newfontfamily\symfallback{DejaVu Sans}[Scale=MatchLowercase]%
+    }{\newcommand{\symfallback}{}}%
+  }%
+}
+\newunicodechar{→}{{\symfallback\symbol{"2192}}}
+\newunicodechar{←}{{\symfallback\symbol{"2190}}}
+\newunicodechar{↑}{{\symfallback\symbol{"2191}}}
+\newunicodechar{↓}{{\symfallback\symbol{"2193}}}
+\newunicodechar{μ}{{\symfallback\symbol{"03BC}}}
+\newunicodechar{−}{{\symfallback\symbol{"2212}}}
+
+% ---- Clamp every image to the text block so wide Mermaid diagrams never
+% overflow the right margin. Pandoc prepends its \setkeys{Gin} defaults BEFORE
+% its explicit width=, so a Gin default cannot win; instead we append adjustbox's
+% "max width" AFTER pandoc's own options on every \includegraphics call. ----
+\usepackage[export]{adjustbox}
+\makeatletter
+\let\pgxorigincludegraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{%
+  \pgxorigincludegraphics[#1,max width=\linewidth,max totalheight=0.88\textheight,keepaspectratio]{#2}}
+\makeatother
