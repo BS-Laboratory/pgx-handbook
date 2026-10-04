@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="th" xml:lang="th"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>บทที่ 4: ดาวนำทาง — Star Allele และฟีโนไทป์การเผาผลาญยา – คู่มือเภสัชพันธุศาสตร์สำหรับประชาชน (PGx Handbook)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch05.html" rel="next">
+<link href="../chapters/ch03.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6b142e7faa852efe82cf055f57d87643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-95863237d9acc750b64c3c49c9e6d325.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-6b142e7faa852efe82cf055f57d87643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&amp;family=IBM+Plex+Sans+Thai:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch04.html"><span class="chapter-title">บทที่ 4: ดาวนำทาง — Star Allele และฟีโนไทป์การเผาผลาญยา</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">คู่มือเภสัชพันธุศาสตร์สำหรับประชาชน (PGx Handbook)</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/BS-Laboratory/pgx-handbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">คู่มือเภสัชพันธุศาสตร์สำหรับประชาชน (PGx Handbook)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">คำนำ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 1: รหัสชีวิตกับยา — DNA ทำงานอย่างไร</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 2: ร่างกายทำอะไรกับยา — เภสัชจลนศาสตร์และเภสัชพลศาสตร์</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 3: เอนไซม์ Big 5</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">บทที่ 4: ดาวนำทาง — Star Allele และฟีโนไทป์การเผาผลาญยา</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 5: ยาเปลี่ยนรูป — Prodrug vs.&nbsp;Active Drug</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 6: แนวทาง CPIC — จากวิทยาศาสตร์สู่เตียงผู้ป่วย</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 7: ยาหัวใจและหลอดเลือด</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 8: ยาจิตเวชและยาแก้ปวด</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 9: ยีนภูมิคุ้มกัน HLA และปฏิกิริยาแพ้ยารุนแรง</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 10: ปฏิกิริยาระหว่างยา ยา และยีน (DDGI)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 11: ตัวขนส่งยา (Drug Transporters)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 12: เภสัชพันธุศาสตร์ในกลุ่มประชากรพิเศษ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 13: อนาคตของเภสัชพันธุศาสตร์</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/appendix.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ภาคผนวก (ฉบับละเอียด)</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">ในบทนี้</h2>
+   
+  <ul class="collapse">
+  <li><a href="#star-allele-คออะไร" id="toc-star-allele-คออะไร" class="nav-link active" data-scroll-target="#star-allele-คออะไร">4.1 Star Allele คืออะไร</a></li>
+  <li><a href="#diplotype" id="toc-diplotype" class="nav-link" data-scroll-target="#diplotype">4.2 Diplotype</a></li>
+  <li><a href="#activity-score" id="toc-activity-score" class="nav-link" data-scroll-target="#activity-score">4.3 Activity Score</a></li>
+  <li><a href="#การจดกลมฟโนไทปการเผาผลาญยา" id="toc-การจดกลมฟโนไทปการเผาผลาญยา" class="nav-link" data-scroll-target="#การจดกลมฟโนไทปการเผาผลาญยา">4.4 การจัดกลุ่มฟีโนไทป์การเผาผลาญยา</a></li>
+  <li><a href="#เคสสมมตเพอฝกการแปลผล" id="toc-เคสสมมตเพอฝกการแปลผล" class="nav-link" data-scroll-target="#เคสสมมตเพอฝกการแปลผล">4.5 เคสสมมติเพื่อฝึกการแปลผล</a></li>
+  <li><a href="#สรปทายบท" id="toc-สรปทายบท" class="nav-link" data-scroll-target="#สรปทายบท">สรุปท้ายบท</a></li>
+  <li><a href="#คำถามทบทวน" id="toc-คำถามทบทวน" class="nav-link" data-scroll-target="#คำถามทบทวน">คำถามทบทวน</a></li>
+  <li><a href="#เอกสารอางอง" id="toc-เอกสารอางอง" class="nav-link" data-scroll-target="#เอกสารอางอง">เอกสารอ้างอิง</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/BS-Laboratory/pgx-handbook/blob/main/chapters/ch04.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/BS-Laboratory/pgx-handbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">บทที่ 4: ดาวนำทาง — Star Allele และฟีโนไทป์การเผาผลาญยา</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>ภาพรวมบท (Chapter Overview)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  T(["บทที่ 4&lt;br/&gt;Star Allele และฟีโนไทป์"]):::hub
+  T --&gt; A["Star Allele&lt;br/&gt;เช่น *1 *4 *10"]:::node
+  A --&gt; B["Diplotype&lt;br/&gt;อัลลีล 2 ชุด"]:::node
+  B --&gt; C["Activity Score"]:::node
+  C --&gt; D["ฟีโนไทป์&lt;br/&gt;PM · IM · NM · RM · UM"]:::accent
+  classDef hub fill:#0b6e99,stroke:#084a67,color:#fff;
+  classDef node fill:#eef4f8,stroke:#0b6e99,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>ในบทที่ 3 เราได้รู้จักเอนไซม์ในกลุ่ม Cytochrome P450 (CYP450) ที่เผาผลาญยาในตับ เช่น CYP2D6, CYP2C19 และ CYP2C9 เอนไซม์เหล่านี้ถูกสร้างตามข้อมูลในยีน และยีนของแต่ละคนไม่เหมือนกัน บางคนมียีนที่ทำให้เอนไซม์ทำงานปกติ บางคนมียีนที่ทำให้เอนไซม์ทำงานลดลงหรือไม่ทำงาน และบางคนมียีนที่ทำให้เอนไซม์ทำงานมากกว่าปกติ</p>
+<p>คำถามคือ เราจะทราบได้อย่างไรว่ายีนของแต่ละคนเป็นแบบใด บทนี้จะอธิบายขั้นตอนการแปลผลตรวจยีน ตั้งแต่ระบบการตั้งชื่อ <strong>Star Allele</strong> การระบุ <strong>Diplotype</strong> การคำนวณ <strong>Activity Score</strong> ไปจนถึงการจัดกลุ่ม <strong>ฟีโนไทป์การเผาผลาญยา</strong> พร้อมเคสสมมติเพื่อฝึกการแปลผล</p>
+<div id="fig-star-allele-flow" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-star-allele-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/star-allele-flow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;4.1: ภาพรวมบทที่ 4: ขั้นตอนการแปลผลตรวจยีน จาก Star Allele → Diplotype → Activity Score → ฟีโนไทป์การเผาผลาญยา"><img src="../images/star-allele-flow.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-star-allele-flow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.1: ภาพรวมบทที่ 4: ขั้นตอนการแปลผลตรวจยีน จาก Star Allele → Diplotype → Activity Score → ฟีโนไทป์การเผาผลาญยา
+</figcaption>
+</figure>
+</div>
+<section id="star-allele-คออะไร" class="level2">
+<h2 class="anchored" data-anchor-id="star-allele-คออะไร">4.1 Star Allele คืออะไร</h2>
+<section id="ระบบการตงชอดวยเครองหมายดอกจน" class="level3">
+<h3 class="anchored" data-anchor-id="ระบบการตงชอดวยเครองหมายดอกจน">ระบบการตั้งชื่อด้วยเครื่องหมายดอกจัน</h3>
+<p>อัลลีลของยีนที่เกี่ยวข้องกับยาถูกตั้งชื่อด้วยเครื่องหมายดอกจัน (*) ตามด้วยตัวเลข เช่น CYP2D6*1, CYP2D6*2, CYP2D6*4 และ CYP2D6*17 ระบบนี้เรียกว่า <strong>Star Allele</strong> ดูแลโดย PharmVar Consortium [1]</p>
+<p>แต่ละ Star Allele ระบุชุดของความแปรผันใน DNA (variant) ที่พบร่วมกันบนยีนชุดเดียวกัน และบอกว่าเอนไซม์ที่สร้างจากอัลลีลนั้นทำงานได้ระดับใด ซึ่งแบ่งได้เป็น 4 ระดับ [1,2]</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ลักษณะของความแปรผัน</th>
+<th>ระดับการทำงานของอัลลีล</th>
+<th>ตัวอย่าง (CYP2D6)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ไม่มีผลต่อการทำงานของเอนไซม์</td>
+<td>ทำงานปกติ (normal function)</td>
+<td>*1, *2</td>
+</tr>
+<tr class="even">
+<td>เปลี่ยนโครงสร้างหรือความเสถียรของเอนไซม์บางส่วน</td>
+<td>ทำงานลดลง (decreased function)</td>
+<td>*10, *17, *41</td>
+</tr>
+<tr class="odd">
+<td>ทำให้สร้างโปรตีนที่สมบูรณ์ไม่ได้ หรือยีนขาดหาย</td>
+<td>ไม่ทำงาน (no function)</td>
+<td>*4, *5</td>
+</tr>
+<tr class="even">
+<td>มีจำนวนสำเนาของยีนเพิ่มขึ้น (gene duplication)</td>
+<td>ทำงานเพิ่มขึ้น (increased function)</td>
+<td>*1xN, *2xN</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ตวอยาง-star-allele-ของ-cyp2d6" class="level3">
+<h3 class="anchored" data-anchor-id="ตวอยาง-star-allele-ของ-cyp2d6">ตัวอย่าง Star Allele ของ CYP2D6</h3>
+<p>CYP2D6 เป็นตัวอย่างที่ดีที่สุดในการอธิบาย เพราะมี Star Allele หลากหลายและมีการศึกษามากที่สุด [1,2]</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Star Allele</th>
+<th>ลักษณะ</th>
+<th>ระดับการทำงาน</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>*1</td>
+<td>อัลลีลอ้างอิง</td>
+<td>ปกติ</td>
+</tr>
+<tr class="even">
+<td>*2</td>
+<td>มีความแปรผันบางตำแหน่ง แต่เอนไซม์ทำงานปกติ</td>
+<td>ปกติ</td>
+</tr>
+<tr class="odd">
+<td>*4</td>
+<td>ความผิดปกติในการตัดต่อ mRNA (splicing defect) สร้างเอนไซม์ที่ทำงานไม่ได้ พบบ่อยในชาวยุโรป</td>
+<td>ไม่ทำงาน</td>
+</tr>
+<tr class="even">
+<td>*5</td>
+<td>ยีนขาดหายทั้งยีน (gene deletion)</td>
+<td>ไม่ทำงาน</td>
+</tr>
+<tr class="odd">
+<td>*10</td>
+<td>เอนไซม์เสถียรน้อยลง พบบ่อยในชาวเอเชีย</td>
+<td>ลดลง</td>
+</tr>
+<tr class="even">
+<td>*17</td>
+<td>เอนไซม์จับกับยาได้น้อยลง พบบ่อยในชาวแอฟริกัน</td>
+<td>ลดลง</td>
+</tr>
+<tr class="odd">
+<td>*1xN</td>
+<td>มียีน *1 หลายชุดบนโครโมโซมเดียวกัน</td>
+<td>เพิ่มขึ้น</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><strong>หมายเหตุ:</strong> ตัวเลขหลังเครื่องหมายดอกจันเป็นเพียงลำดับการค้นพบ ไม่ได้บอกระดับการทำงาน เช่น *17 ไม่ได้ทำงานดีกว่า *2 ต้องตรวจสอบระดับการทำงานของแต่ละอัลลีลจากตารางอ้างอิงของ PharmVar หรือ CPIC เสมอ [1]</p>
+</blockquote>
+</section>
+</section>
+<section id="diplotype" class="level2">
+<h2 class="anchored" data-anchor-id="diplotype">4.2 Diplotype</h2>
+<p>มนุษย์มียีนแต่ละยีน <strong>2 ชุด</strong> ชุดหนึ่งจากบิดาและอีกชุดหนึ่งจากมารดา (ยกเว้นยีนบนโครโมโซมเพศในเพศชาย) ผลตรวจยีนจึงรายงานเป็นคู่เสมอ เรียกว่า <strong>Diplotype</strong> เช่น CYP2D6 *1/*4 หมายถึงได้รับอัลลีล *1 หนึ่งชุด และอัลลีล *4 อีกหนึ่งชุด</p>
+<p>อัลลีลทั้งสองชุดสร้างเอนไซม์ที่ทำงานร่วมกัน ความสามารถในการเผาผลาญยาโดยรวมจึงขึ้นกับอัลลีลทั้งสองชุด เช่น หากอัลลีลชุดหนึ่งทำงานปกติ (*1) แต่อีกชุดไม่ทำงาน (*4) การเผาผลาญยาโดยรวมจะลดลง</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Diplotype</th>
+<th>ความหมาย</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>*1/*1</td>
+<td>อัลลีลปกติทั้งสองชุด</td>
+</tr>
+<tr class="even">
+<td>*1/*4</td>
+<td>อัลลีลปกติ 1 ชุด และอัลลีลที่ไม่ทำงาน 1 ชุด</td>
+</tr>
+<tr class="odd">
+<td>*4/*4</td>
+<td>อัลลีลที่ไม่ทำงานทั้งสองชุด</td>
+</tr>
+<tr class="even">
+<td>*1/*1xN</td>
+<td>อัลลีลปกติ 1 ชุด และอัลลีลที่มีสำเนาซ้ำ 1 ชุด</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="activity-score" class="level2">
+<h2 class="anchored" data-anchor-id="activity-score">4.3 Activity Score</h2>
+<section id="แนวคด" class="level3">
+<h3 class="anchored" data-anchor-id="แนวคด">แนวคิด</h3>
+<p>Activity Score เปรียบได้กับการให้คะแนนกำลังการทำงานของเอนไซม์จากอัลลีลทั้งสองชุดรวมกัน โดยยิ่งคะแนนสูงยิ่งเผาผลาญยาได้เร็ว</p>
+<p>สำหรับยีน CYP2D6 แต่ละอัลลีลจะได้รับค่า <strong>Activity Value</strong> ตามระดับการทำงาน [2]</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>ระดับการทำงานของอัลลีล</th>
+<th>Activity Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ไม่ทำงาน เช่น *4, *5</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>ทำงานลดลง เช่น *10</td>
+<td>0.25</td>
+</tr>
+<tr class="odd">
+<td>ทำงานลดลง เช่น *17, *41</td>
+<td>0.5</td>
+</tr>
+<tr class="even">
+<td>ทำงานปกติ เช่น *1, *2</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>ทำงานเพิ่มขึ้น เช่น *1xN</td>
+<td>1 × จำนวนสำเนา (เช่น *1x2 = 2)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Activity Score (AS)</strong> = Activity Value ของอัลลีลชุดที่ 1 + Activity Value ของอัลลีลชุดที่ 2</p>
+<div id="fig-activity-score" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-activity-score-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../images/activity-score.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;4.2: ตัวอย่างการรวม Activity Score: อัลลีล *1 (ค่า 1.0) รวมกับ *4 (ค่า 0) ได้ Activity Score = 1.0 จัดเป็น Intermediate Metabolizer"><img src="../images/activity-score.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-activity-score-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.2: ตัวอย่างการรวม Activity Score: อัลลีล *1 (ค่า 1.0) รวมกับ *4 (ค่า 0) ได้ Activity Score = 1.0 จัดเป็น Intermediate Metabolizer
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="ตวอยางการคำนวณ" class="level3">
+<h3 class="anchored" data-anchor-id="ตวอยางการคำนวณ">ตัวอย่างการคำนวณ</h3>
+<pre><code>ตัวอย่างที่ 1: *1/*1    →  1 + 1    = 2.0
+ตัวอย่างที่ 2: *1/*4    →  1 + 0    = 1.0
+ตัวอย่างที่ 3: *4/*4    →  0 + 0    = 0
+ตัวอย่างที่ 4: *1/*1x2  →  1 + 2    = 3.0
+ตัวอย่างที่ 5: *10/*10  →  0.25 + 0.25 = 0.5</code></pre>
+<blockquote class="blockquote">
+<p><strong>หมายเหตุ:</strong> ระบบ Activity Score ใช้กับยีน CYP2D6 และ CYP2C9 เป็นหลัก ส่วนยีน CYP2C19 แนวทาง CPIC จัดฟีโนไทป์จาก Diplotype โดยตรง เช่น *2/*2 = PM, *1/*17 = RM และ *17/*17 = UM [3] ค่า Activity Value และเกณฑ์การแบ่งกลุ่มอาจมีการปรับปรุงเป็นระยะ ในทางปฏิบัติจึงต้องตรวจสอบกับตารางล่าสุดของ CPIC เสมอ</p>
+</blockquote>
+</section>
+</section>
+<section id="การจดกลมฟโนไทปการเผาผลาญยา" class="level2">
+<h2 class="anchored" data-anchor-id="การจดกลมฟโนไทปการเผาผลาญยา">4.4 การจัดกลุ่มฟีโนไทป์การเผาผลาญยา</h2>
+<p>เมื่อได้ Activity Score หรือ Diplotype แล้ว ขั้นตอนสุดท้ายคือเทียบกับตารางมาตรฐานเพื่อจัด <strong>ฟีโนไทป์การเผาผลาญยา (Metabolizer Phenotype)</strong> [2,4]</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ฟีโนไทป์</th>
+<th>การเผาผลาญยา</th>
+<th>CYP2D6 Activity Score</th>
+<th>ตัวอย่าง Diplotype ของ CYP2D6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Poor Metabolizer (PM)</td>
+<td>แทบไม่มี</td>
+<td>0</td>
+<td>*4/*4, *4/*5</td>
+</tr>
+<tr class="even">
+<td>Intermediate Metabolizer (IM)</td>
+<td>ช้ากว่าปกติ</td>
+<td>0.25–1.0</td>
+<td>*1/*4, *10/*10, *4/*10</td>
+</tr>
+<tr class="odd">
+<td>Normal Metabolizer (NM)</td>
+<td>ปกติ</td>
+<td>1.25–2.25</td>
+<td>*1/*1, *1/*2, *1/*10</td>
+</tr>
+<tr class="even">
+<td>Rapid Metabolizer (RM)</td>
+<td>เร็วกว่าปกติเล็กน้อย</td>
+<td>ไม่มีกลุ่มนี้สำหรับ CYP2D6</td>
+<td>(CYP2C19 *1/*17)</td>
+</tr>
+<tr class="odd">
+<td>Ultrarapid Metabolizer (UM)</td>
+<td>เร็วมาก</td>
+<td>&gt; 2.25</td>
+<td>*1/*1x2</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><strong>หมายเหตุ:</strong> ตำราเก่าบางเล่มเรียก Normal Metabolizer ว่า Extensive Metabolizer (EM) ปัจจุบัน CPIC ใช้คำว่า Normal Metabolizer เป็นมาตรฐาน [4]</p>
+</blockquote>
+<section id="ความหมายของแตละกลม" class="level3">
+<h3 class="anchored" data-anchor-id="ความหมายของแตละกลม">ความหมายของแต่ละกลุ่ม</h3>
+<p><strong>Poor Metabolizer (PM)</strong> — มีอัลลีลที่ไม่ทำงานทั้งสองชุด ร่างกายแทบเผาผลาญยาที่ใช้เอนไซม์นี้ไม่ได้ - หากเป็น Active Drug ยาจะค้างในเลือดนาน เสี่ยงต่อพิษหรือผลข้างเคียง - หากเป็น Prodrug ยาจะไม่ได้ผล เพราะไม่ถูกเปลี่ยนเป็นสารออกฤทธิ์</p>
+<p><strong>Intermediate Metabolizer (IM)</strong> — การทำงานของเอนไซม์ลดลง เช่น *1/*4 หรือ *10/*10 ร่างกายเผาผลาญยาได้แต่ช้ากว่าปกติ</p>
+<p><strong>Normal Metabolizer (NM)</strong> — การทำงานของเอนไซม์ปกติ เช่น *1/*1 หรือ *1/*2 เป็นกลุ่มที่ขนาดยามาตรฐานมักได้ผลตามที่คาด</p>
+<p><strong>Rapid Metabolizer (RM)</strong> — เอนไซม์ทำงานมากกว่าปกติเล็กน้อย พบในบางยีน เช่น CYP2C19 ที่มีอัลลีล *17 หนึ่งชุด</p>
+<p><strong>Ultrarapid Metabolizer (UM)</strong> — เอนไซม์ทำงานมากกว่าปกติมาก สำหรับ CYP2D6 มักเกิดจากการมียีนหลายชุด - หากเป็น Active Drug ยาจะถูกกำจัดเร็วเกินไป จนอาจไม่ได้ผล - หากเป็น Prodrug ยาจะถูกเปลี่ยนเป็นสารออกฤทธิ์เร็วและมากเกินไป เสี่ยงต่อพิษ</p>
+</section>
+</section>
+<section id="เคสสมมตเพอฝกการแปลผล" class="level2">
+<h2 class="anchored" data-anchor-id="เคสสมมตเพอฝกการแปลผล">4.5 เคสสมมติเพื่อฝึกการแปลผล</h2>
+<blockquote class="blockquote">
+<p><strong>หมายเหตุ:</strong> เคสต่อไปนี้เป็นเคสสมมติที่สร้างขึ้นเพื่อการศึกษาเท่านั้น ไม่ใช่คำแนะนำทางการแพทย์ หากมีคำถามเกี่ยวกับยาที่ใช้อยู่ ควรปรึกษาแพทย์หรือเภสัชกร</p>
+</blockquote>
+<section id="เคสท-1-คณสมชาย-ใช-codeine-แลวไมหายปวด" class="level3">
+<h3 class="anchored" data-anchor-id="เคสท-1-คณสมชาย-ใช-codeine-แลวไมหายปวด">เคสที่ 1: คุณสมชาย — ใช้ Codeine แล้วไม่หายปวด</h3>
+<p><strong>ข้อมูล:</strong> คุณสมชาย อายุ 45 ปี ได้รับ Codeine เพื่อบรรเทาปวดหลังผ่าตัดฟันคุด แต่ไม่รู้สึกว่าอาการปวดลดลงเลย</p>
+<p><strong>ผลตรวจยีน:</strong> CYP2D6 *4/*4</p>
+<p><strong>การแปลผล:</strong> Codeine เป็น Prodrug ที่ต้องอาศัย CYP2D6 เปลี่ยนเป็น Morphine ซึ่งเป็นสารที่ออกฤทธิ์ระงับปวด คุณสมชายมี Diplotype *4/*4 คิดเป็น Activity Score = 0 จึงเป็น <strong>Poor Metabolizer (PM)</strong> Codeine แทบไม่ถูกเปลี่ยนเป็น Morphine ยาจึงไม่ได้ผล</p>
+<p><strong>แนวทาง:</strong> CPIC แนะนำให้หลีกเลี่ยง Codeine ในผู้ที่เป็น PM และเลือกยาแก้ปวดที่ไม่ต้องอาศัย CYP2D6 (ไม่ใช่ Tramadol) [5]</p>
+</section>
+<section id="เคสท-2-คณวาร-ใช-codeine-แลวงวงซมและหายใจชา" class="level3">
+<h3 class="anchored" data-anchor-id="เคสท-2-คณวาร-ใช-codeine-แลวงวงซมและหายใจชา">เคสที่ 2: คุณวารี — ใช้ Codeine แล้วง่วงซึมและหายใจช้า</h3>
+<p><strong>ข้อมูล:</strong> คุณวารี อายุ 35 ปี ได้รับ Codeine ขนาดมาตรฐานหลังผ่าตัดเล็ก ใช้ยาเพียงไม่กี่ครั้งก็มีอาการง่วงซึมมาก คลื่นไส้ และหายใจช้าผิดปกติ</p>
+<p><strong>ผลตรวจยีน:</strong> CYP2D6 *1/*1x2</p>
+<p><strong>การแปลผล:</strong> Activity Score = 1 + 2 = 3.0 (มากกว่า 2.25) จึงเป็น <strong>Ultrarapid Metabolizer (UM)</strong> ร่างกายเปลี่ยน Codeine เป็น Morphine เร็วและมากกว่าปกติ ระดับ Morphine ในเลือดจึงสูงเกินไป จนเกิดพิษจาก opioid เช่น ง่วงซึมและกดการหายใจ</p>
+<p><strong>แนวทาง:</strong> CPIC แนะนำให้หลีกเลี่ยง Codeine ในผู้ที่เป็น UM เนื่องจากเสี่ยงต่อพิษ [5] (รายละเอียดในบทที่ 5)</p>
+</section>
+<section id="เคสท-3-คณประไพ-ใช-clopidogrel-แตยงเกดลมเลอดอดตนซำ" class="level3">
+<h3 class="anchored" data-anchor-id="เคสท-3-คณประไพ-ใช-clopidogrel-แตยงเกดลมเลอดอดตนซำ">เคสที่ 3: คุณประไพ — ใช้ Clopidogrel แต่ยังเกิดลิ่มเลือดอุดตันซ้ำ</h3>
+<p><strong>ข้อมูล:</strong> คุณประไพ อายุ 68 ปี ใส่ขดลวดขยายหลอดเลือดหัวใจ (stent) และได้รับ Clopidogrel เพื่อป้องกันลิ่มเลือดอุดตัน แต่ 3 เดือนต่อมาเกิดลิ่มเลือดอุดตันซ้ำ</p>
+<p><strong>ผลตรวจยีน:</strong> CYP2C19 *2/*2</p>
+<p><strong>การแปลผล:</strong> Clopidogrel เป็น Prodrug ที่ต้องอาศัย CYP2C19 เปลี่ยนให้อยู่ในรูปออกฤทธิ์ อัลลีล *2 ไม่ทำงาน การมี *2 ทั้งสองชุดจึงจัดเป็น <strong>Poor Metabolizer (PM)</strong> [3] ร่างกายแทบสร้างสารออกฤทธิ์ไม่ได้ ยาจึงยับยั้งเกล็ดเลือดได้ไม่เพียงพอ แม้จะรับประทานยาสม่ำเสมอ</p>
+<p><strong>แนวทาง:</strong> CPIC แนะนำให้เปลี่ยนเป็นยาต้านเกล็ดเลือดที่ไม่ต้องอาศัย CYP2C19 เช่น Prasugrel หรือ Ticagrelor หากไม่มีข้อห้ามใช้ [3]</p>
+</section>
+<section id="เคสท-4-คณอรทย-ไมมปญหาจากการใชยา" class="level3">
+<h3 class="anchored" data-anchor-id="เคสท-4-คณอรทย-ไมมปญหาจากการใชยา">เคสที่ 4: คุณอรทัย — ไม่มีปัญหาจากการใช้ยา</h3>
+<p><strong>ข้อมูล:</strong> คุณอรทัย อายุ 50 ปี ใช้ยาหลายชนิด ไม่เคยมีปัญหายาไม่ได้ผลหรือผลข้างเคียงรุนแรงผิดปกติ</p>
+<p><strong>ผลตรวจยีน:</strong> CYP2D6 *1/*2, CYP2C19 *1/*1</p>
+<p><strong>การแปลผล:</strong> CYP2D6 Activity Score = 1 + 1 = 2.0 และ CYP2C19 มีอัลลีลปกติทั้งสองชุด จึงเป็น <strong>Normal Metabolizer (NM)</strong> ทั้งสองยีน ขนาดยามาตรฐานมักได้ผลตามที่คาด โดยไม่ต้องปรับขนาดยาจากปัจจัยทางพันธุกรรมของยีนทั้งสองนี้</p>
+</section>
+<section id="เคสท-5-คณมานะ-ตองใชยาลดกรดขนาดสงกวาผอน" class="level3">
+<h3 class="anchored" data-anchor-id="เคสท-5-คณมานะ-ตองใชยาลดกรดขนาดสงกวาผอน">เคสที่ 5: คุณมานะ — ต้องใช้ยาลดกรดขนาดสูงกว่าผู้อื่น</h3>
+<p><strong>ข้อมูล:</strong> คุณมานะมีโรคกรดไหลย้อนเรื้อรัง ใช้ยาลดกรดกลุ่ม Proton Pump Inhibitor (PPI) เช่น Omeprazole ในขนาดมาตรฐานแล้วอาการไม่ดีขึ้น ต้องเพิ่มขนาดยาจึงควบคุมอาการได้</p>
+<p><strong>ผลตรวจยีน:</strong> CYP2C19 *17/*17</p>
+<p><strong>การแปลผล:</strong> อัลลีล *17 ทำให้ CYP2C19 ทำงานเพิ่มขึ้น การมี *17 ทั้งสองชุดจึงจัดเป็น <strong>Ultrarapid Metabolizer (UM)</strong> (ส่วน *1/*17 จัดเป็น Rapid Metabolizer) [3] Omeprazole เป็น Active Drug ที่ถูก CYP2C19 เผาผลาญ เมื่อเอนไซม์ทำงานมาก ยาจึงถูกกำจัดเร็วและระดับยาในเลือดต่ำกว่าที่ควร</p>
+<p><strong>แนวทาง:</strong> CPIC แนะนำให้เพิ่มขนาดยาเริ่มต้นของ PPI ในผู้ที่เป็น UM และติดตามผลการรักษา [6]</p>
+<blockquote class="blockquote">
+<p><strong>ประเด็นสำคัญ:</strong> เคสที่ 3 และ 5 เป็นยีนเดียวกัน แต่ผลต่อการรักษากลับทิศกัน เพราะ Clopidogrel เป็น Prodrug ส่วน Omeprazole เป็น Active Drug ความเข้าใจเรื่องนี้เป็นพื้นฐานของบทที่ 5</p>
+</blockquote>
+</section>
+</section>
+<section id="สรปทายบท" class="level2">
+<h2 class="anchored" data-anchor-id="สรปทายบท">สรุปท้ายบท</h2>
+<p>การแปลผลตรวจยีนมี 4 ขั้นตอน ได้แก่ ระบุ Star Allele ของอัลลีลแต่ละชุด ระบุ Diplotype คำนวณ Activity Score (สำหรับยีนที่ใช้ระบบนี้ เช่น CYP2D6) และจัดกลุ่มฟีโนไทป์การเผาผลาญยา 5 กลุ่ม ได้แก่ PM, IM, NM, RM และ UM ผลของฟีโนไทป์ต่อการรักษาขึ้นกับว่ายาเป็น Prodrug หรือ Active Drug ในบทที่ 5 เราจะศึกษาเรื่องนี้โดยละเอียด</p>
+</section>
+<section id="คำถามทบทวน" class="level2">
+<h2 class="anchored" data-anchor-id="คำถามทบทวน">คำถามทบทวน</h2>
+<ol type="1">
+<li>Star Allele คืออะไร และเหตุใดตัวเลขหลังเครื่องหมายดอกจัน (*) จึงไม่ได้บอกระดับการทำงานของเอนไซม์</li>
+<li>อธิบายวิธีคำนวณ Activity Score จาก Diplotype ของ CYP2D6 พร้อมยกตัวอย่างการคำนวณ 1 กรณี และระบุฟีโนไทป์ที่ได้</li>
+<li>จากเคสคุณสมชาย (CYP2D6 *4/*4) และเคสคุณวารี (CYP2D6 *1/*1x2) อธิบายว่าเหตุใดฟีโนไทป์ที่ต่างกันจึงทำให้ผลของ Codeine แตกต่างกันอย่างสิ้นเชิง</li>
+<li>เหตุใดการแปลผลฟีโนไทป์จึงเป็นเรื่องเฉพาะยีน (gene-specific) จงเปรียบเทียบระบบของ CYP2D6 กับ CYP2C19</li>
+<li>จากเคสคุณประไพ (CYP2C19 *2/*2) และเคสคุณมานะ (CYP2C19 *17/*17) อธิบายว่าฟีโนไทป์ทั้งสองส่งผลต่อ Clopidogrel และ PPI อย่างไร และเหตุใดผลจึงกลับทิศกัน</li>
+</ol>
+</section>
+<section id="เอกสารอางอง" class="level2">
+<h2 class="anchored" data-anchor-id="เอกสารอางอง">เอกสารอ้างอิง</h2>
+<ol type="1">
+<li>Gaedigk A, Ingelman-Sundberg M, Miller NA, et al.&nbsp;The Pharmacogene Variation (PharmVar) Consortium: incorporation of the Human Cytochrome P450 (CYP) allele nomenclature database. <em>Clin Pharmacol Ther</em>. 2018;103(3):399–401. <a href="https://doi.org/10.1002/cpt.910">doi:10.1002/cpt.910</a></li>
+<li>Caudle KE, Sangkuhl K, Whirl-Carrillo M, et al.&nbsp;Standardizing CYP2D6 genotype to phenotype translation: consensus recommendations from the Clinical Pharmacogenetics Implementation Consortium and Dutch Pharmacogenetics Working Group. <em>Clin Transl Sci</em>. 2020;13(1):116–124. <a href="https://doi.org/10.1111/cts.12692">doi:10.1111/cts.12692</a></li>
+<li>Lee CR, Luzum JA, Sangkuhl K, et al.&nbsp;Clinical Pharmacogenetics Implementation Consortium guideline for CYP2C19 genotype and clopidogrel therapy: 2022 update. <em>Clin Pharmacol Ther</em>. 2022;112(5):959–967. <a href="https://doi.org/10.1002/cpt.2526">doi:10.1002/cpt.2526</a></li>
+<li>Caudle KE, Dunnenberger HM, Freimuth RR, et al.&nbsp;Standardizing terms for clinical pharmacogenetic test results: consensus terms from the Clinical Pharmacogenetics Implementation Consortium (CPIC). <em>Genet Med</em>. 2017;19(2):215–223. <a href="https://doi.org/10.1038/gim.2016.87">doi:10.1038/gim.2016.87</a></li>
+<li>Crews KR, Monte AA, Huddart R, et al.&nbsp;Clinical Pharmacogenetics Implementation Consortium guideline for CYP2D6, OPRM1, and COMT genotypes and select opioid therapy. <em>Clin Pharmacol Ther</em>. 2021;110(4):888–896. <a href="https://doi.org/10.1002/cpt.2149">doi:10.1002/cpt.2149</a></li>
+<li>Lima JJ, Thomas CD, Barbarino J, et al.&nbsp;Clinical Pharmacogenetics Implementation Consortium (CPIC) guideline for CYP2C19 and proton pump inhibitor dosing. <em>Clin Pharmacol Ther</em>. 2021;109(6):1417–1423. <a href="https://doi.org/10.1002/cpt.2015">doi:10.1002/cpt.2015</a></li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch03.html" class="pagination-link" aria-label="บทที่ 3: เอนไซม์ Big 5">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">บทที่ 3: เอนไซม์ Big 5</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch05.html" class="pagination-link" aria-label="บทที่ 5: ยาเปลี่ยนรูป — Prodrug vs. Active Drug">
+        <span class="nav-page-text"><span class="chapter-title">บทที่ 5: ยาเปลี่ยนรูป — Prodrug vs.&nbsp;Active Drug</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>คู่มือเภสัชพันธุศาสตร์สำหรับประชาชน (PGx Handbook)</p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link active" href="https://github.com/BS-Laboratory/pgx-handbook" aria-current="page">
+<p>GitHub Repository</p>
+</a>
+  </li>  
+</ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/BS-Laboratory/pgx-handbook/blob/main/chapters/ch04.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/BS-Laboratory/pgx-handbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Bhoom Suktitipat Laboratory</p>
+</div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>

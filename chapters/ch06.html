@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="th" xml:lang="th"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>บทที่ 6: แนวทาง CPIC — จากวิทยาศาสตร์สู่เตียงผู้ป่วย – คู่มือเภสัชพันธุศาสตร์สำหรับประชาชน (PGx Handbook)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch07.html" rel="next">
+<link href="../chapters/ch05.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6b142e7faa852efe82cf055f57d87643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-95863237d9acc750b64c3c49c9e6d325.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-6b142e7faa852efe82cf055f57d87643.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<meta name="mermaid-theme" content="neutral">
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&amp;family=IBM+Plex+Sans+Thai:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch06.html"><span class="chapter-title">บทที่ 6: แนวทาง CPIC — จากวิทยาศาสตร์สู่เตียงผู้ป่วย</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">คู่มือเภสัชพันธุศาสตร์สำหรับประชาชน (PGx Handbook)</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/BS-Laboratory/pgx-handbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">คู่มือเภสัชพันธุศาสตร์สำหรับประชาชน (PGx Handbook)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">คำนำ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 1: รหัสชีวิตกับยา — DNA ทำงานอย่างไร</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 2: ร่างกายทำอะไรกับยา — เภสัชจลนศาสตร์และเภสัชพลศาสตร์</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 3: เอนไซม์ Big 5</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 4: ดาวนำทาง — Star Allele และฟีโนไทป์การเผาผลาญยา</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 5: ยาเปลี่ยนรูป — Prodrug vs.&nbsp;Active Drug</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">บทที่ 6: แนวทาง CPIC — จากวิทยาศาสตร์สู่เตียงผู้ป่วย</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 7: ยาหัวใจและหลอดเลือด</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 8: ยาจิตเวชและยาแก้ปวด</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 9: ยีนภูมิคุ้มกัน HLA และปฏิกิริยาแพ้ยารุนแรง</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 10: ปฏิกิริยาระหว่างยา ยา และยีน (DDGI)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 11: ตัวขนส่งยา (Drug Transporters)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 12: เภสัชพันธุศาสตร์ในกลุ่มประชากรพิเศษ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">บทที่ 13: อนาคตของเภสัชพันธุศาสตร์</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/appendix.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">ภาคผนวก (ฉบับละเอียด)</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">ในบทนี้</h2>
+   
+  <ul class="collapse">
+  <li><a href="#ทมาและโครงสรางของ-cpic" id="toc-ทมาและโครงสรางของ-cpic" class="nav-link active" data-scroll-target="#ทมาและโครงสรางของ-cpic">6.1 ที่มาและโครงสร้างของ CPIC</a></li>
+  <li><a href="#cpic-ไมใชหนวยงานอนมตยา" id="toc-cpic-ไมใชหนวยงานอนมตยา" class="nav-link" data-scroll-target="#cpic-ไมใชหนวยงานอนมตยา">6.2 CPIC ไม่ใช่หน่วยงานอนุมัติยา</a></li>
+  <li><a href="#กระบวนการพฒนาแนวทาง" id="toc-กระบวนการพฒนาแนวทาง" class="nav-link" data-scroll-target="#กระบวนการพฒนาแนวทาง">6.3 กระบวนการพัฒนาแนวทาง</a></li>
+  <li><a href="#ระบบการจดระดบของ-cpic" id="toc-ระบบการจดระดบของ-cpic" class="nav-link" data-scroll-target="#ระบบการจดระดบของ-cpic">6.4 ระบบการจัดระดับของ CPIC</a></li>
+  <li><a href="#ตวอยาง-ววฒนาการของแนวทาง-cyp2c19clopidogrel" id="toc-ตวอยาง-ววฒนาการของแนวทาง-cyp2c19clopidogrel" class="nav-link" data-scroll-target="#ตวอยาง-ววฒนาการของแนวทาง-cyp2c19clopidogrel">6.5 ตัวอย่าง: วิวัฒนาการของแนวทาง CYP2C19–Clopidogrel</a></li>
+  <li><a href="#การนำไปใชในระบบสารสนเทศโรงพยาบาล" id="toc-การนำไปใชในระบบสารสนเทศโรงพยาบาล" class="nav-link" data-scroll-target="#การนำไปใชในระบบสารสนเทศโรงพยาบาล">6.6 การนำไปใช้ในระบบสารสนเทศโรงพยาบาล</a></li>
+  <li><a href="#cpic-กบฉลากยาของ-us-fda" id="toc-cpic-กบฉลากยาของ-us-fda" class="nav-link" data-scroll-target="#cpic-กบฉลากยาของ-us-fda">6.7 CPIC กับฉลากยาของ US FDA</a></li>
+  <li><a href="#ขอจำกดของแนวทาง-cpic" id="toc-ขอจำกดของแนวทาง-cpic" class="nav-link" data-scroll-target="#ขอจำกดของแนวทาง-cpic">6.8 ข้อจำกัดของแนวทาง CPIC</a></li>
+  <li><a href="#สรปทายบท" id="toc-สรปทายบท" class="nav-link" data-scroll-target="#สรปทายบท">สรุปท้ายบท</a></li>
+  <li><a href="#คำถามทบทวน" id="toc-คำถามทบทวน" class="nav-link" data-scroll-target="#คำถามทบทวน">คำถามทบทวน</a></li>
+  <li><a href="#เอกสารอางอง" id="toc-เอกสารอางอง" class="nav-link" data-scroll-target="#เอกสารอางอง">เอกสารอ้างอิง</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/BS-Laboratory/pgx-handbook/blob/main/chapters/ch06.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/BS-Laboratory/pgx-handbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">บทที่ 6: แนวทาง CPIC — จากวิทยาศาสตร์สู่เตียงผู้ป่วย</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>ภาพรวมบท (Chapter Overview)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  T(["บทที่ 6&lt;br/&gt;แนวทาง CPIC"]):::hub
+  T --&gt; A["แปลผลตรวจยีน → คำแนะนำการใช้ยา"]:::node
+  T --&gt; B["ตาราง Diplotype → ฟีโนไทป์"]:::node
+  T --&gt; C["ระดับหลักฐาน + ความเข้มข้นคำแนะนำ&lt;br/&gt;CPIC Level A–D"]:::accent
+  T --&gt; D["ต่างจากฉลากยา FDA&lt;br/&gt;อัปเดตเร็วกว่า ลงรายละเอียดกว่า"]:::node
+  classDef hub fill:#0b6e99,stroke:#084a67,color:#fff;
+  classDef node fill:#eef4f8,stroke:#0b6e99,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>เมื่อผลตรวจพันธุกรรมของผู้ป่วยระบุว่าเป็น “CYP2C19 Poor Metabolizer” คำถามที่ตามมาทันทีคือ แพทย์ควรปรับการรักษาอย่างไร ควรลดขนาดยา เปลี่ยนเป็นยาชนิดอื่น หรือไม่ต้องปรับเปลี่ยนเลย คำถามลักษณะนี้เกิดขึ้นซ้ำในเวชปฏิบัติทั่วโลก และเป็นที่มาของการก่อตั้ง <strong>Clinical Pharmacogenetics Implementation Consortium (CPIC)</strong> ซึ่งเป็นองค์กรที่มีบทบาทสำคัญที่สุดองค์กรหนึ่งในการนำเภสัชพันธุศาสตร์ไปใช้ทางคลินิก</p>
+<p>บทนี้จะอธิบายที่มา กระบวนการพัฒนาแนวทาง ระบบการจัดระดับ ตัวอย่างการปรับปรุงแนวทาง และข้อจำกัดของ CPIC ที่ผู้อ่านชาวไทยควรตระหนัก</p>
+<p><strong>เส้นทางจากรหัสพันธุกรรมสู่การสั่งจ่ายยา (Right drug · Right dose · Right patient)</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-cpic-pipeline" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cpic-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-cpic-pipeline">flowchart LR
+  A["1. Genotype&lt;br/&gt;ข้อมูลพันธุกรรม&lt;br/&gt;SNP · CNV · HLA&lt;br/&gt;เช่น CYP2C19 *2"]:::step
+  B["2. Diplotype&lt;br/&gt;รูปแบบยีนของบุคคล&lt;br/&gt;เช่น *1/*2"]:::step
+  C["3. Phenotype&lt;br/&gt;การทำงานของเอนไซม์&lt;br/&gt;PM · IM · NM · RM · UM"]:::step
+  D["4. คำแนะนำ CPIC&lt;br/&gt;ยา · ขนาด/ทางเลือก&lt;br/&gt;+ ระดับความน่าเชื่อถือ"]:::accent
+  E["5. การสั่งจ่ายยา&lt;br/&gt;เลือกยา/ปรับขนาด&lt;br/&gt;ติดตามความปลอดภัย"]:::step
+  A --&gt; B --&gt; C --&gt; D --&gt; E
+  classDef step fill:#eef4f8,stroke:#0b6e99,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cpic-pipeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.1: เส้นทางการนำข้อมูลพันธุกรรมไปสู่การสั่งจ่ายยาตามแนวทาง CPIC
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>ตัวอย่างคำแนะนำตามฟีโนไทป์ เช่น <strong>CYP2C19 + Clopidogrel</strong> (PM/IM พิจารณาใช้ยาต้านเกล็ดเลือดทางเลือก เช่น prasugrel หรือ ticagrelor ส่วน NM/RM/UM ใช้ Clopidogrel ได้ตามปกติ), <strong>CYP2D6 + Codeine</strong> (PM หลีกเลี่ยงเพราะเสี่ยงไม่ได้ผล และ UM หลีกเลี่ยงเพราะเสี่ยงพิษจาก morphine สูง) และ <strong>HLA-B*15:02 + Carbamazepine</strong> (พบอัลลีลให้หลีกเลี่ยงยาเพราะเสี่ยง SJS/TEN) โดยแต่ละคำแนะนำมีระดับความเข้มข้น (Strong / Moderate / Optional) ตามน้ำหนักของหลักฐาน (รายละเอียดในหัวข้อ 6.4)</p>
+<section id="ทมาและโครงสรางของ-cpic" class="level2">
+<h2 class="anchored" data-anchor-id="ทมาและโครงสรางของ-cpic">6.1 ที่มาและโครงสร้างของ CPIC</h2>
+<p>CPIC ก่อตั้งในปี ค.ศ. 2009 ภายใต้ความร่วมมือของ Pharmacogenomics Research Network (PGRN) และ PharmGKB โดยมี Mary V. Relling และ Teri E. Klein เป็นผู้ริเริ่มหลัก และตีพิมพ์กรอบแนวคิดขององค์กรในวารสาร <em>Clinical Pharmacology &amp; Therapeutics</em> ในปี ค.ศ. 2011 [1] บทความดังกล่าวระบุว่าการนำการตรวจเภสัชพันธุศาสตร์ไปใช้ในเวชปฏิบัติยังอยู่ในระดับต่ำ ส่วนหนึ่งเพราะขาดแนวทางที่ชัดเจนว่าเมื่อได้ผลตรวจพันธุกรรมแล้ว ควรปรับการรักษาอย่างไร</p>
+<p>CPIC ประกอบด้วยเครือข่ายผู้เชี่ยวชาญนานาชาติจากหลายสาขา ได้แก่ เภสัชพันธุศาสตร์ เภสัชวิทยาคลินิก อายุรศาสตร์ กุมารเวชศาสตร์ และเภสัชกรรม ในระยะเริ่มต้น การคัดเลือกคู่ยีน–ยาที่จะจัดทำแนวทางอาศัยการสำรวจความคิดเห็นจากสมาชิก CPIC และสมาชิกของ American Society for Clinical Pharmacology and Therapeutics โดยพิจารณาจากปริมาณหลักฐาน การมีการตรวจพันธุกรรมใช้ในเวชปฏิบัติแล้ว และความสนใจของสมาชิก [1,2]</p>
+</section>
+<section id="cpic-ไมใชหนวยงานอนมตยา" class="level2">
+<h2 class="anchored" data-anchor-id="cpic-ไมใชหนวยงานอนมตยา">6.2 CPIC ไม่ใช่หน่วยงานอนุมัติยา</h2>
+<p>CPIC ไม่มีอำนาจตามกฎหมายในการอนุมัติ ระงับ หรือควบคุมการใช้ยา แนวทางของ CPIC ให้คำแนะนำเฉพาะยาที่ได้รับอนุมัติให้ใช้ในเวชปฏิบัติแล้ว และมุ่งตอบคำถามเดียวคือ <strong>“หากทราบผลตรวจพันธุกรรมของผู้ป่วยแล้ว ควรปรับการรักษาด้วยยานี้อย่างไร”</strong> CPIC ไม่ได้ตอบคำถามว่าควรส่งตรวจยีนหรือไม่ แต่มุ่งช่วยการแปลผลตรวจไปสู่การตัดสินใจทางคลินิกโดยตรง [2]</p>
+</section>
+<section id="กระบวนการพฒนาแนวทาง" class="level2">
+<h2 class="anchored" data-anchor-id="กระบวนการพฒนาแนวทาง">6.3 กระบวนการพัฒนาแนวทาง</h2>
+<p>การพัฒนาแนวทางแต่ละฉบับของ CPIC มีกระบวนการที่เป็นระบบ ประกอบด้วยขั้นตอนหลักดังนี้ [2]</p>
+<ul>
+<li><strong>การทบทวนวรรณกรรมอย่างเป็นระบบ</strong> คณะทำงานของแต่ละคู่ยีน–ยาสืบค้นและประเมินงานวิจัยที่เกี่ยวข้อง ทั้งการศึกษาทางคลินิก การศึกษาทางเภสัชจลนศาสตร์ และกลไกระดับโมเลกุล</li>
+<li><strong>การกำหนดระดับการทำงานของอัลลีล (allele function assignment)</strong> จัดอัลลีลแต่ละชนิดเป็น normal function, decreased function, no function หรือ increased function โดยอาศัยหลักฐานจากการศึกษาในหลอดทดลองและข้อมูลทางคลินิก</li>
+<li><strong>ตารางแปลผล Diplotype เป็นฟีโนไทป์</strong> แปลงอัลลีลทั้งสองชุดของผู้ป่วยเป็นฟีโนไทป์ที่ใช้ในทางคลินิก เช่น Poor, Intermediate, Normal, Rapid หรือ Ultrarapid Metabolizer โดยใช้คำศัพท์มาตรฐานร่วมกัน [3]</li>
+<li><strong>การจัดทำคำแนะนำพร้อมระดับหลักฐานและความเข้มข้น</strong> สำหรับแต่ละฟีโนไทป์</li>
+<li><strong>การทบทวนโดยผู้ทรงคุณวุฒิ</strong> แนวทางฉบับร่างผ่านการทบทวนภายในโดยสมาชิก CPIC และการทบทวนโดยผู้ทรงคุณวุฒิ (peer review) ของวารสารก่อนตีพิมพ์</li>
+</ul>
+<p>กระบวนการนี้ได้รับการประเมินเทียบกับมาตรฐานการพัฒนาแนวทางปฏิบัติทางคลินิกที่น่าเชื่อถือ (Standards for Developing Trustworthy Clinical Practice Guidelines) ของ Institute of Medicine แห่งสหรัฐอเมริกา และพบว่าสอดคล้องในหลายด้าน [2]</p>
+</section>
+<section id="ระบบการจดระดบของ-cpic" class="level2">
+<h2 class="anchored" data-anchor-id="ระบบการจดระดบของ-cpic">6.4 ระบบการจัดระดับของ CPIC</h2>
+<p>ผู้อ่านมักสับสนระหว่างระบบการจัดระดับของ CPIC ซึ่งมี 3 ส่วนที่แยกจากกัน [2,4]</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ระบบ</th>
+<th>ใช้กับ</th>
+<th>ระดับ</th>
+<th>ความหมาย</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CPIC Level</td>
+<td>คู่ยีน–ยา</td>
+<td>A, B, C, D</td>
+<td>ความพร้อมของคู่ยีน–ยาสำหรับการปรับการรักษาตามผลตรวจ</td>
+</tr>
+<tr class="even">
+<td>ระดับหลักฐาน (level of evidence)</td>
+<td>แต่ละข้อความในแนวทาง</td>
+<td>high, moderate, weak</td>
+<td>คุณภาพและความสอดคล้องของหลักฐาน</td>
+</tr>
+<tr class="odd">
+<td>ความเข้มข้นของคำแนะนำ (strength of recommendation)</td>
+<td>แต่ละคำแนะนำ</td>
+<td>strong, moderate, optional</td>
+<td>ความสมดุลระหว่างประโยชน์และความเสี่ยงของการปรับการรักษา</td>
+</tr>
+</tbody>
+</table>
+<p><strong>CPIC Level A</strong> หมายถึงคู่ยีน–ยาที่มีหลักฐานเพียงพอว่าควรใช้ข้อมูลพันธุกรรมในการเปลี่ยนยาหรือปรับขนาดยา และมีคำแนะนำอย่างน้อยหนึ่งข้อในระดับ strong หรือ moderate ตัวอย่างที่ชัดเจนคือ CYP2C19 กับ Clopidogrel ซึ่งมีงานวิจัยจำนวนมากยืนยันว่าผู้ป่วยที่เป็น Intermediate หรือ Poor Metabolizer เสี่ยงต่อเหตุการณ์ทางหัวใจและหลอดเลือดที่ไม่พึงประสงค์มากขึ้นเมื่อได้รับ Clopidogrel ขนาดมาตรฐาน [5]</p>
+<p><strong>CPIC Level C และ D</strong> ไม่ได้หมายความว่ายีนนั้นไม่มีความสำคัญทางชีววิทยา แต่หมายถึงหลักฐานยังไม่เพียงพอที่จะแปลงเป็นคำแนะนำให้ปรับการรักษา ประเด็นนี้สำคัญเป็นพิเศษสำหรับยีนที่มีข้อมูลในประชากรไทยและเอเชียตะวันออกเฉียงใต้จำกัด</p>
+</section>
+<section id="ตวอยาง-ววฒนาการของแนวทาง-cyp2c19clopidogrel" class="level2">
+<h2 class="anchored" data-anchor-id="ตวอยาง-ววฒนาการของแนวทาง-cyp2c19clopidogrel">6.5 ตัวอย่าง: วิวัฒนาการของแนวทาง CYP2C19–Clopidogrel</h2>
+<p>แนวทาง CPIC มีการทบทวนและปรับปรุงตามหลักฐานใหม่อย่างต่อเนื่อง ตัวอย่างคือแนวทางคู่ยีน–ยา CYP2C19 กับ Clopidogrel ซึ่งเผยแพร่ครั้งแรกในปี ค.ศ. 2011 ปรับปรุงในปี ค.ศ. 2013 และปรับปรุงล่าสุดในปี ค.ศ. 2022 [5]</p>
+<p>ฉบับปี ค.ศ. 2022 มีการเปลี่ยนแปลงสำคัญหลายประการ ได้แก่ การขยายขอบเขตข้อบ่งใช้ของการใช้ผลตรวจพันธุกรรมกับยาต้านเกล็ดเลือด (รวมถึงโรคหลอดเลือดสมอง) การยกระดับความเข้มข้นของคำแนะนำสำหรับผู้ที่เป็น Intermediate Metabolizer จาก moderate เป็น strong และการปรับปรุงตารางแปลผลจีโนไทป์เป็นฟีโนไทป์ตามข้อมูลอัลลีลใหม่ [5] การเปลี่ยนแปลงนี้สะท้อนหลักการของ CPIC ที่ว่าแนวทางปฏิบัติต้องปรับตามหลักฐานที่สะสมเพิ่มขึ้น</p>
+</section>
+<section id="การนำไปใชในระบบสารสนเทศโรงพยาบาล" class="level2">
+<h2 class="anchored" data-anchor-id="การนำไปใชในระบบสารสนเทศโรงพยาบาล">6.6 การนำไปใช้ในระบบสารสนเทศโรงพยาบาล</h2>
+<p>แนวทาง CPIC จะเกิดประโยชน์สูงสุดเมื่อผนวกเข้ากับการทำงานจริงของแพทย์ ในหลายสถาบัน แนวทาง CPIC ถูกแปลงเป็นกฎในระบบสนับสนุนการตัดสินใจทางคลินิก (Clinical Decision Support; CDS) ของเวชระเบียนอิเล็กทรอนิกส์ (Electronic Health Record; EHR) เมื่อแพทย์สั่งยาที่เกี่ยวข้องให้ผู้ป่วยที่มีผลตรวจพันธุกรรมบันทึกไว้ ระบบจะแสดงการแจ้งเตือนพร้อมคำแนะนำตามแนวทาง CPIC โดยอัตโนมัติ แนวทางแต่ละฉบับของ CPIC จึงมักมีเอกสารเสริมที่อธิบายวิธีนำไปใช้ในระบบ EHR [2,6] (รายละเอียดในบทที่ 13)</p>
+</section>
+<section id="cpic-กบฉลากยาของ-us-fda" class="level2">
+<h2 class="anchored" data-anchor-id="cpic-กบฉลากยาของ-us-fda">6.7 CPIC กับฉลากยาของ US FDA</h2>
+<p>ฉลากยาที่ได้รับอนุมัติจาก US FDA จำนวนมากมีข้อมูลด้านเภสัชพันธุศาสตร์ ซึ่งรวบรวมไว้ในตาราง Table of Pharmacogenomic Biomarkers in Drug Labeling [7] แต่แนวทาง CPIC มีบทบาทแตกต่างกันใน 3 ด้าน</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ด้าน</th>
+<th>ฉลากยาของ US FDA</th>
+<th>แนวทาง CPIC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>วัตถุประสงค์</td>
+<td>ความปลอดภัยในการใช้ยาและข้อกำหนดทางกฎหมาย</td>
+<td>สนับสนุนการตัดสินใจทางคลินิกโดยตรง</td>
+</tr>
+<tr class="even">
+<td>ความละเอียดของคำแนะนำ</td>
+<td>มักระบุเพียงความเกี่ยวข้องทางพันธุกรรม โดยไม่ระบุการปรับขนาดยาเสมอไป</td>
+<td>ให้คำแนะนำเป็นรูปธรรมสำหรับแต่ละฟีโนไทป์ เช่น สัดส่วนการลดขนาดยา หรือยาทางเลือก</td>
+</tr>
+<tr class="odd">
+<td>ความรวดเร็วในการปรับปรุง</td>
+<td>กระบวนการแก้ไขฉลากใช้เวลานาน</td>
+<td>ทบทวนและปรับปรุงได้เร็วกว่า</td>
+</tr>
+</tbody>
+</table>
+<p>ยาบางชนิดยังไม่มีข้อมูลเภสัชพันธุศาสตร์ในฉลากของ US FDA แต่ CPIC ออกแนวทางไว้แล้ว เพราะ CPIC พิจารณาจากหลักฐานงานวิจัยโดยตรง</p>
+</section>
+<section id="ขอจำกดของแนวทาง-cpic" class="level2">
+<h2 class="anchored" data-anchor-id="ขอจำกดของแนวทาง-cpic">6.8 ข้อจำกัดของแนวทาง CPIC</h2>
+<p>แนวทาง CPIC เป็นแหล่งอ้างอิงที่น่าเชื่อถือสูง แต่มีข้อจำกัดที่เกี่ยวข้องกับบริบทของประเทศไทย</p>
+<ol type="1">
+<li><strong>ประชากรที่ใช้ศึกษา</strong> แนวทางส่วนใหญ่พัฒนาจากข้อมูลในประชากรยุโรปและอเมริกาเหนือ ความถี่อัลลีลและขนาดผลทางคลินิกจึงอาจไม่สะท้อนประชากรไทยได้สมบูรณ์ (บทที่ 12)</li>
+<li><strong>กลุ่มอายุ</strong> คำแนะนำส่วนใหญ่อิงการศึกษาในผู้ใหญ่ การนำไปใช้ในเด็กหรือผู้สูงอายุต้องใช้ดุลยพินิจทางคลินิกเพิ่มเติม (บทที่ 12)</li>
+<li><strong>ปัจจัยที่ไม่ใช่พันธุกรรม</strong> คำแนะนำอิงจีโนไทป์เป็นหลัก แต่ไม่ครอบคลุมปัจจัยที่ทำให้ฟีโนไทป์จริงต่างจากจีโนไทป์ เช่น ยาที่ใช้ร่วม (บทที่ 10)</li>
+</ol>
+</section>
+<section id="สรปทายบท" class="level2">
+<h2 class="anchored" data-anchor-id="สรปทายบท">สรุปท้ายบท</h2>
+<p>CPIC ก่อตั้งขึ้นเพื่อแก้ปัญหาการขาดแนวทางที่ชัดเจนในการแปลผลตรวจพันธุกรรมไปสู่การรักษา CPIC ไม่ใช่หน่วยงานอนุมัติยา แต่ให้คำแนะนำเชิงปฏิบัติสำหรับยาที่ได้รับอนุมัติแล้ว ผ่านกระบวนการที่เป็นระบบ และมีระบบการจัดระดับ 3 ส่วน ได้แก่ CPIC Level ของคู่ยีน–ยา ระดับหลักฐาน และความเข้มข้นของคำแนะนำ แนวทางมีการปรับปรุงตามหลักฐานใหม่ แต่มีข้อจำกัดด้านประชากร กลุ่มอายุ และปัจจัยที่ไม่ใช่พันธุกรรม ในบทที่ 7 เราจะศึกษาการประยุกต์ใช้แนวทางเหล่านี้กับยาโรคหัวใจและหลอดเลือด</p>
+</section>
+<section id="คำถามทบทวน" class="level2">
+<h2 class="anchored" data-anchor-id="คำถามทบทวน">คำถามทบทวน</h2>
+<ol type="1">
+<li>เหตุใดจึงมีการก่อตั้ง CPIC และองค์กรนี้แตกต่างจากหน่วยงานอนุมัติยาอย่าง US FDA ในด้านบทบาทและอำนาจหน้าที่อย่างไร</li>
+<li>อธิบายขั้นตอนสำคัญในกระบวนการพัฒนาแนวทางของ CPIC และยกตัวอย่างผลลัพธ์ที่ได้จากแต่ละขั้นตอน</li>
+<li>CPIC Level, ระดับหลักฐาน และความเข้มข้นของคำแนะนำ แตกต่างกันอย่างไร และเหตุใดจึงมักถูกเข้าใจผิดว่าเป็นระบบเดียวกัน</li>
+<li>แนวทาง CYP2C19–Clopidogrel ฉบับปี ค.ศ. 2022 มีการเปลี่ยนแปลงที่สำคัญทางคลินิกอะไรบ้าง และสะท้อนหลักการใดของ CPIC</li>
+<li>แนวทาง CPIC มีข้อจำกัดใดบ้างที่ผู้อ่านชาวไทยควรตระหนักเป็นพิเศษ</li>
+</ol>
+</section>
+<section id="เอกสารอางอง" class="level2">
+<h2 class="anchored" data-anchor-id="เอกสารอางอง">เอกสารอ้างอิง</h2>
+<ol type="1">
+<li>Relling MV, Klein TE. CPIC: Clinical Pharmacogenetics Implementation Consortium of the Pharmacogenomics Research Network. <em>Clin Pharmacol Ther</em>. 2011;89(3):464–467. <a href="https://doi.org/10.1038/clpt.2010.279">doi:10.1038/clpt.2010.279</a></li>
+<li>Caudle KE, Klein TE, Hoffman JM, et al.&nbsp;Incorporation of pharmacogenomics into routine clinical practice: the Clinical Pharmacogenetics Implementation Consortium (CPIC) guideline development process. <em>Curr Drug Metab</em>. 2014;15(2):209–217.</li>
+<li>Caudle KE, Dunnenberger HM, Freimuth RR, et al.&nbsp;Standardizing terms for clinical pharmacogenetic test results: consensus terms from the Clinical Pharmacogenetics Implementation Consortium (CPIC). <em>Genet Med</em>. 2017;19(2):215–223. <a href="https://doi.org/10.1038/gim.2016.87">doi:10.1038/gim.2016.87</a></li>
+<li>Clinical Pharmacogenetics Implementation Consortium (CPIC). Genes–drugs: CPIC levels and prioritization. <a href="https://cpicpgx.org/prioritization/" class="uri">https://cpicpgx.org/prioritization/</a></li>
+<li>Lee CR, Luzum JA, Sangkuhl K, et al.&nbsp;Clinical Pharmacogenetics Implementation Consortium guideline for CYP2C19 genotype and clopidogrel therapy: 2022 update. <em>Clin Pharmacol Ther</em>. 2022;112(5):959–967. <a href="https://doi.org/10.1002/cpt.2526">doi:10.1002/cpt.2526</a></li>
+<li>Relling MV, Krauss RM, Roden DM, et al.&nbsp;New Pharmacogenomics Research Network: an open community catalyzing research and translation in precision medicine. <em>Clin Pharmacol Ther</em>. 2017;102(6):897–902.</li>
+<li>U.S. Food and Drug Administration. Table of pharmacogenomic biomarkers in drug labeling. <a href="https://www.fda.gov/drugs/science-and-research-drugs/table-pharmacogenomic-biomarkers-drug-labeling" class="uri">https://www.fda.gov/drugs/science-and-research-drugs/table-pharmacogenomic-biomarkers-drug-labeling</a></li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch05.html" class="pagination-link" aria-label="บทที่ 5: ยาเปลี่ยนรูป — Prodrug vs. Active Drug">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">บทที่ 5: ยาเปลี่ยนรูป — Prodrug vs.&nbsp;Active Drug</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch07.html" class="pagination-link" aria-label="บทที่ 7: ยาหัวใจและหลอดเลือด">
+        <span class="nav-page-text"><span class="chapter-title">บทที่ 7: ยาหัวใจและหลอดเลือด</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>คู่มือเภสัชพันธุศาสตร์สำหรับประชาชน (PGx Handbook)</p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link active" href="https://github.com/BS-Laboratory/pgx-handbook" aria-current="page">
+<p>GitHub Repository</p>
+</a>
+  </li>  
+</ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/BS-Laboratory/pgx-handbook/blob/main/chapters/ch06.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/BS-Laboratory/pgx-handbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Bhoom Suktitipat Laboratory</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
