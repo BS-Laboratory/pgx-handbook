@@ -157,21 +157,13 @@ flowchart LR
 
 ## สรุปหนังสือทั้งเล่ม
 
-| บท | เนื้อหาหลัก |
-|---|---|
-| 1 | DNA, mRNA, โปรตีน และ SNP ที่เปลี่ยนการตอบสนองต่อยา |
-| 2 | ADME และเภสัชพลศาสตร์ |
-| 3 | เอนไซม์ Big 5 (CYP2D6, CYP2C19, CYP2C9, CYP3A4, CYP3A5) |
-| 4 | Star Allele, Diplotype, Activity Score และฟีโนไทป์ |
-| 5 | Prodrug กับ Active Drug และยาสำคัญ 4 ชนิด |
-| 6 | แนวทาง CPIC |
-| 7 | ยาโรคหัวใจ: Clopidogrel, Statins, Warfarin |
-| 8 | ยาจิตเวชและยาแก้ปวด: SSRIs, Opioids |
-| 9 | HLA และปฏิกิริยาแพ้ยารุนแรง |
-| 10 | ปฏิกิริยา DDGI และ Phenoconversion |
-| 11 | ตัวขนส่งยา |
-| 12 | ประชากรพิเศษ: เด็ก ผู้สูงอายุ และชาติพันธุ์ |
-| 13 | อนาคตของเภสัชพันธุศาสตร์ |
+ตลอดทั้งเล่มมีแนวคิดหลักที่เชื่อมโยงกันและเป็นหัวใจของเภสัชพันธุศาสตร์ ดังนี้
+
+- **พันธุกรรมกำหนดการตอบสนองต่อยา** ความแตกต่างของ DNA ส่งผลต่อเอนไซม์ ตัวขนส่ง และตัวรับยา ทำให้แต่ละคนเผาผลาญและตอบสนองต่อยาต่างกัน แม้ได้รับยาขนาดเท่ากัน
+- **Prodrug กับ Active Drug ให้ผลกลับทิศกัน** ผู้ที่เป็น Poor Metabolizer ทำให้ prodrug (เช่น Codeine, Clopidogrel) ไม่ได้ผล แต่ทำให้ active drug สะสมจนเสี่ยงพิษ ส่วน Ultrarapid Metabolizer ให้ผลตรงข้าม
+- **มียีนที่สำคัญเป็นพิเศษสำหรับคนไทย** เช่น CYP2C19 (Clopidogrel), CYP2D6 (ยาแก้ปวดและยาจิตเวช) และ HLA-B\*15:02 (Carbamazepine) ซึ่งมีความถี่อัลลีลต่างจากประชากรตะวันตก
+- **ยีนไม่ใช่คำตอบเดียว** ฟีโนไทป์ที่แท้จริงยังขึ้นกับยาที่ใช้ร่วม (DDGI และ phenoconversion) อายุและพัฒนาการของเอนไซม์ รวมถึงโรคตับและไต จึงต้องแปลผลร่วมกับบริบททางคลินิกเสมอ
+- **ตรวจก่อนใช้ยาดีกว่าแก้ไขภายหลัง** การทราบข้อมูลพันธุกรรมล่วงหน้าและใช้แนวทางมาตรฐานอย่าง CPIC ช่วยเลือกยาและขนาดยาที่เหมาะสมได้ตั้งแต่แรก
 
 เภสัชพันธุศาสตร์เป็นเครื่องมือสำคัญในการเลือกยาและขนาดยาให้เหมาะกับผู้ป่วยแต่ละราย โดยเฉพาะในบริบทของประเทศไทยที่มีความถี่อัลลีลบางชนิดต่างจากประชากรตะวันตก การนำความรู้นี้ไปใช้อย่างเหมาะสม ร่วมกับการพิจารณาปัจจัยทางคลินิกอื่น จะช่วยให้ผู้ป่วยได้รับการรักษาที่ปลอดภัยและมีประสิทธิภาพมากขึ้น
 
@@ -186,7 +178,7 @@ flowchart LR
 ## เอกสารอ้างอิง
 
 1. Pirmohamed M. Pharmacogenomics: current status and future perspectives. *Nat Rev Genet*. 2023;24(6):350–362. [doi:10.1038/s41576-022-00572-8](https://doi.org/10.1038/s41576-022-00572-8)
-2. Swen JJ, van der Wouden CH, Manson LE, et al. A 12-gene pharmacogenetic panel to prevent adverse drug reactions: an open-label, multicentre, controlled, cluster-randomised crossover implementation study (PREPARE). *Lancet*. 2023;401(10374):347–356. [doi:10.1016/S0140-6736(22](https://doi.org/10.1016/S0140-6736(22))01841-4
+2. Swen JJ, van der Wouden CH, Manson LE, et al. A 12-gene pharmacogenetic panel to prevent adverse drug reactions: an open-label, multicentre, controlled, cluster-randomised crossover implementation study (PREPARE). *Lancet*. 2023;401(10374):347–356. [doi:10.1016/S0140-6736(22)01841-4](https://doi.org/10.1016/S0140-6736(22)01841-4)
 3. Dagli-Hernandez C, et al. Implementation of pre-emptive pharmacogenomic testing in outpatient clinics: experience from Asia. (ผู้เขียนควรตรวจสอบและแทนที่ด้วยการอ้างอิงฉบับสมบูรณ์ก่อนตีพิมพ์)
 4. National Human Genome Research Institute. The cost of sequencing a human genome. <https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost>
 5. Saokaew S, Tassaneeyakul W, Maenthaisong R, Chaiyakunapruk N. Cost-effectiveness analysis of HLA-B\*5801 testing in preventing allopurinol-induced SJS/TEN in Thai population. *PLoS One*. 2014;9(4):e94294. [doi:10.1371/journal.pone.0094294](https://doi.org/10.1371/journal.pone.0094294)
