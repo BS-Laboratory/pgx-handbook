@@ -475,27 +475,39 @@ Figure&nbsp;13.1: แนวโน้มราคาการตรวจยี�
 </figure>
 </div>
 <p><strong>Reactive (ตรวจหลังเกิดปัญหา)</strong></p>
-<pre><code>ผู้ป่วยได้รับยาในขนาดมาตรฐาน
-    │
-    ▼
-เกิดผลข้างเคียง หรือยาไม่ได้ผล
-    │
-    ▼
-ส่งตรวจยีน (รอผล 1–2 สัปดาห์)
-    │
-    ▼
-ปรับยาหรือเปลี่ยนยา — แต่ผู้ป่วยอาจได้รับผลกระทบไปแล้ว</code></pre>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A["ผู้ป่วยได้รับยาในขนาดมาตรฐาน"]:::step --&gt; B["เกิดผลข้างเคียง หรือยาไม่ได้ผล"]:::avoid --&gt; C["ส่งตรวจยีน (รอผล 1–2 สัปดาห์)"]:::step --&gt; D["ปรับยาหรือเปลี่ยนยา&lt;br/&gt;— แต่ผู้ป่วยอาจได้รับผลกระทบไปแล้ว"]:::caution
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
+  classDef caution fill:#fff4e5,stroke:#ef6c00,color:#111;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <p><strong>Preemptive (ตรวจล่วงหน้าก่อนใช้ยา)</strong></p>
-<pre><code>ตรวจยีนครั้งเดียวล่วงหน้า
-    │
-    ▼
-เก็บผลไว้ในเวชระเบียนอิเล็กทรอนิกส์ (EHR)
-    │
-    ▼
-เมื่อแพทย์สั่งยาที่เกี่ยวข้อง ระบบแจ้งเตือนอัตโนมัติ
-    │
-    ▼
-แพทย์เลือกยาและขนาดที่เหมาะสมตั้งแต่แรก</code></pre>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A["ตรวจยีนครั้งเดียวล่วงหน้า"]:::step --&gt; B["เก็บผลไว้ในเวชระเบียนอิเล็กทรอนิกส์ (EHR)"]:::step --&gt; C["เมื่อแพทย์สั่งยาที่เกี่ยวข้อง&lt;br/&gt;ระบบแจ้งเตือนอัตโนมัติ"]:::accent --&gt; D["แพทย์เลือกยาและขนาดที่เหมาะสมตั้งแต่แรก"]:::ok
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <blockquote class="blockquote">
 <p><strong>ประเด็นสำคัญ:</strong> ข้อดีของ Preemptive PGx คือไม่ต้องรอผลเมื่อต้องใช้ยาเร่งด่วน ครอบคลุมยีนหลายตัวในการตรวจครั้งเดียว และเนื่องจากลำดับ DNA ไม่เปลี่ยน จึงตรวจครั้งเดียวใช้ได้ตลอดชีวิต</p>
 </blockquote>
@@ -608,16 +620,25 @@ Figure&nbsp;13.1: แนวโน้มราคาการตรวจยี�
 <section id="การเชอมขอมลกบเวชระเบยนอเลกทรอนกส-ehr" class="level2">
 <h2 class="anchored" data-anchor-id="การเชอมขอมลกบเวชระเบยนอเลกทรอนกส-ehr">13.5 การเชื่อมข้อมูลกับเวชระเบียนอิเล็กทรอนิกส์ (EHR)</h2>
 <p>ข้อมูล PGx จะเกิดประโยชน์สูงสุดเมื่อพร้อมใช้ทันทีที่แพทย์สั่งยา ผ่านระบบสนับสนุนการตัดสินใจทางคลินิก (Clinical Decision Support; CDS) ในเวชระเบียนอิเล็กทรอนิกส์ [6]</p>
-<pre><code>แพทย์กำลังสั่ง Codeine ให้เด็กอายุ 8 ปี
-    │
-    ▼
-ระบบ EHR ตรวจสอบข้อมูล PGx ของผู้ป่วย
-    │
-    ├── ไม่พบข้อมูล → ระบบแนะนำให้พิจารณาตรวจยีน
-    │
-    └── พบผล CYP2D6 UM → แสดงการแจ้งเตือน:
-        "ผู้ป่วยเป็น CYP2D6 Ultrarapid Metabolizer
-         Codeine เสี่ยงต่อพิษ พิจารณายาทางเลือก"</code></pre>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A["แพทย์กำลังสั่ง Codeine ให้เด็กอายุ 8 ปี"]:::step --&gt; B["ระบบ EHR ตรวจสอบข้อมูล PGx ของผู้ป่วย"]:::accent
+  B --&gt;|"ไม่พบข้อมูล"| C["ระบบแนะนำให้พิจารณาตรวจยีน"]:::caution
+  B --&gt;|"พบผล CYP2D6 UM"| D["แสดงการแจ้งเตือน:&lt;br/&gt;ผู้ป่วยเป็น CYP2D6 Ultrarapid Metabolizer&lt;br/&gt;Codeine เสี่ยงต่อพิษ พิจารณายาทางเลือก"]:::avoid
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef caution fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <section id="ความทาทายในการนำไปใช" class="level3">
 <h3 class="anchored" data-anchor-id="ความทาทายในการนำไปใช">ความท้าทายในการนำไปใช้</h3>
 <table class="caption-top table">

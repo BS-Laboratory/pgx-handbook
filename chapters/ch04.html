@@ -651,11 +651,42 @@ Figure&nbsp;4.2: ตัวอย่างการรวม Activity Score: อ�
 </section>
 <section id="ตวอยางการคำนวณ" class="level3">
 <h3 class="anchored" data-anchor-id="ตวอยางการคำนวณ">ตัวอย่างการคำนวณ</h3>
-<pre><code>ตัวอย่างที่ 1: *1/*1    →  1 + 1    = 2.0
-ตัวอย่างที่ 2: *1/*4    →  1 + 0    = 1.0
-ตัวอย่างที่ 3: *4/*4    →  0 + 0    = 0
-ตัวอย่างที่ 4: *1/*1x2  →  1 + 2    = 3.0
-ตัวอย่างที่ 5: *10/*10  →  0.25 + 0.25 = 0.5</code></pre>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Diplotype</th>
+<th>การคำนวณ</th>
+<th>Activity Score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>*1/*1</td>
+<td>1 + 1</td>
+<td>2.0</td>
+</tr>
+<tr class="even">
+<td>*1/*4</td>
+<td>1 + 0</td>
+<td>1.0</td>
+</tr>
+<tr class="odd">
+<td>*4/*4</td>
+<td>0 + 0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>*1/*1x2</td>
+<td>1 + 2</td>
+<td>3.0</td>
+</tr>
+<tr class="odd">
+<td>*10/*10</td>
+<td>0.25 + 0.25</td>
+<td>0.5</td>
+</tr>
+</tbody>
+</table>
 <blockquote class="blockquote">
 <p><strong>หมายเหตุ:</strong> ระบบ Activity Score ใช้กับยีน CYP2D6 และ CYP2C9 เป็นหลัก ส่วนยีน CYP2C19 แนวทาง CPIC จัดฟีโนไทป์จาก Diplotype โดยตรง เช่น *2/*2 = PM, *1/*17 = RM และ *17/*17 = UM [3] ค่า Activity Value และเกณฑ์การแบ่งกลุ่มอาจมีการปรับปรุงเป็นระยะ ในทางปฏิบัติจึงต้องตรวจสอบกับตารางล่าสุดของ CPIC เสมอ</p>
 </blockquote>

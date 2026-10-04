@@ -463,16 +463,25 @@ ul.task-list li input[type="checkbox"] {
 <section id="hla-คออะไร" class="level2">
 <h2 class="anchored" data-anchor-id="hla-คออะไร">9.1 HLA คืออะไร</h2>
 <p><strong>HLA (Human Leukocyte Antigen)</strong> คือกลุ่มโปรตีนบนผิวเซลล์ที่ทำหน้าที่นำเสนอชิ้นส่วนของสิ่งแปลกปลอม เช่น ชิ้นส่วนโปรตีนของเชื้อโรค ให้ T-cell ของระบบภูมิคุ้มกันตรวจสอบ ในกรณีของปฏิกิริยาแพ้ยา ยาบางชนิดสามารถจับกับโมเลกุล HLA บางแบบโดยตรง หรือเปลี่ยนชุดของเปปไทด์ที่ HLA นำเสนอ ทำให้ T-cell มองว่าเป็นสิ่งแปลกปลอมและกระตุ้นการตอบสนองของภูมิคุ้มกัน [2]</p>
-<pre><code>ยา หรือ ยาที่จับกับเปปไทด์
-    │  จับกับโมเลกุล HLA บางแบบ
-    ▼
-HLA นำเสนอต่อ T-cell
-    │
-    ├── ไม่กระตุ้น T-cell → ไม่มีปฏิกิริยา
-    │
-    └── กระตุ้น T-cell → ปล่อยสารสื่อการอักเสบและทำลายเซลล์
-                         → ปฏิกิริยาแพ้ยารุนแรง
-                           (hypersensitivity reaction, SJS/TEN, DRESS)</code></pre>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A["ยา หรือ ยาที่จับกับเปปไทด์"]:::step --&gt;|"จับกับโมเลกุล HLA บางแบบ"| B["HLA นำเสนอต่อ T-cell"]:::accent
+  B --&gt; C["ไม่กระตุ้น T-cell&lt;br/&gt;ไม่มีปฏิกิริยา"]:::ok
+  B --&gt; D["กระตุ้น T-cell → ปล่อยสารสื่อการอักเสบและทำลายเซลล์&lt;br/&gt;→ ปฏิกิริยาแพ้ยารุนแรง&lt;br/&gt;(hypersensitivity, SJS/TEN, DRESS)"]:::avoid
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <p>ยีน HLA อยู่บนโครโมโซมที่ 6 และเป็นยีนที่มีความหลากหลายทางพันธุกรรมสูงที่สุดในจีโนมมนุษย์ มีอัลลีลที่ได้รับการตั้งชื่อแล้วมากกว่า 30,000 อัลลีล [3] ความหลากหลายนี้ช่วยให้ประชากรมนุษย์รับมือกับเชื้อโรคได้หลากหลาย แต่อัลลีลบางแบบก็ทำให้ยาบางชนิดกระตุ้นระบบภูมิคุ้มกันได้</p>
 </section>
 <section id="stevensjohnson-syndrome-และ-toxic-epidermal-necrolysis" class="level2">
@@ -564,15 +573,25 @@ Figure&nbsp;9.1: ภาพรวม HLA-B*15:02: ยีนที่สัมพ�
 <section id="การนำไปใชในประเทศไทย" class="level3">
 <h3 class="anchored" data-anchor-id="การนำไปใชในประเทศไทย">การนำไปใช้ในประเทศไทย</h3>
 <p>โรงพยาบาลหลายแห่งในไทยได้นำการตรวจ HLA-B*15:02 มาใช้เป็นมาตรฐานก่อนสั่งจ่าย Carbamazepine (standard of care) และพัฒนาระบบแจ้งเตือนในเวชระเบียนอิเล็กทรอนิกส์ [8]</p>
-<pre><code>แพทย์กำลังสั่ง Carbamazepine
-    │
-    ▼
-ระบบตรวจสอบผล HLA-B*15:02
-    │
-    ├── ไม่พบ → สั่งยาได้ และเฝ้าระวังอาการแพ้ตามปกติ
-    │
-    └── พบ → แจ้งเตือนแพทย์: "ผู้ป่วยมีอัลลีลเสี่ยงต่อ SJS/TEN
-             พิจารณายาทางเลือก"</code></pre>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A["แพทย์กำลังสั่ง Carbamazepine"]:::step --&gt; B["ระบบตรวจสอบผล HLA-B*15:02"]:::accent
+  B --&gt;|"ไม่พบ"| C["สั่งยาได้&lt;br/&gt;เฝ้าระวังอาการแพ้ตามปกติ"]:::ok
+  B --&gt;|"พบ"| D["แจ้งเตือนแพทย์:&lt;br/&gt;ผู้ป่วยมีอัลลีลเสี่ยงต่อ SJS/TEN&lt;br/&gt;พิจารณายาทางเลือก"]:::avoid
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 <section id="ยาทางเลอกสำหรบผทม-hla-b1502" class="level3">
 <h3 class="anchored" data-anchor-id="ยาทางเลอกสำหรบผทม-hla-b1502">ยาทางเลือกสำหรับผู้ที่มี HLA-B*15:02</h3>
@@ -685,16 +704,29 @@ Figure&nbsp;9.1: ภาพรวม HLA-B*15:02: ยีนที่สัมพ�
 </section>
 <section id="หลกการนำไปใช" class="level2">
 <h2 class="anchored" data-anchor-id="หลกการนำไปใช">9.6 หลักการนำไปใช้</h2>
-<pre><code>ก่อนสั่งยาที่มีความเสี่ยงสูง
-    │
-    ▼
-ผู้ป่วยเคยตรวจ HLA ที่เกี่ยวข้องหรือไม่
-    ├── เคยตรวจ → ใช้ผลตรวจประกอบการตัดสินใจ
-    └── ยังไม่เคย → ตรวจก่อน (หากไม่เร่งด่วน)
-                    หรือเริ่มด้วยยาทางเลือกที่มีความเสี่ยงต่ำกว่า
-
-ผลตรวจไม่พบอัลลีลเสี่ยง → ใช้ยาได้ แต่ยังต้องเฝ้าระวังอาการแพ้ยา
-ผลตรวจพบอัลลีลเสี่ยง    → หลีกเลี่ยงยานั้นและเลือกยาทางเลือก</code></pre>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A["ก่อนสั่งยาที่มีความเสี่ยงสูง"]:::step --&gt; B{"ผู้ป่วยเคยตรวจ HLA ที่เกี่ยวข้องหรือไม่"}:::accent
+  B --&gt;|"เคยตรวจ"| C["ใช้ผลตรวจประกอบการตัดสินใจ"]:::ok
+  B --&gt;|"ยังไม่เคย"| D["ตรวจก่อน (หากไม่เร่งด่วน)&lt;br/&gt;หรือเริ่มด้วยยาทางเลือกที่เสี่ยงต่ำกว่า"]:::caution
+  C --&gt; E{"ผลตรวจ"}:::accent
+  E --&gt;|"ไม่พบอัลลีลเสี่ยง"| F["ใช้ยาได้ แต่ยังต้องเฝ้าระวังอาการแพ้ยา"]:::ok
+  E --&gt;|"พบอัลลีลเสี่ยง"| G["หลีกเลี่ยงยานั้นและเลือกยาทางเลือก"]:::avoid
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+  classDef caution fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <blockquote class="blockquote">
 <p><strong>ข้อควรระวัง:</strong> ผลตรวจที่ไม่พบอัลลีลเสี่ยงไม่ได้รับประกันว่าจะไม่แพ้ยา เพราะ HLA เป็นเพียงปัจจัยหนึ่ง ยังมีกลไกและปัจจัยทางพันธุกรรมอื่นที่ทำให้เกิดปฏิกิริยาแพ้ยาได้ จึงต้องเฝ้าระวังอาการแพ้ยาเสมอ</p>
 </blockquote>

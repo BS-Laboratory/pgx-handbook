@@ -513,16 +513,22 @@ Figure&nbsp;7.1: ภาพรวมบทที่ 7: ยาโรคหัว�
 <section id="กลไก" class="level3">
 <h3 class="anchored" data-anchor-id="กลไก">กลไก</h3>
 <p>Clopidogrel เป็น Prodrug ที่ต้องถูกเปลี่ยนรูป 2 ขั้นตอน โดย CYP2C19 มีบทบาททั้งสองขั้นตอน (รายละเอียดในบทที่ 5) [4]</p>
-<pre><code>Clopidogrel
-    │  CYP2C19 (ขั้นที่ 1)
-    ▼
-2-Oxo-clopidogrel
-    │  CYP2C19 (ขั้นที่ 2)
-    ▼
-Thiol metabolite (สารออกฤทธิ์)
-    │  จับกับตัวรับ P2Y12 บนเกล็ดเลือด
-    ▼
-ยับยั้งการเกาะกลุ่มของเกล็ดเลือด</code></pre>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A["Clopidogrel"]:::step --&gt;|"CYP2C19 (ขั้นที่ 1)"| B["2-Oxo-clopidogrel"]:::accent --&gt;|"CYP2C19 (ขั้นที่ 2)"| C["Thiol metabolite&lt;br/&gt;(สารออกฤทธิ์)"]:::accent --&gt;|"จับตัวรับ P2Y12 บนเกล็ดเลือด"| D["ยับยั้งการเกาะกลุ่มของเกล็ดเลือด"]:::ok
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <blockquote class="blockquote">
 <p><strong>ข้อควรระวัง:</strong> ผู้ที่เป็น CYP2C19 Poor Metabolizer สร้างสารออกฤทธิ์ได้น้อยมาก เกล็ดเลือดจึงยังเกาะกลุ่มได้ และเสี่ยงต่อลิ่มเลือดอุดตันซ้ำ แม้รับประทานยาสม่ำเสมอ [4]</p>
 </blockquote>
@@ -572,10 +578,36 @@ Thiol metabolite (สารออกฤทธิ์)
 <section id="คำแนะนำของ-cpic-ฉบบป-ค.ศ.-2022-4" class="level3">
 <h3 class="anchored" data-anchor-id="คำแนะนำของ-cpic-ฉบบป-ค.ศ.-2022-4">คำแนะนำของ CPIC ฉบับปี ค.ศ. 2022 [4]</h3>
 <p>สำหรับผู้ป่วยภาวะหลอดเลือดหัวใจเฉียบพลัน (ACS) หรือได้รับการขยายหลอดเลือดหัวใจ (PCI)</p>
-<pre><code>PM     → หลีกเลี่ยง Clopidogrel หากทำได้ → ใช้ Prasugrel หรือ Ticagrelor
-IM     → หลีกเลี่ยง Clopidogrel ขนาดมาตรฐานหากทำได้ → ใช้ Prasugrel หรือ Ticagrelor
-NM     → Clopidogrel ขนาดมาตรฐาน
-RM/UM  → Clopidogrel ขนาดมาตรฐาน</code></pre>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ฟีโนไทป์</th>
+<th>คำแนะนำ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PM</td>
+<td>หลีกเลี่ยง Clopidogrel หากทำได้ → ใช้ Prasugrel หรือ Ticagrelor</td>
+</tr>
+<tr class="even">
+<td>IM</td>
+<td>หลีกเลี่ยง Clopidogrel ขนาดมาตรฐานหากทำได้ → ใช้ Prasugrel หรือ Ticagrelor</td>
+</tr>
+<tr class="odd">
+<td>NM</td>
+<td>Clopidogrel ขนาดมาตรฐาน</td>
+</tr>
+<tr class="even">
+<td>RM/UM</td>
+<td>Clopidogrel ขนาดมาตรฐาน</td>
+</tr>
+</tbody>
+</table>
 <p>คำแนะนำสำหรับทั้ง PM และ IM อยู่ในระดับ strong [4] Ticagrelor เป็น Active Drug ที่ไม่ต้องอาศัย CYP2C19 ในการเปลี่ยนรูป จึงเป็นทางเลือกที่ได้ผลในทุกฟีโนไทป์ของ CYP2C19</p>
 </section>
 <section id="แผนภาพการตดสนใจ-decision-tree" class="level3">
@@ -614,14 +646,24 @@ RM/UM  → Clopidogrel ขนาดมาตรฐาน</code></pre>
 <section id="slco1b1" class="level3">
 <h3 class="anchored" data-anchor-id="slco1b1">SLCO1B1</h3>
 <p>ยีน <strong>SLCO1B1</strong> สร้างโปรตีนขนส่ง <strong>OATP1B1</strong> ซึ่งนำ Statin จากเลือดเข้าสู่เซลล์ตับ อันเป็นตำแหน่งออกฤทธิ์ของยา (รายละเอียดในบทที่ 11)</p>
-<pre><code>Statin ในกระแสเลือด
-    │  OATP1B1 (จากยีน SLCO1B1) ขนส่งเข้าเซลล์ตับ
-    ▼
-ตับ: ยับยั้งเอนไซม์ HMG-CoA reductase → ลด LDL-cholesterol
-
-หาก OATP1B1 ทำงานลดลง (เช่น อัลลีล SLCO1B1*5):
-    Statin เข้าตับได้น้อย → ระดับยาในเลือดสูงขึ้น
-    → เสี่ยงต่ออาการทางกล้ามเนื้อ</code></pre>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A["Statin ในกระแสเลือด"]:::step --&gt;|"OATP1B1 (ยีน SLCO1B1)&lt;br/&gt;ขนส่งเข้าเซลล์ตับ"| B["ตับ: ยับยั้ง HMG-CoA reductase&lt;br/&gt;→ ลด LDL-cholesterol"]:::ok
+  C["หาก OATP1B1 ทำงานลดลง&lt;br/&gt;(เช่น อัลลีล SLCO1B1*5)"]:::caution --&gt; D["Statin เข้าตับได้น้อย&lt;br/&gt;→ ระดับยาในเลือดสูงขึ้น&lt;br/&gt;→ เสี่ยงอาการทางกล้ามเนื้อ"]:::avoid
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef ok fill:#e6f4ea,stroke:#2e7d32,color:#111;
+  classDef caution fill:#fff4e5,stroke:#ef6c00,color:#111;
+  classDef avoid fill:#fdecea,stroke:#c62828,color:#111;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 <p>ผลกระทบชัดเจนที่สุดกับ Simvastatin การศึกษา SEARCH พบว่าผู้ที่มีอัลลีล c.521C (อยู่ใน SLCO1B1*5) ทั้งสองชุด มีความเสี่ยงต่อ myopathy จาก Simvastatin 80 mg/วัน สูงกว่าผู้ที่ไม่มีอัลลีลนี้ประมาณ 17 เท่า [6]</p>
 </section>
 <section id="คำแนะนำของ-cpic-สำหรบ-simvastatin-5" class="level3">
@@ -667,13 +709,22 @@ RM/UM  → Clopidogrel ขนาดมาตรฐาน</code></pre>
 <section id="ตองพจารณา-2-ยนรวมกน" class="level3">
 <h3 class="anchored" data-anchor-id="ตองพจารณา-2-ยนรวมกน">ต้องพิจารณา 2 ยีนร่วมกัน</h3>
 <p>พันธุกรรมมีผลต่อ Warfarin ทั้งด้านเภสัชจลนศาสตร์ (PK) และเภสัชพลศาสตร์ (PD) [7]</p>
-<pre><code>CYP2C9 (PK)
-└── กำหนดความเร็วในการเผาผลาญ Warfarin
-    อัลลีล *2, *3 → เผาผลาญช้า → ยาสะสม → เสี่ยงเลือดออก
-
-VKORC1 (PD)
-└── กำหนดความไวต่อฤทธิ์ของ Warfarin
-    อัลลีล −1639A → สร้างเอนไซม์เป้าหมายน้อย → ไวต่อยา → ต้องการยาขนาดต่ำ</code></pre>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  A["CYP2C9 (PK)"]:::step --&gt; B["กำหนดความเร็วในการเผาผลาญ Warfarin&lt;br/&gt;อัลลีล *2, *3 → เผาผลาญช้า → ยาสะสม → เสี่ยงเลือดออก"]:::accent
+  C["VKORC1 (PD)"]:::step --&gt; D["กำหนดความไวต่อฤทธิ์ของ Warfarin&lt;br/&gt;อัลลีล −1639A → สร้างเอนไซม์เป้าหมายน้อย → ไวต่อยา → ต้องการยาขนาดต่ำ"]:::accent
+  classDef step fill:#eef4f8,stroke:#37698a,color:#111;
+  classDef accent fill:#fff4e5,stroke:#ef6c00,color:#111;
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 </section>
 <section id="ขนาดยาตามจโนไทป" class="level3">
 <h3 class="anchored" data-anchor-id="ขนาดยาตามจโนไทป">ขนาดยาตามจีโนไทป์</h3>
